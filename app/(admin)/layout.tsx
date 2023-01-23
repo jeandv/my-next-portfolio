@@ -1,4 +1,4 @@
-import '../styles/tailwind.css';
+import '../../styles/tailwind.css';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
