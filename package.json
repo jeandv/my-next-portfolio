@@ -2,6 +2,10 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "My portfolio with Blog using Next.js 13 + TypeScript, Tailwind and Sanity CMS",
+  "author": "Jean Rondón <jeanrdev@gmail.com>",
+  "repository": "https://github.com/jeandv/my-next-portfolio",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,14 +14,35 @@
   },
   "dependencies": {
     "@next/font": "13.1.4",
+    "@portabletext/react": "^2.0.0",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.0.0",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
-    "eslint": "8.32.0",
-    "eslint-config-next": "13.1.4",
     "next": "13.1.4",
+    "next-sanity": "^4.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sanity": "^3.0.0",
+    "styled-components": "^5.2.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@sanity/eslint-config-studio": "^2.0.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.32.0",
+    "eslint-config-next": "^13.1.4",
+    "postcss": "^8.4.21",
+    "postcss-preset-env": "^7.8.3",
+    "prettier": "^2.8.3",
+    "tailwindcss": "^3.2.4"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
   }
 }
