@@ -1,7 +1,6 @@
 import { AppProps } from 'next/app';
 import { Inter } from '@next/font/google';
 import { ThemeProvider } from 'next-themes';
-import '../styles/tailwind.css';
 
 const inter = Inter();
 

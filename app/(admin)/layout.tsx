@@ -1,3 +1,5 @@
+'use client'
+
 import '../../styles/tailwind.css';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
