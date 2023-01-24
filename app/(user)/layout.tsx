@@ -11,6 +11,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         {children}
 
         {/* <Footer/> */}
+
       </body>
     </html>
   )
