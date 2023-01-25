@@ -4,6 +4,7 @@ import '../../styles/globals.css';
 
 import { Providers } from '../providers';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -16,7 +17,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
             {children}
 
-            {/* <Footer/> */}
+            <Footer />
+
           </main>
         </Providers>
       </body>
