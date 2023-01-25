@@ -2,25 +2,25 @@
 
 import '../../styles/globals.css';
 
-// import { ThemeProvider } from 'next-themes';
+import { Providers } from '../providers';
 import Header from '@/components/Header';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    // <ThemeProvider attribute='class'>
     <html>
       <body className='bg-gray-50 dark:bg-gray-900'>
-        <main className='flex flex-col justify-center px-8'>
+        <Providers>
+          <main className='flex flex-col justify-center px-8'>
 
-          <Header />
+            <Header />
 
-          {children}
+            {children}
 
-          {/* <Footer/> */}
-        </main>
+            {/* <Footer/> */}
+          </main>
+        </Providers>
       </body>
     </html>
-    // </ThemeProvider>
   )
 }
 
