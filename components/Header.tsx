@@ -1,5 +1,3 @@
-'use client';
-
 import NavItem from './NavItem';
 import ButtonTheme from './ButtonTheme';
 
