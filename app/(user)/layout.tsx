@@ -11,15 +11,13 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html>
       <body className='bg-gray-50 dark:bg-gray-900'>
         <Providers>
-          <main className='flex flex-col justify-center px-8'>
 
-            <Header />
+          <Header />
 
-            {children}
+          {children}
 
-            <Footer />
+          <Footer />
 
-          </main>
         </Providers>
       </body>
     </html>
