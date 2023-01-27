@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import CurrentFavTech from './CurrentFavTech';
 
 const HomeSection = () => {
   return (
@@ -22,7 +23,7 @@ const HomeSection = () => {
 
           </h2>
 
-          <p className='text-gray-600 dark:text-gray-400 mb-16'>
+          <p className='text-gray-600 dark:text-gray-400 mb-6'>
             I enjoy programming, I help others and whenever I can I try to learn new things and React / Next.js lover {':)'}
           </p>
 
@@ -41,6 +42,9 @@ const HomeSection = () => {
         </div>
 
       </div>
+
+      <CurrentFavTech />
+
     </section>
   )
 }
