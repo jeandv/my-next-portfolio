@@ -3,7 +3,7 @@ import ExternalLink from './ExternalLink';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8'>
+    <footer className='flex flex-col justify-center items-center max-w-4xl mx-auto w-full mb-8'>
       <hr className='w-full border-1 border-gray-200 dark:border-gray-800 mb-8' />
 
       <div className='w-full max-w-2xl grid place-items-center grid-cols-1 gap-4 pb-16 sm:grid-cols-3'>

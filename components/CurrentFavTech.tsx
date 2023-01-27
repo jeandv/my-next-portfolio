@@ -56,7 +56,7 @@ const CurrentFavTech = () => {
           </li>
 
           <li style={{ opacity: 1, transform: 'none' }}>
-            <div className='h-3 w-[1px] bg-slate-300 dark:bg-slate-700'>
+            <div className='h-3 w-[1px] bg-slate-300 dark:bg-gray-300'>
             </div>
           </li>
 
