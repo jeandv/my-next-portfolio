@@ -1,7 +1,7 @@
 
 const CurrentFavTech = () => {
   return (
-    <div className=''>
+    <div className='mb-12'>
       <div>
 
         <p className='mb-2.5 text-gray-600 dark:text-gray-400'>
