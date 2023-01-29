@@ -1,12 +1,26 @@
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import ExternalLink from './ExternalLink';
+
+const animation = {
+  hide: { y: -8, opacity: 0 },
+  show: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 const Footer = () => {
   return (
     <footer className='flex flex-col justify-center items-center max-w-4xl mx-auto w-full mb-8'>
       <hr className='w-full border-1 border-gray-200 dark:border-gray-800 mb-8' />
 
-      <div className='w-full max-w-2xl grid place-items-center grid-cols-1 gap-4 pb-16 sm:grid-cols-3'>
+      <motion.div
+        className='w-full max-w-2xl grid place-items-center grid-cols-1 gap-4 pb-16 sm:grid-cols-3'
+        initial={animation.hide}
+        animate={animation.show}
+        transition={{ delay: 0.3 }}
+      >
         <div className='flex flex-col space-y-4'>
 
           <Link
@@ -97,7 +111,7 @@ const Footer = () => {
           </ExternalLink>
 
         </div>
-      </div>
+      </motion.div>
     </footer>
   )
 }
