@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import NavItem from './NavItem';
 import ButtonTheme from './ButtonTheme';
-import MobileMenuNav from './MobileMenuNav';
 
 const animation = {
   hide: { y: -8, opacity: 0 },
@@ -31,8 +30,6 @@ const Header = () => {
         </div>
 
         <div className='ml-[-0.60rem]'>
-
-          <MobileMenuNav />
 
           <NavItem href='/' text='Home' />
 
