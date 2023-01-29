@@ -217,3 +217,17 @@ table {
 .prose .callout>p {
   margin: 0 !important;
 }
+
+.backgroundCirclesColors{
+    inset: 0px;
+    position: absolute;
+    z-index: -1;
+    background: radial-gradient(circle at top left, hsl(252 40.1% 22.5%), rgba(255, 255, 255, 0) 15%), radial-gradient(circle at 80% 20%, hsl(192 79.3% 12.8%), rgba(255, 255, 255, 0) 15%);
+}
+@media (min-width: 900px) {
+
+.backgroundCirclesColors{ 
+background: radial-gradient(circle at 15% 50%, hsl(252 40.1% 22.5%), rgba(255, 255, 255, 0) 25%), radial-gradient(circle at 85% 30%, hsl(192 79.3% 12.8%), rgba(255, 255, 255, 0) 25%);
+}
+
+}
