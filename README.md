@@ -1,6 +1,7 @@
 💻💼 This is: ⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡ ❗❗❗❗❗❗
 
-Preview of my next portfolio: https://jeandv-portfolio.vercel.app </b>
+Preview of my next portfolio (this): https://jeandv-portfolio.vercel.app
+
 Actual portfolio: https://jeandv.vercel.app
 
 soon more details of my portfolio here :)
