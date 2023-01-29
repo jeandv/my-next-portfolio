@@ -14,24 +14,23 @@ const animation = {
 
 const Header = () => {
   return (
-    <header className='flex flex-col justify-center px-8'>
+    <motion.header
+      className='flex flex-col justify-center px-8'
+      initial={animation.hide}
+      animate={animation.show}
+      transition={{ delay: 0.5 }}
+    >
       <nav className='flex items-center justify-between w-full relative max-w-4xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 text-gray-900 bg-gray-50 dark:bg-gray-900 bg-opacity-60 dark:text-gray-100'>
 
-        <motion.div
-          initial={animation.hide}
-          animate={animation.show}
-          transition={{ delay: 0.5 }}>
+        <div>
           <h1>
             <Link href='/'>
               <strong>Jeandv</strong>();
             </Link>
           </h1>
-        </motion.div>
+        </div>
 
-        <motion.div className='ml-[-0.60rem]'
-          initial={animation.hide}
-          animate={animation.show}
-          transition={{ delay: 0.5 }}>
+        <div className='ml-[-0.60rem]'>
 
           <MobileMenuNav />
 
@@ -45,12 +44,12 @@ const Header = () => {
 
           <NavItem href='/blog' text='Blog' />
 
-        </motion.div>
+        </div>
 
         <ButtonTheme />
 
       </nav>
-    </header>
+    </motion.header>
   )
 }
 
