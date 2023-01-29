@@ -1,4 +1,6 @@
-💻💼 This is the dev branch of: ⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡ ❗❗❗❗❗❗
+💻💼 This is: ⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡ ❗❗❗❗❗❗
+
+soon more details of my portfolio here :)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
