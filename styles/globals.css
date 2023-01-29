@@ -10,6 +10,7 @@
 html {
   min-width: 360px;
   scroll-behavior: smooth;
+  cursor: crosshair;
 }
 
 #__next {

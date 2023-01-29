@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import CurrentFavTech from './CurrentFavTech';
 
 const HomeSection = () => {
@@ -6,7 +9,12 @@ const HomeSection = () => {
     <section className='flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto pb-16'>
       <div className='flex flex-col-reverse lg:flex-row items-start'>
 
-        <div className='flex flex-col pr-8'>
+        <motion.div
+          className='flex flex-col pr-8'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
 
           <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-2 text-black dark:text-white'>
             Jean Rondón
@@ -27,9 +35,14 @@ const HomeSection = () => {
             I enjoy programming, I help others and whenever I can I try to learn new things {':)'}
           </p>
 
-        </div>
+        </motion.div>
 
-        <div className='w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto'>
+        <motion.div
+          className='w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
           <Image
             alt='Jean Rondón'
             height={176}
@@ -37,21 +50,26 @@ const HomeSection = () => {
             src='/jean-rondon.jpg'
             sizes='30vw'
             priority
-            className='rounded-3xl filter grayscale'
+            className='rounded-3xl filter grayscale hover:grayscale-0 transition ease'
           />
-        </div>
+        </motion.div>
 
       </div>
 
       <CurrentFavTech />
 
-      <div className='flex flex-col-reverse lg:flex-row items-start'>
+      <motion.div
+        className='flex flex-col-reverse lg:flex-row items-start'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+      >
 
         <p className='text-gray-600 dark:text-gray-400 mb-6'>
           I'm a passionate dev with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can, I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, pixel perfect and agile methodologies.
         </p>
 
-      </div>
+      </motion.div>
 
     </section>
   )
