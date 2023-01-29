@@ -1,5 +1,14 @@
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
+
+const animation = {
+  hide: { y: -8, opacity: 0 },
+  show: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 const ButtonTheme = () => {
 
@@ -10,11 +19,14 @@ const ButtonTheme = () => {
   useEffect(() => setChangeTheme(true), []);
 
   return (
-    <button
+    <motion.button
       aria-label='Toggle Dark Mode'
       type='button'
       className='w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center hover:ring-2 ring-gray-300 transition-all ease'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+      initial={animation.hide}
+      animate={animation.show}
+      transition={{ delay: 0.5 }}
     >
       {changeTheme && (
         <svg
@@ -41,7 +53,7 @@ const ButtonTheme = () => {
           )}
         </svg>
       )}
-    </button>
+    </motion.button>
   )
 }
 
