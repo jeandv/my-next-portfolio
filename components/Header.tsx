@@ -25,25 +25,31 @@ const navItems: { [key: string]: NavItem } = {
   '/': {
     name: 'home',
     x: 0,
-    y: 0,
+    y: -5,
     w: '64px',
   },
   '/about': {
     name: 'about',
-    x: 94,
-    y: 20,
+    x: -94,
+    y: -5,
     w: '65px',
+  },
+  '/projects': {
+    name: 'projects',
+    x: 127,
+    y: 0,
+    w: '56px',
+  },
+  '/contact': {
+    name: 'contact',
+    x: 182,
+    y: 0,
+    w: '100px',
   },
   '/blog': {
     name: 'blog',
-    x: 127,
-    y: 69,
-    w: '56px',
-  },
-  '/guestbook': {
-    name: 'guestbook',
     x: 182,
-    y: 104,
+    y: 0,
     w: '100px',
   },
 };
@@ -90,10 +96,10 @@ const Header = () => {
           {navItems[pathname] ? (
             <>
               {/* Desktop version, hidden on mobile, animates y axis */}
-              <div className="hidden md:block">
+              <div className='hidden md:block'>
                 <motion.div
-                  className="absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]"
-                  layoutId="test2"
+                  className='absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
+                  layoutId='test2'
                   initial={{ opacity: 0, y: navItems[pathname].y }}
                   animate={{
                     opacity: 1,
@@ -108,10 +114,10 @@ const Header = () => {
                 />
               </div>
               {/* Mobile version, hidden on desktop, animates x axis */}
-              <div className="block md:hidden">
+              <div className='block md:hidden'>
                 <motion.div
-                  className="absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]"
-                  layoutId="test"
+                  className='absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
+                  layoutId='test'
                   initial={{ opacity: 0, x: navItems[pathname].x }}
                   animate={{
                     opacity: 1,
@@ -128,15 +134,16 @@ const Header = () => {
             </>
           ) : null}
 
-          {Object.entries(navItems).map(([path, { name }]) => {
+          {Object.entries(navItems).map(([path, { name }], i) => {
+
             const isActive = path === pathname;
 
             return (
               <Link
-                key={path}
+                key={i}
                 href={path}
                 className={clsx(
-                  'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]',
+                  'transition-all ease hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]',
                   {
                     'text-neutral-500': !isActive,
                     'font-bold': isActive,
