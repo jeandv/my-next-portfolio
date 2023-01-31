@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-// import NavItem from './NavItem';
 import { usePathname } from 'next/navigation';
-import ButtonTheme from './ButtonTheme';
-// import MobileMenuNav from './MobileMenuNav';
+import { motion } from 'framer-motion';
 import clsx from 'clsx';
+import ButtonTheme from './ButtonTheme';
+import MobileMenuNav from './MobileMenuNav';
+import { useScrollPosition } from '@/utils/useScrollPosition';
 
 const animation = {
   hide: { y: -8, opacity: 0 },
@@ -58,18 +58,23 @@ const Header = () => {
 
   let pathname = usePathname() as string;
 
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
-  }
+  if (pathname.includes('/blog/')) pathname = '/blog';
+
+  const classNames = (...classes: string[]) => classes.filter(Boolean).join(' ');
+
+  const scrollPosition = useScrollPosition();
 
   return (
     <motion.header
-      className='flex flex-col justify-center px-8'
+      className={classNames(
+        scrollPosition > 0 ? 'backdrop-blur-md bg-white/60 dark:bg-black/30' : '',
+        'w-8/12 rounded-3xl sticky top-0 flex flex-col justify-center px-8 z-10 transition-all duration-300 ease-in-out'
+      )}
       initial={animation.hide}
       animate={animation.show}
       transition={{ delay: 0.5 }}
     >
-      <nav className='flex items-center justify-between w-full relative max-w-4xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 text-gray-900 bg-opacity-60 dark:text-gray-100'>
+      <nav className='flex items-center justify-between w-full relative max-w-4xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-8 text-gray-900 bg-opacity-60 dark:text-gray-100'>
 
         <div>
           <h1>
@@ -81,7 +86,7 @@ const Header = () => {
 
         <div className='ml-[-0.60rem]'>
 
-          {/* <MobileMenuNav /> */}
+          <MobileMenuNav />
 
           {/* <NavItem href='/' text='Home' />
 
@@ -93,46 +98,29 @@ const Header = () => {
 
           <NavItem href='/blog' text='Blog' /> */}
 
-          {navItems[pathname] ? (
-            <>
-              {/* Desktop version, hidden on mobile, animates y axis */}
-              <div className='hidden md:block'>
-                <motion.div
-                  className='absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
-                  layoutId='test2'
-                  initial={{ opacity: 0, x: navItems[pathname].x, y: navItems[pathname].y }}
-                  animate={{
-                    opacity: 1,
-                    x: navItems[pathname].x,
-                    width: navItems[pathname].w,
-                  }}
-                  transition={{
-                    type: 'spring',
-                    stiffness: 350,
-                    damping: 30,
-                  }}
-                />
-              </div>
-              {/* Mobile version, hidden on desktop, animates x axis */}
-              <div className='block md:hidden'>
-                <motion.div
-                  className='absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
-                  layoutId='test'
-                  initial={{ opacity: 0, x: navItems[pathname].x }}
-                  animate={{
-                    opacity: 1,
-                    x: navItems[pathname].x,
-                    width: navItems[pathname].w,
-                  }}
-                  transition={{
-                    type: 'spring',
-                    stiffness: 350,
-                    damping: 30,
-                  }}
-                />
-              </div>
-            </>
-          ) : null}
+          {
+            navItems[pathname] ? (
+              <>
+                {/* Desktop version, hidden on mobile, animates y axis */}
+                <div className='hidden lg:block'>
+                  <motion.div
+                    className='absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
+                    layoutId='test2'
+                    initial={{ opacity: 0, x: navItems[pathname].x, y: navItems[pathname].y }}
+                    animate={{
+                      opacity: 1,
+                      x: navItems[pathname].x,
+                      width: navItems[pathname].w,
+                    }}
+                    transition={{
+                      type: 'spring',
+                      stiffness: 350,
+                      damping: 30,
+                    }}
+                  />
+                </div>
+              </>
+            ) : null}
 
           {
             Object.entries(navItems).map(([path, { name }]) => {
@@ -144,7 +132,7 @@ const Header = () => {
                   key={path}
                   href={path}
                   className={clsx(
-                    'transition-all ease hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]',
+                    'hidden lg:inline-block transition-all ease hover:text-neutral-800 dark:hover:text-neutral-200 py-[2px] px-[10px]',
                     {
                       'text-neutral-500': !isActive,
                       'font-bold': isActive,
