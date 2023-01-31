@@ -30,7 +30,7 @@ const navItems: { [key: string]: NavItem } = {
   },
   '/about': {
     name: 'about',
-    x: -94,
+    x: 63,
     y: -5,
     w: '65px',
   },
@@ -38,19 +38,19 @@ const navItems: { [key: string]: NavItem } = {
     name: 'projects',
     x: 127,
     y: 0,
-    w: '56px',
+    w: '78px',
   },
   '/contact': {
     name: 'contact',
-    x: 182,
+    x: 207,
     y: 0,
-    w: '100px',
+    w: '75px',
   },
   '/blog': {
     name: 'blog',
-    x: 182,
+    x: 282,
     y: 0,
-    w: '100px',
+    w: '53px',
   },
 };
 
@@ -100,10 +100,10 @@ const Header = () => {
                 <motion.div
                   className='absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
                   layoutId='test2'
-                  initial={{ opacity: 0, y: navItems[pathname].y }}
+                  initial={{ opacity: 0, x: navItems[pathname].x }}
                   animate={{
                     opacity: 1,
-                    y: navItems[pathname].y,
+                    x: navItems[pathname].x,
                     width: navItems[pathname].w,
                   }}
                   transition={{
@@ -134,26 +134,28 @@ const Header = () => {
             </>
           ) : null}
 
-          {Object.entries(navItems).map(([path, { name }], i) => {
+          {
+            Object.entries(navItems).map(([path, { name }]) => {
 
-            const isActive = path === pathname;
+              const isActive = path === pathname;
 
-            return (
-              <Link
-                key={i}
-                href={path}
-                className={clsx(
-                  'transition-all ease hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]',
-                  {
-                    'text-neutral-500': !isActive,
-                    'font-bold': isActive,
-                  }
-                )}
-              >
-                {name}
-              </Link>
-            );
-          })}
+              return (
+                <Link
+                  key={path}
+                  href={path}
+                  className={clsx(
+                    'transition-all ease hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]',
+                    {
+                      'text-neutral-500': !isActive,
+                      'font-bold': isActive,
+                    }
+                  )}
+                >
+                  {name}
+                </Link>
+              );
+            })
+          }
 
         </div>
 
