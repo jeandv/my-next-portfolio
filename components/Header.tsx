@@ -24,32 +24,32 @@ interface NavItem {
 const navItems: { [key: string]: NavItem } = {
   '/': {
     name: 'home',
-    x: 0,
-    y: -5,
-    w: '64px',
+    x: 1,
+    y: -4,
+    w: '60px',
   },
   '/about': {
     name: 'about',
-    x: 63,
-    y: -5,
-    w: '65px',
+    x: 65,
+    y: -25,
+    w: '60px',
   },
   '/projects': {
     name: 'projects',
-    x: 127,
-    y: 0,
+    x: 128,
+    y: -5,
     w: '78px',
   },
   '/contact': {
     name: 'contact',
     x: 207,
-    y: 0,
+    y: -5,
     w: '75px',
   },
   '/blog': {
     name: 'blog',
     x: 282,
-    y: 0,
+    y: -5,
     w: '53px',
   },
 };
@@ -100,7 +100,7 @@ const Header = () => {
                 <motion.div
                   className='absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
                   layoutId='test2'
-                  initial={{ opacity: 0, x: navItems[pathname].x }}
+                  initial={{ opacity: 0, x: navItems[pathname].x, y: navItems[pathname].y }}
                   animate={{
                     opacity: 1,
                     x: navItems[pathname].x,
