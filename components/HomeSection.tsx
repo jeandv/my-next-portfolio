@@ -6,7 +6,7 @@ import CurrentFavTech from './CurrentFavTech';
 
 const HomeSection = () => {
   return (
-    <section className='flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto pb-16'>
+    <section className='flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto mt-8 pb-16'>
       <div className='flex flex-col-reverse lg:flex-row items-start'>
 
         <motion.div
@@ -16,11 +16,11 @@ const HomeSection = () => {
           transition={{ delay: 0.3 }}
         >
 
-          <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-2 text-black dark:text-white'>
+          <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-3 text-black dark:text-white'>
             Jean Rondón
           </h1>
 
-          <h2 className='flex items-center gap-2 text-gray-700 dark:text-gray-200 mb-4'>
+          <h2 className='flex items-center gap-2 text-gray-700 dark:text-gray-200 mb-8'>
 
             <span className='font-semibold tracking-tight'>Frontend</span>
             Developer
@@ -31,7 +31,7 @@ const HomeSection = () => {
 
           </h2>
 
-          <p className='text-gray-600 dark:text-gray-400 mb-6'>
+          <p className='text-gray-600 dark:text-gray-400'>
             I enjoy programming, I help others and whenever I can I try to learn new things {':)'}
           </p>
 
@@ -66,7 +66,7 @@ const HomeSection = () => {
       >
 
         <p className='text-gray-600 dark:text-gray-400 mb-6'>
-          I'm a passionate dev with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can, I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, pixel perfect and agile methodologies.
+          I'm a passionate dev with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron.js, to add I also have experience working in Backend with Node and in the UX design part with Figma, always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect and agile methodologies.
         </p>
 
       </motion.div>
