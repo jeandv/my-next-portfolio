@@ -8,7 +8,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const animation = {
-  hide: { opacity: 0 },
+  hide: { opacity: 0, y: -20 },
   show: {
     y: 0,
     opacity: 1,
@@ -16,16 +16,17 @@ const animation = {
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
+
   return (
     <html>
       <body className='bg-gray-50 dark:bg-gray-900'>
         <Providers>
 
           <motion.div
-            className='backgroundCirclesColors'
+            className='darkBackgroundCirclesColors'
             initial={animation.hide}
             animate={animation.show}
-            transition={{ delay: 0.8 }}
+            transition={{ delay: 0.9 }}
           ></motion.div>
 
           <Header />

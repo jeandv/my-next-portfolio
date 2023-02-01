@@ -14,7 +14,7 @@ html {
 }
 
 #__next {
-  /* @apply bg-gray-50 dark: bg-gray-900; */
+  @apply bg-gray-50 dark:bg-gray-900;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -34,7 +34,7 @@ html {
 }
 
 .skip-nav {
-  /* @apply absolute px-4 py-3 transition-transform duration-200 transform -translate-y-12 -left-1/4 focus: top-4 focus:translate-y-3 -top-8; */
+  @apply absolute px-4 py-3 transition-transform duration-200 transform -translate-y-12 -left-1/4 focus:top-4 focus:translate-y-3 top-8;
 }
 
 #skip {
@@ -44,12 +44,12 @@ html {
 @supports not (backdrop-filter: none) {
   .sticky-nav {
     backdrop-filter: none;
-    /* @apply bg-opacity-100; */
+    @apply bg-opacity-100;
   }
 }
 
 .prose .anchor {
-  /* @apply absolute invisible no-underline; */
+  @apply absolute invisible no-underline;
 
   margin-left: -1em;
   padding-right: 0.5em;
@@ -59,38 +59,38 @@ html {
 }
 
 .anchor:hover {
-  /* @apply visible; */
+  @apply visible;
 }
 
 .prose a {
-  /* @apply transition-all; */
+  @apply transition-all;
 }
 
 .prose .anchor:after {
-  /* @apply text-gray-300 dark: text-gray-700; */
+  @apply text-gray-300 dark:text-gray-700;
   content: '#';
 }
 
 .prose *:hover>.anchor {
-  /* @apply visible; */
+  @apply visible;
 }
 
 .prose pre {
-  /* @apply border border-gray-200 bg-gray-50 dark: border-gray-700 dark:bg-gray-900; */
+  @apply border border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900;
 }
 
 .prose code {
-  /* @apply text-gray-800 dark: text-gray-200 px-1 py-0.5 border border-gray-100 dark:border-gray-800 rounded-lg bg-gray-100 dark:bg-gray-900; */
+  @apply text-gray-800 dark:text-gray-200 px-1 py-0.5 border border-gray-100 dark:border-gray-800 rounded-lg bg-gray-100 dark:bg-gray-900;
 }
 
 .prose pre code {
-  /* @apply text-gray-800 dark: text-gray-200 p-0; */
+  @apply text-gray-800 dark:text-gray-200 p-0;
   border: initial;
 }
 
 .prose img {
   /* Don't apply styles to next/image */
-  /* @apply m-0; */
+  @apply m-0;
 }
 
 .prose> :first-child {
@@ -103,11 +103,11 @@ html {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  /* @apply text-gray-700 dark: text-gray-300; */
+  @apply text-gray-700 dark:text-gray-300;
 }
 
 .token.punctuation {
-  /* @apply text-gray-700 dark: text-gray-300; */
+  @apply text-gray-700 dark:text-gray-300;
 }
 
 .token.property,
@@ -117,7 +117,7 @@ html {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  /* @apply text-green-500; */
+  @apply text-green-500;
 }
 
 .token.selector,
@@ -126,7 +126,7 @@ html {
 .token.char,
 .token.builtin,
 .token.inserted {
-  /* @apply text-purple-500; */
+  @apply text-purple-500;
 }
 
 .token.operator,
@@ -134,29 +134,29 @@ html {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  /* @apply text-yellow-500; */
+  @apply text-yellow-500;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  /* @apply text-blue-500; */
+  @apply text-blue-500;
 }
 
 .token.function,
 .token.class-name {
-  /* @apply text-pink-500; */
+  @apply text-pink-500;
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-  /* @apply text-yellow-500; */
+  @apply text-yellow-500;
 }
 
 code[class*='language-'],
 pre[class*='language-'] {
-  /* @apply text-gray-800 dark: text-gray-50; */
+  @apply text-gray-800 dark:text-gray-50;
 }
 
 pre::-webkit-scrollbar {
@@ -171,15 +171,15 @@ pre {
 }
 
 .rehype-code-title {
-  /* @apply px-5 py-3 font-mono text-sm font-bold text-gray-800 bg-gray-200 border border-b-0 border-gray-200 rounded-t-lg dark: text-gray-200 dark:border-gray-700 dark:bg-gray-800; */
+  @apply px-5 py-3 font-mono text-sm font-bold text-gray-800 bg-gray-200 border border-b-0 border-gray-200 rounded-t-lg dark:text-gray-200 dark:border-gray-700 dark:bg-gray-800;
 }
 
 .rehype-code-title+pre {
-  /* @apply mt-0 rounded-t-none; */
+  @apply mt-0 rounded-t-none;
 }
 
 .highlight-line {
-  /* @apply block px-4 -mx-4 bg-gray-100 border-l-4 border-blue-500 dark: bg-gray-800; */
+  @apply block px-4 -mx-4 bg-gray-100 border-l-4 border-blue-500 dark:bg-gray-800;
 }
 
 /* Remove Safari input shadow on mobile */
@@ -191,15 +191,15 @@ input[type='email'] {
 }
 
 .metric-card>a {
-  /* @apply no-underline; */
+  @apply no-underline;
 }
 
 .metric-card>p {
-  /* @apply my-2; */
+  @apply my-2;
 }
 
 .step>h3 {
-  /* @apply my-0; */
+  @apply my-0;
 }
 
 .prose .tweet a {
@@ -218,16 +218,17 @@ table {
   margin: 0 !important;
 }
 
-.backgroundCirclesColors{
-    inset: 0px;
-    position: absolute;
-    z-index: -1;
-    background: radial-gradient(circle at top left, hsl(252 40.1% 22.5%), rgba(255, 255, 255, 0) 15%), radial-gradient(circle at 80% 20%, hsl(192 79.3% 12.8%), rgba(255, 255, 255, 0) 15%);
+.darkBackgroundCirclesColors{
+  inset: 0px;
+  position: absolute;
+  z-index: -1;
+  background:radial-gradient(circle at top left, rgba(139, 0, 255, 0.22) 0%, rgba(0, 0, 0, 0) 15%, rgba(128, 128, 128, 0) 100%), radial-gradient(circle at 85% 30%, rgba(0, 136, 255, 0.28) 0%, rgba(0, 0, 0, 0) 30%, rgba(128, 128, 128, 0) 15%);
 }
+
 @media (min-width: 900px) {
 
-.backgroundCirclesColors{ 
-background: radial-gradient(circle at 15% 50%, hsl(252 40.1% 22.5%), rgba(255, 255, 255, 0) 25%), radial-gradient(circle at 85% 30%, hsl(192 79.3% 12.8%), rgba(255, 255, 255, 0) 25%);
+.darkBackgroundCirclesColors{ 
+  background:radial-gradient(circle at 15% 55%, rgba(139, 0, 255, 0.22) 0%, rgba(0, 0, 0, 0) 25%, rgba(128, 128, 128, 0) 100%), radial-gradient(circle at 85% 30%, rgba(0, 136, 255, 0.28) 0%, rgba(0, 0, 0, 0) 30%, rgba(128, 128, 128, 0) 25%);
 }
 
 }
