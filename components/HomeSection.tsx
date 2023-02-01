@@ -65,17 +65,30 @@ const HomeSection = () => {
         transition={{ delay: 0.3 }}
       >
 
-        <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-4 text-black dark:text-white'>
-          About me
+        <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-5 text-black dark:text-white'>
+          About me.
         </h2>
 
-        <p className='text-gray-600 dark:text-gray-400 mb-6'>
+        <p className='text-gray-600 dark:text-gray-400 mb-8'>
           I'm a passionate dev with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron.js, to add I also have experience working in Backend with Node and in the UX design part with Figma, always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect and agile methodologies.
         </p>
 
-        <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-4 text-black dark:text-white'>
-          Fav projects
+        <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-5 text-black dark:text-white'>
+          Fav projects.
         </h2>
+
+        <article className='mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group' style={{ backgroundImage: `url('https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=900')` }}>
+          <div className='bg-black bg-opacity-20 min-h-150 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300'>
+            <h1 className='text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300'>
+              Example title
+            </h1>
+            <div className='w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300'>
+            </div>
+            <p className='opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+            </p>
+          </div>
+        </article>
 
       </motion.div>
 
