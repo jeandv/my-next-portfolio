@@ -89,6 +89,8 @@ const Header = () => {
           <MobileMenuNav />
 
           {/* <NavItem href='/' text='Home' />
+          
+          <NavItem href='/' text='Home' />
 
           <NavItem href='/about' text='About' />
 
