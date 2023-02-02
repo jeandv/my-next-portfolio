@@ -1,5 +1,5 @@
 
-const AboutMe = () => {
+export const AboutMe = () => {
   return (
     <div className='mb-16'>
 
@@ -14,5 +14,3 @@ const AboutMe = () => {
     </div>
   )
 }
-
-export default AboutMe;

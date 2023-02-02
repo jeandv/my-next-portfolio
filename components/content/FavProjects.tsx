@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const myFavProjects = [
   {
@@ -21,7 +21,7 @@ const myFavProjects = [
   }
 ];
 
-const FavProjects = () => {
+export const FavProjects = () => {
   return (
     <div className='mb-16'>
 
@@ -63,5 +63,3 @@ const FavProjects = () => {
     </div>
   )
 }
-
-export default FavProjects;

@@ -2,13 +2,9 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import CurrentFavTech from './CurrentFavTech';
-import AboutMe from './AboutMe';
-import FavProjects from './FavProjects';
-import { Timeline, TimelineEvent } from './TimeLineExp';
-import { ProcessWork } from './ProcessWork';
+import { CurrentFavTech, AboutMe, Timeline, TimelineEvent, FavProjects, ProcessWork } from '../content';
 
-const HomeSection = () => {
+export const HomeSection = () => {
   return (
     <section className='flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto mt-8 pb-16'>
       <div className='flex flex-col-reverse lg:flex-row items-start'>
@@ -104,5 +100,3 @@ const HomeSection = () => {
     </section>
   )
 }
-
-export default HomeSection;

@@ -4,7 +4,7 @@ interface ExternalLinkProps {
   children: React.ReactNode
 }
 
-const ExternalLink = ({ href, children }: ExternalLinkProps) => (
+export const ExternalLink = ({ href, children }: ExternalLinkProps) => (
   <a
     className='flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease'
     target='_blank'
@@ -14,5 +14,3 @@ const ExternalLink = ({ href, children }: ExternalLinkProps) => (
     {children}
   </a>
 );
-
-export default ExternalLink;

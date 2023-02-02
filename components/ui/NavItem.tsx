@@ -7,7 +7,7 @@ interface NavItemProps {
   text: string
 }
 
-const NavItem = ({ href, text }: NavItemProps) => {
+export const NavItem = ({ href, text }: NavItemProps) => {
 
   const pathname = usePathname();
 
@@ -27,5 +27,3 @@ const NavItem = ({ href, text }: NavItemProps) => {
     </Link>
   );
 }
-
-export default NavItem;

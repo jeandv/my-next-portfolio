@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
-import ButtonTheme from './ButtonTheme';
-import MobileMenuNav from './MobileMenuNav';
-import { useScrollPosition } from '@/utils/useScrollPosition';
+import { ButtonTheme } from './';
+// import MobileMenuNav from '../MobileMenuNav';
+import { useScrollPosition } from '@/utils';
 
 const animation = {
   hide: { y: -8, opacity: 0 },
@@ -54,7 +54,7 @@ const navItems: { [key: string]: NavItem } = {
   },
 };
 
-const Header = () => {
+export const Header = () => {
 
   let pathname = usePathname() as string;
 
@@ -86,7 +86,7 @@ const Header = () => {
 
         <div className='ml-[-0.60rem]'>
 
-          <MobileMenuNav />
+          {/* <MobileMenuNav /> */}
 
           {/* <NavItem href='/' text='Home' />
 
@@ -153,5 +153,3 @@ const Header = () => {
     </motion.header>
   )
 }
-
-export default Header;

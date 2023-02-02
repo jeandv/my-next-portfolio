@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import cn from 'classnames';
 import useDelayedRender from 'use-delayed-render';
-import styles from '../styles/MobileMenu.module.css';
+import styles from '../../styles/MobileMenu.module.css';
 
-const MobileMenuNav = () => {
+export const MobileMenuNav = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -180,5 +180,3 @@ const CrossIcon = (props: JSX.IntrinsicElements['svg']) => {
     </svg>
   );
 }
-
-export default MobileMenuNav;

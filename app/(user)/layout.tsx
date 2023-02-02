@@ -4,8 +4,7 @@ import '../../styles/globals.css';
 
 import { motion } from 'framer-motion';
 import { Providers } from '../providers';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import { Header, Footer } from '@/components/ui';
 
 const animation = {
   hide: { opacity: 0, y: -20 },

@@ -1,6 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import ExternalLink from './ExternalLink';
+import { ExternalLink } from './';
 
 const animation = {
   hide: { y: -8, opacity: 0 },
@@ -10,7 +11,7 @@ const animation = {
   },
 };
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className='flex flex-col justify-center items-center max-w-4xl mx-auto w-full mb-8'>
       <hr className='w-full border-1 border-gray-200 dark:border-gray-800 mb-8' />
@@ -115,5 +116,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer;

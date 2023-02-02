@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 
-const ButtonTheme = () => {
+export const ButtonTheme = () => {
 
   const [changeTheme, setChangeTheme] = useState(false);
 
@@ -44,5 +44,3 @@ const ButtonTheme = () => {
     </button>
   )
 }
-
-export default ButtonTheme;

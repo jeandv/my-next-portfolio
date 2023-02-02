@@ -8,7 +8,7 @@ const animation = {
   },
 };
 
-const CurrentFavTech = () => {
+export const CurrentFavTech = () => {
   return (
     <motion.div className='mb-16'>
       <div>
@@ -100,5 +100,3 @@ const CurrentFavTech = () => {
     </motion.div>
   )
 }
-
-export default CurrentFavTech;
