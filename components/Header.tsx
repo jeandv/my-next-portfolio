@@ -42,13 +42,13 @@ const navItems: { [key: string]: NavItem } = {
   },
   '/contact': {
     name: 'contact',
-    x: 207,
+    x: 210,
     y: -5,
     w: '75px',
   },
   '/blog': {
     name: 'blog',
-    x: 282,
+    x: 285,
     y: -5,
     w: '53px',
   },
