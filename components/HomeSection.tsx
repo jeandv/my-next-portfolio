@@ -70,8 +70,6 @@ const HomeSection = () => {
 
         <AboutMe />
 
-        <FavProjects />
-
         <Timeline>
 
           <TimelineEvent active>
@@ -89,12 +87,14 @@ const HomeSection = () => {
             <TimelineEvent.Title>Studio Iluxion | may. 2022 - jul. 2022</TimelineEvent.Title>
 
             <TimelineEvent.Description>
-              Web designer and responsive web designer and frontend programmer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery and using pixel perfect.
+              Web designer and responsive web designer and frontend programmer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery implementing SCRUM, pixel perfect and clean code.
             </TimelineEvent.Description>
 
           </TimelineEvent>
 
         </Timeline>
+
+        <FavProjects />
 
       </motion.div>
 
