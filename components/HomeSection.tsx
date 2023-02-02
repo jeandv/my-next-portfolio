@@ -6,6 +6,7 @@ import CurrentFavTech from './CurrentFavTech';
 import AboutMe from './AboutMe';
 import FavProjects from './FavProjects';
 import { Timeline, TimelineEvent } from './TimeLineExp';
+import { ProcessWork } from './ProcessWork';
 
 const HomeSection = () => {
   return (
@@ -95,6 +96,8 @@ const HomeSection = () => {
         </Timeline>
 
         <FavProjects />
+
+        <ProcessWork />
 
       </motion.div>
 

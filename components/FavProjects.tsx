@@ -33,8 +33,8 @@ const FavProjects = () => {
 
         {
           myFavProjects.map(({ id, title, des, img }) => (
-            <article key={id} className='mx-auto shadow-xl bg-cover transform duration-500 hover:-translate-y-2 cursor-pointer group rounded-3xl max-h-70' style={{ backgroundImage: `url(${img})` }}>
-              <div className='bg-black bg-opacity-20 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300 rounded-3xl max-h-70'>
+            <article key={id} className='mx-auto shadow-xl bg-cover transform duration-500 hover:-translate-y-2 cursor-pointer group rounded-1xl max-h-65' style={{ backgroundImage: `url(${img})` }}>
+              <div className='bg-black bg-opacity-20 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300 rounded-1xl max-h-65'>
 
                 <h1 className='text-white text-2xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300'>
                   {title}
