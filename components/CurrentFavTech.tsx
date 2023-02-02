@@ -10,7 +10,7 @@ const animation = {
 
 const CurrentFavTech = () => {
   return (
-    <motion.div className='mb-12'>
+    <motion.div className='mb-16'>
       <div>
 
         <motion.p

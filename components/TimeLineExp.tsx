@@ -8,13 +8,13 @@ interface TimelineEventProps {
 
 export const Timeline = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className='mb-8'>
+    <div className='mb-16'>
 
       <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-start'>Experience</h2>
 
       {children}
 
-    </section>
+    </div>
   )
 }
 

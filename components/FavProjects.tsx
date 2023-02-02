@@ -23,13 +23,13 @@ const myFavProjects = [
 
 const FavProjects = () => {
   return (
-    <div className='mb-8'>
+    <div className='mb-16'>
 
-      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-start'>
-        Fav projects.
+      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-10 text-black dark:text-white text-start'>
+        Fav projects
       </h2>
 
-      <div className='flex items-center justify-center gap-5 my-8 mx-auto'>
+      <div className='flex items-center justify-center gap-5 mb-8 mx-auto'>
 
         {
           myFavProjects.map(({ id, title, des, img }) => (
