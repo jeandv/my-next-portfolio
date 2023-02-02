@@ -3,7 +3,7 @@ const AboutMe = () => {
   return (
     <div className='mb-8'>
 
-      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-5 text-black dark:text-white'>
+      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-start'>
         About me.
       </h2>
 

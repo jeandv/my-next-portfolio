@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import CurrentFavTech from './CurrentFavTech';
 import AboutMe from './AboutMe';
 import FavProjects from './FavProjects';
+import { Timeline, TimelineEvent } from './TimeLineExp';
 
 const HomeSection = () => {
   return (
@@ -70,6 +71,30 @@ const HomeSection = () => {
         <AboutMe />
 
         <FavProjects />
+
+        <Timeline>
+
+          <TimelineEvent active>
+
+            <TimelineEvent.Title>Freelance | feb. 2022 - Currently</TimelineEvent.Title>
+
+            <TimelineEvent.Description>
+              Design and complete development of web pages/applications in a freelancer way applying agile methodologies, clean architecture, SOLID principles and pixel perfect in the projects I have done, I have developed almost all types of projects from Landing pages, Manageable stores with registration and login, Manageable blogs, dashboards, web pages with a variety of sections and more from prototyping, design using Balsamiq Wireframes, Adobe Photoshop and Figma, also from the design to the programming and migration.
+            </TimelineEvent.Description>
+
+          </TimelineEvent>
+
+          <TimelineEvent last>
+
+            <TimelineEvent.Title>Studio Iluxion | may. 2022 - jul. 2022</TimelineEvent.Title>
+
+            <TimelineEvent.Description>
+              Web designer and responsive web designer and frontend programmer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery and using pixel perfect.
+            </TimelineEvent.Description>
+
+          </TimelineEvent>
+
+        </Timeline>
 
       </motion.div>
 
