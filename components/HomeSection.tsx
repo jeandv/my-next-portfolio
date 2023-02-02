@@ -3,10 +3,14 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import CurrentFavTech from './CurrentFavTech';
+import AboutMe from './AboutMe';
+import FavProjects from './FavProjects';
+import { Timeline, TimelineEvent } from './TimeLineExp';
+import { ProcessWork } from './ProcessWork';
 
 const HomeSection = () => {
   return (
-    <section className='flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto pb-16'>
+    <section className='flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto mt-8 pb-16'>
       <div className='flex flex-col-reverse lg:flex-row items-start'>
 
         <motion.div
@@ -16,11 +20,11 @@ const HomeSection = () => {
           transition={{ delay: 0.3 }}
         >
 
-          <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-2 text-black dark:text-white'>
+          <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-3 text-black dark:text-white'>
             Jean Rondón
           </h1>
 
-          <h2 className='flex items-center gap-2 text-gray-700 dark:text-gray-200 mb-4'>
+          <h2 className='flex items-center gap-2 text-gray-700 dark:text-gray-200 mb-8'>
 
             <span className='font-semibold tracking-tight'>Frontend</span>
             Developer
@@ -31,7 +35,7 @@ const HomeSection = () => {
 
           </h2>
 
-          <p className='text-gray-600 dark:text-gray-400 mb-6'>
+          <p className='text-1xl md:text-1xl text-gray-600 dark:text-gray-400'>
             I enjoy programming, I help others and whenever I can I try to learn new things {':)'}
           </p>
 
@@ -59,15 +63,41 @@ const HomeSection = () => {
       <CurrentFavTech />
 
       <motion.div
-        className='flex flex-col-reverse lg:flex-row items-start'
+        className='flex flex-col items-start'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
 
-        <p className='text-gray-600 dark:text-gray-400 mb-6'>
-          I'm a passionate dev with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can, I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, pixel perfect and agile methodologies.
-        </p>
+        <AboutMe />
+
+        <Timeline>
+
+          <TimelineEvent active>
+
+            <TimelineEvent.Title>Freelance | feb. 2022 - Currently</TimelineEvent.Title>
+
+            <TimelineEvent.Description>
+              Design and complete development of web pages/applications in a freelancer way applying agile methodologies, clean architecture, SOLID principles and pixel perfect in the projects I have done, I have developed almost all types of projects from Landing pages, Manageable stores with registration and login, Manageable blogs, dashboards, web pages with a variety of sections and more from prototyping, design using Balsamiq Wireframes, Adobe Photoshop and Figma, also from the design to the programming and migration.
+            </TimelineEvent.Description>
+
+          </TimelineEvent>
+
+          <TimelineEvent last>
+
+            <TimelineEvent.Title>Studio Iluxion | may. 2022 - jul. 2022</TimelineEvent.Title>
+
+            <TimelineEvent.Description>
+              Web designer and responsive web designer and frontend programmer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery implementing SCRUM, pixel perfect and clean code.
+            </TimelineEvent.Description>
+
+          </TimelineEvent>
+
+        </Timeline>
+
+        <FavProjects />
+
+        <ProcessWork />
 
       </motion.div>
 

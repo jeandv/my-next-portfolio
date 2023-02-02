@@ -17,7 +17,7 @@ module.exports = {
           600: '#444444',
           700: '#333333',
           800: '#222222',
-          900: '#111111'
+          900: '#111010'
         }
       },
       fontFamily: {
@@ -94,5 +94,8 @@ module.exports = {
   variants: {
     typography: ['dark']
   },
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp')
+  ]
 };
