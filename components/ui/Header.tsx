@@ -54,7 +54,7 @@ const navItems: { [key: string]: NavItem } = {
   },
 };
 
-export const Header = () => {
+const Header = () => {
 
   let pathname = usePathname() as string;
 
@@ -153,3 +153,5 @@ export const Header = () => {
     </motion.header>
   )
 }
+
+export default Header;
