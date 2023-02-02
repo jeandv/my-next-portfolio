@@ -1,11 +1,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import cn from 'classnames';
-
-interface NavItemProps {
-  href: string,
-  text: string
-}
+import { NavItemProps } from '@/types';
 
 export const NavItem = ({ href, text }: NavItemProps) => {
 

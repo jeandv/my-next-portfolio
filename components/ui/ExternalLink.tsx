@@ -1,8 +1,4 @@
-
-interface ExternalLinkProps {
-  href: string,
-  children: React.ReactNode
-}
+import { ExternalLinkProps } from '@/types';
 
 export const ExternalLink = ({ href, children }: ExternalLinkProps) => (
   <a

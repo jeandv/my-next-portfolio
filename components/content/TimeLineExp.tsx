@@ -1,10 +1,5 @@
 import classNames from 'classnames';
-
-interface TimelineEventProps {
-  active?: boolean;
-  children: React.ReactNode;
-  last?: boolean;
-}
+import { TimelineEventProps } from '@/types';
 
 export const Timeline = ({ children }: { children: React.ReactNode }) => {
   return (

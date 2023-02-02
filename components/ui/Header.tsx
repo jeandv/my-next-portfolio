@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import { ButtonTheme } from './';
 // import MobileMenuNav from '../MobileMenuNav';
 import { useScrollPosition } from '@/utils';
+import { NavItemHeaderAnimation } from '@/types';
 
 const animation = {
   hide: { y: -8, opacity: 0 },
@@ -14,14 +15,7 @@ const animation = {
   },
 };
 
-interface NavItem {
-  name: string;
-  x: number;
-  y: number;
-  w: string;
-}
-
-const navItems: { [key: string]: NavItem } = {
+const navItems: { [key: string]: NavItemHeaderAnimation } = {
   '/': {
     name: 'home',
     x: 1,
