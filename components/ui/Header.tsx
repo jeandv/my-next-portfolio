@@ -48,7 +48,7 @@ const navItems: { [key: string]: NavItemHeaderAnimation } = {
   },
 };
 
-const Header = () => {
+export const Header = () => {
 
   let pathname = usePathname() as string;
 
@@ -147,5 +147,3 @@ const Header = () => {
     </motion.header>
   )
 }
-
-export default Header;
