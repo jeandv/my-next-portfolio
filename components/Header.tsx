@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import ButtonTheme from './ButtonTheme';
-import MobileMenuNav from './MobileMenuNav';
+// import MobileMenuNav from './MobileMenuNav';
 import { useScrollPosition } from '@/utils/useScrollPosition';
 
 const animation = {
@@ -86,7 +86,7 @@ const Header = () => {
 
         <div className='ml-[-0.60rem]'>
 
-          <MobileMenuNav />
+          {/* <MobileMenuNav /> */}
 
           {/* <NavItem href='/' text='Home' />
           
