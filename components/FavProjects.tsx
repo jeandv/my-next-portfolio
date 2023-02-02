@@ -35,14 +35,18 @@ const FavProjects = () => {
           myFavProjects.map(({ id, title, des, img }) => (
             <article key={id} className='mx-auto shadow-xl bg-cover transform duration-500 hover:-translate-y-2 cursor-pointer group rounded-3xl max-h-70' style={{ backgroundImage: `url(${img})` }}>
               <div className='bg-black bg-opacity-20 px-10 flex flex-wrap flex-col pt-96 hover:bg-opacity-75 transform duration-300 rounded-3xl max-h-70'>
-                <h1 className='text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300'>
+
+                <h1 className='text-white text-2xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300'>
                   {title}
                 </h1>
-                <div className='w-16 h-2 bg-indigo-700 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300'>
+
+                <div className='w-16 h-2 bg-indigo-700 rounded-full mb-8 transform translate-y-20 group-hover:translate-y-0 duration-300'>
                 </div>
-                <p className='text-2xl md:text-md opacity-0 text-white group-hover:opacity-80 transform duration-500 mb-5'>
+
+                <p className='opacity-0 text-white group-hover:opacity-80 transform duration-500 mb-5'>
                   {des}
                 </p>
+
               </div>
             </article>
           ))
@@ -50,7 +54,7 @@ const FavProjects = () => {
 
       </div>
 
-      <div className='text-2xl md:text-2xl text-center text-gray-600 dark:text-gray-400 hover:text-white'>
+      <div className='text-1xl md:text-1xl text-center text-gray-600 dark:text-gray-400 hover:text-white'>
         <Link href='/projects' className='hover:text-white hover:underline transition-all ease'>
           See all my /projects
         </Link>
