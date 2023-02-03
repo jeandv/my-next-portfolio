@@ -2,11 +2,12 @@
 
 import Image from 'next/image';
 import { CurrentFavTech, AboutMe, Timeline, TimelineEvent, FavProjects, ProcessWork } from '../content';
-import { AnimationContainer } from '../utils';
+import { AnimationContainer, SectionContainer } from '../utils';
 
 export const HomeSection = () => {
   return (
-    <section className='flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto mt-8 pb-16'>
+    <SectionContainer>
+
       <div className='flex flex-col-reverse lg:flex-row items-start'>
 
         <AnimationContainer customClassName='flex flex-col pr-8'>
@@ -82,6 +83,6 @@ export const HomeSection = () => {
 
       </div>
 
-    </section>
+    </SectionContainer>
   )
 }

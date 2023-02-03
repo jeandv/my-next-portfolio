@@ -1,7 +1,8 @@
+import { AboutSection } from '@/components/sections';
 
 const About = () => {
   return (
-    <div>this is the about section!!</div>
+    <AboutSection />
   )
 }
 
