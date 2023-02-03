@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { AnimationContainer } from '../utils';
 
 const myFavProjects = [
   {
@@ -23,10 +24,10 @@ const myFavProjects = [
 
 export const FavProjects = () => {
   return (
-    <div className='mb-16'>
+    <AnimationContainer customClassName='mb-16'>
 
       <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-10 text-black dark:text-white text-start'>
-        Fav projects
+        Top projects
       </h2>
 
       <div className='flex items-center justify-center gap-5 mb-8 mx-auto'>
@@ -60,6 +61,6 @@ export const FavProjects = () => {
         </Link>
       </div>
 
-    </div>
+    </AnimationContainer>
   )
 }

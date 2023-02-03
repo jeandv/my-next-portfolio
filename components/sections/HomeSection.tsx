@@ -1,20 +1,15 @@
 'use client'
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { CurrentFavTech, AboutMe, Timeline, TimelineEvent, FavProjects, ProcessWork } from '../content';
+import { AnimationContainer } from '../utils';
 
 export const HomeSection = () => {
   return (
     <section className='flex flex-col justify-center items-start max-w-4xl border-gray-200 dark:border-gray-700 mx-auto mt-8 pb-16'>
       <div className='flex flex-col-reverse lg:flex-row items-start'>
 
-        <motion.div
-          className='flex flex-col pr-8'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
+        <AnimationContainer customClassName='flex flex-col pr-8'>
 
           <h1 className='font-bold text-3xl md:text-5xl tracking-tight mb-3 text-black dark:text-white'>
             Jean Rondón
@@ -35,14 +30,9 @@ export const HomeSection = () => {
             I enjoy programming, I help others and whenever I can I try to learn new things {':)'}
           </p>
 
-        </motion.div>
+        </AnimationContainer>
 
-        <motion.div
-          className='w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
+        <AnimationContainer customClassName='w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto'>
           <Image
             alt='Jean Rondón'
             height={176}
@@ -52,18 +42,13 @@ export const HomeSection = () => {
             priority
             className='rounded-3xl filter grayscale hover:grayscale-0 transition ease'
           />
-        </motion.div>
+        </AnimationContainer>
 
       </div>
 
       <CurrentFavTech />
 
-      <motion.div
-        className='flex flex-col items-start'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-      >
+      <div className='flex flex-col items-start'>
 
         <AboutMe />
 
@@ -95,7 +80,7 @@ export const HomeSection = () => {
 
         <ProcessWork />
 
-      </motion.div>
+      </div>
 
     </section>
   )

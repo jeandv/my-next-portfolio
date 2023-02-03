@@ -1,15 +1,16 @@
 import classNames from 'classnames';
+import { AnimationContainer } from '../utils';
 import { TimelineEventProps } from '@/types';
 
 export const Timeline = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className='mb-16'>
+    <AnimationContainer customClassName='mb-16'>
 
       <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-start'>Experience</h2>
 
       {children}
 
-    </div>
+    </AnimationContainer>
   )
 }
 

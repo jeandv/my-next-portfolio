@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import { ExternalLink } from './';
+import { AnimationContainer } from '../utils';
 
 const animation = {
   hide: { y: -8, opacity: 0 },
@@ -13,15 +13,12 @@ const animation = {
 
 export const Footer = () => {
   return (
-    <footer className='flex flex-col justify-center items-center max-w-4xl mx-auto w-full mb-8'>
+    <footer className='flex flex-col justify-center items-center max-w-4xl mx-auto w-full'>
       <hr className='w-full border-1 border-gray-200 dark:border-gray-800 mb-8' />
 
-      <motion.div
-        className='w-full max-w-2xl grid place-items-center grid-cols-1 gap-4 pb-16 sm:grid-cols-3'
-        initial={animation.hide}
-        animate={animation.show}
-        transition={{ delay: 0.3 }}
-      >
+
+      <AnimationContainer customClassName='w-full max-w-2xl grid place-items-center grid-cols-1 gap-4 pb-8 sm:grid-cols-3'>
+
         <div className='flex flex-col space-y-4'>
 
           <Link
@@ -112,7 +109,8 @@ export const Footer = () => {
           </ExternalLink>
 
         </div>
-      </motion.div>
+      </AnimationContainer>
+
     </footer>
   )
 }

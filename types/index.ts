@@ -1,5 +1,3 @@
-// INTERFACES
-
 export interface TimelineEventProps {
   active?: boolean;
   children: React.ReactNode;
@@ -21,4 +19,10 @@ export interface NavItemHeaderAnimation {
 export interface NavItemProps {
   href: string,
   text: string
+}
+
+export interface AnimationContainerProps {
+  children: React.ReactNode;
+  customClassName?: string;
+  customDelay?: number;
 }

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { AnimationContainer } from '../utils';
 
 const animation = {
   hide: { x: -8, opacity: 0 },
@@ -10,7 +11,7 @@ const animation = {
 
 export const CurrentFavTech = () => {
   return (
-    <motion.div className='mb-16'>
+    <AnimationContainer customClassName='mb-16'>
       <div>
 
         <motion.p
@@ -80,7 +81,7 @@ export const CurrentFavTech = () => {
             </div>
           </motion.li>
 
-          <motion.li initial={animation.hide} animate={animation.show} transition={{ duration: 0.3 }}>
+          <motion.li style={{ opacity: 1, transform: 'none' }} variants={animation}>
             <div className='h-3 w-[1px] bg-slate-300 dark:bg-gray-300'>
             </div>
           </motion.li>
@@ -97,6 +98,6 @@ export const CurrentFavTech = () => {
         </motion.ul>
 
       </div>
-    </motion.div>
+    </AnimationContainer>
   )
 }
