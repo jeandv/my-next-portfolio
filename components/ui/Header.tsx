@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { ButtonTheme } from './';
 // import MobileMenuNav from '../MobileMenuNav';
-import { useScrollPosition } from '@/utils';
+import { useScrollPosition } from '@/hooks';
 import { NavItemHeaderAnimation } from '@/types';
 
 const animation = {
