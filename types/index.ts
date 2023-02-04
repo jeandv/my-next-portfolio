@@ -5,8 +5,9 @@ export interface TimelineEventProps {
 }
 
 export interface ExternalLinkProps {
-  href: string,
-  children: React.ReactNode
+  href: string;
+  customClassName?: string;
+  children: React.ReactNode;
 }
 
 export interface NavItemHeaderAnimation {
@@ -18,7 +19,7 @@ export interface NavItemHeaderAnimation {
 
 export interface NavItemProps {
   href: string,
-  text: string
+  text: string;
 }
 
 export interface AnimationContainerProps {
