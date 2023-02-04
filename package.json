@@ -13,6 +13,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@mantine/carousel": "^5.10.3",
+    "@mantine/core": "^5.10.3",
+    "@mantine/hooks": "^5.10.3",
     "@next/font": "^13.1.5",
     "@portabletext/react": "^2.0.0",
     "@sanity/image-url": "^1.0.2",
@@ -24,6 +28,7 @@
     "@types/react-dom": "18.0.10",
     "classnames": "^2.3.2",
     "clsx": "^1.2.1",
+    "embla-carousel-react": "^7.0.9",
     "framer-motion": "^8.5.4",
     "next": "13.1.4",
     "next-sanity": "^4.1.1",
