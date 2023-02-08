@@ -1,6 +1,8 @@
 'use client'
 
 import '@/styles/globals.css';
+import Link from 'next/link';
+import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
 import { Badge } from '@mantine/core';
 import { Timeline, TimelineEvent } from '../content';
@@ -24,12 +26,12 @@ const skills = [
     techs: ['jQuery', 'Angular', 'React', 'Next.js', 'Ionic', 'Electron.js']
   },
   {
-    title: 'State libreries',
+    title: 'State libraries',
     techs: ['Redux', 'TanStack Query']
   },
   {
     title: 'Preprocessors, css style, component and motion libraries',
-    techs: ['Pug', 'SCSS', 'SASS', 'LESS', 'Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'NextUI', 'Framer Motion']
+    techs: ['Pug', 'SCSS', 'SASS', 'LESS', 'Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'Framer Motion']
   },
   {
     title: 'Backend stack',
@@ -37,13 +39,18 @@ const skills = [
   },
   {
     title: 'Softwares and tools',
-    techs: ['VS Code', 'Git', 'GitHub', 'WordPress', 'Elementor', 'Balsamiq Wireframes', 'Figma', 'Photoshop']
+    techs: ['VS Code', 'Jira', 'Trello', 'Git', 'GitHub', 'WordPress', 'Elementor', 'Figma', 'Photoshop']
   }
 ];
 
+const myLinkedin = 'https://linkedin.com/in/jeandv';
+const myGithubRepo = 'https://github.com/jeandv/my-next-portfolio';
+
 export const AboutSection = () => {
 
-  const getNameTechSkills = (techs: string[]) => techs.map((tech, i) => <Badge key={i} color='dark' size='lg' radius='xs' variant='filled'>{tech}</Badge>);
+  const { resolvedTheme } = useTheme();
+
+  const getNameTechSkills = (techs: string[]) => techs.map((tech, i) => <Badge key={i} color={resolvedTheme === 'dark' ? 'dark' : 'gray'} size='lg' radius='xs' variant='filled'>{tech}</Badge>);
 
   return (
     <SectionContainer>
@@ -120,7 +127,7 @@ export const AboutSection = () => {
 
                   <h3 className='font-bold text-1xl md:text-1xl tracking-tight mb-5 text-black dark:text-white text-start'>{title}</h3>
 
-                  <AnimationContainer customClassName='flex items-center gap-3 mb-5'>
+                  <AnimationContainer customClassName='flex items-center flex-wrap gap-3 mb-5'>
                     {getNameTechSkills(techs)}
                   </AnimationContainer>
 
@@ -132,13 +139,36 @@ export const AboutSection = () => {
 
         </AnimationContainer>
 
+        <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
+
+          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Interests</h2>
+
+          <p className='text-gray-600 dark:text-gray-400'>
+            Of all the things I want to learn I haven't decided yet and I feel I have to decide only one because it is almost impossible to know everything I want to know, I am interested in learning Backend (and if possible also about AI) with Python or with Java or with Rust! The reason why I am interested in Rust is because of the low demand of devs and because the biggest companies are starting to implement. I also want to know how to make a video game with Unity and finally apart from programming I am very interested in being a content creator whether programming or something else.
+          </p>
+
+          <p className='text-gray-600 dark:text-gray-400'>
+            For now I've decided that I'm going to get involved in every single thing I want to learn so that I can figure out which one I like the most and stick with it until the end of time!
+          </p>
+
+        </AnimationContainer>
+
+        <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
+
+          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Do you want to know something in more detail?</h2>
+
+          <p className='text-gray-600 dark:text-gray-400'>
+            If you are interested in knowing more about me or my work experience or the mentioned technologies I use and have used, you can contact me from my <a href={myLinkedin} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>LinkedIn</a>, from <Link href='/contact' className='hover:text-black dark:hover:text-white underline transition-all ease'>/contact</Link> or my email "jeanrdev@gmail.com".
+          </p>
+
+          <p className='text-gray-600 dark:text-gray-400'>
+            About this portfolio, I made it with Next.js 13 + TypeScript, Tailwind for the styles and Framer Motion for the animations, if you want to know more about how I made this portfolio, what other technologies or libraries I used and what else I will add, you can visit the <a href={myGithubRepo} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>github repository</a> and as a spoiler I will add internationalization for Spanish, English, German and Portuguese languages!
+          </p>
+
+        </AnimationContainer>
+
       </div>
 
     </SectionContainer>
   )
 }
-
-// about
-// exp
-// skills
-// interests
