@@ -1,7 +1,6 @@
 'use client'
 
-import '@/styles/globals.css';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
 import { Badge } from '@mantine/core';
@@ -43,8 +42,8 @@ const skills = [
   }
 ];
 
-const myLinkedin = 'https://linkedin.com/in/jeandv';
-const myGithubRepo = 'https://github.com/jeandv/my-next-portfolio';
+// const myLinkedin = 'https://linkedin.com/in/jeandv';
+// const myGithubRepo = 'https://github.com/jeandv/my-next-portfolio';
 
 export const AboutSection = () => {
 
@@ -153,7 +152,7 @@ export const AboutSection = () => {
 
         </AnimationContainer>
 
-        <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
+        {/* <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
 
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Do you want to know something in more detail?</h2>
 
@@ -165,7 +164,7 @@ export const AboutSection = () => {
             About this portfolio, I made it with Next.js 13 + TypeScript, Tailwind for the styles and Framer Motion for the animations, if you want to know more about how I made this portfolio, what other technologies or libraries I used and what else I will add, you can visit the <a href={myGithubRepo} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>github repository</a> and as a spoiler I will add internationalization for Spanish, English, German and Portuguese languages!
           </p>
 
-        </AnimationContainer>
+        </AnimationContainer> */}
 
       </div>
 

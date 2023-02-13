@@ -1,9 +1,5 @@
 import { AboutSection } from '@/components/sections';
 
-const About = () => {
-  return (
-    <AboutSection />
-  )
-}
+const About = () => <AboutSection />;
 
 export default About;

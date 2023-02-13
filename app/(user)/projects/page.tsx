@@ -1,8 +1,5 @@
+import { ProjectsSection } from '@/components/sections';
 
-const Projects = () => {
-  return (
-    <div>here i will show my Projects!!!!</div>
-  )
-}
+const Projects = () => <ProjectsSection />;
 
 export default Projects;

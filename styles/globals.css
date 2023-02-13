@@ -3,14 +3,13 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #6a00ff;
+  background-color: #000;
   color: #ffffff;
 }
 
 html {
   min-width: 360px;
   scroll-behavior: smooth;
-  cursor: crosshair;
 }
 
 #__next {

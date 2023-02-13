@@ -1,8 +1,5 @@
+import { ContactSection } from '@/components/sections';
 
-const Contact = () => {
-  return (
-    <div>CONTACT ME! ➡ jeanrdev@gmail.com</div>
-  )
-}
+const Contact = () => <ContactSection />;
 
 export default Contact;
