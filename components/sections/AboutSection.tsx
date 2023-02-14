@@ -25,16 +25,16 @@ const skills = [
     techs: ['jQuery', 'Angular', 'React', 'Next.js', 'Ionic', 'Electron.js']
   },
   {
-    title: 'State libraries',
-    techs: ['Redux', 'TanStack Query']
+    title: 'JavaScript libraries',
+    techs: ['Redux', 'TanStack Query', 'Formik', 'Jest']
   },
   {
     title: 'Preprocessors, css style, component and motion libraries',
-    techs: ['Pug', 'SCSS', 'SASS', 'LESS', 'Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'Framer Motion']
+    techs: ['Pug', 'Scss', 'Sass', 'Less', 'Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'Framer Motion']
   },
   {
     title: 'Backend stack',
-    techs: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Docker']
+    techs: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Firebase', 'Sanity CMS', 'Docker']
   },
   {
     title: 'Softwares and tools',
@@ -118,7 +118,7 @@ export const AboutSection = () => {
             Event though the scope of web development is wide, I was very interested and focused on Frontend development and UI/UX design.
           </p>
 
-          <div className='flex flex-col items-start gap-3'>
+          <div className='flex flex-col items-start gap-3 mt-3'>
 
             {
               skills.map(({ title, techs }, i) => (
@@ -138,16 +138,16 @@ export const AboutSection = () => {
 
         </AnimationContainer>
 
-        <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
+        <AnimationContainer customClassName='flex flex-col gap-5'>
 
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Interests</h2>
 
           <p className='text-gray-600 dark:text-gray-400'>
-            Of all the things I want to learn I haven't decided yet and I feel I have to decide only one because it is almost impossible to know everything I want to know, I am interested in learning Backend (and if possible also about AI) with Python or with Java or with Rust! The reason why I am interested in Rust is because of the low demand of devs and because the biggest companies are starting to implement. I also want to know how to make a video game with Unity and finally apart from programming I am very interested in being a content creator whether programming or something else.
+            Of all the things I want to learn I haven't decided yet and I feel I have to decide only one because it is almost impossible to know everything I want to know, I am interested in learning Backend with Java, Python or with Rust! (and if possible also about AI with Python). I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.
           </p>
 
           <p className='text-gray-600 dark:text-gray-400'>
-            For now I've decided that I'm going to get involved in every single thing I want to learn so that I can figure out which one I like the most and stick with it until the end of time!
+            For now I've decided that I'm going to get involved in each of the things I want to learn so I can figure out which one I like the most.
           </p>
 
         </AnimationContainer>

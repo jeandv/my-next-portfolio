@@ -85,7 +85,7 @@ export const ContactMe = () => {
 
             <button
               type='submit'
-              className='flex w-full items-center justify-center rounded px-5 py-3 text-black dark:text-white bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 sm:w-auto transition-all ease'
+              className='flex w-full items-center justify-center rounded px-5 py-3 text-black dark:text-white bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 shadow-sm transition-all ease'
             >
               <span className='font-medium'>Send</span>
 
