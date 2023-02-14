@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image';
-import { CurrentFavTech, AboutMe, Timeline, TimelineEvent, FavProjects, ProcessWork } from '../content';
+import { CurrentFavTech, AboutMe, Timeline, TimelineEvent, FavProjects, ProcessWork, ContactMe } from '../content';
 import { AnimationContainer, SectionContainer } from '../utils';
 
 export const HomeSection = () => {
@@ -80,6 +80,8 @@ export const HomeSection = () => {
         <FavProjects />
 
         <ProcessWork />
+
+        <ContactMe />
 
       </div>
 

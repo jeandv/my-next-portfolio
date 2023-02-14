@@ -34,15 +34,9 @@ const navItems: { [key: string]: NavItemHeaderAnimation } = {
     y: -5,
     w: '78px',
   },
-  '/contact': {
-    name: 'contact',
-    x: 210,
-    y: -5,
-    w: '75px',
-  },
   '/blog': {
     name: 'blog',
-    x: 285,
+    x: 207,
     y: -5,
     w: '53px',
   },

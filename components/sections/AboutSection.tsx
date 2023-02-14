@@ -81,7 +81,7 @@ export const AboutSection = () => {
         <Timeline>
 
           <p className='text-gray-600 dark:text-gray-400 mb-6'>
-            I started my professional career as a web developer and designer web around 2020 (18 years old). I am currently in active job search while doing freelance projects.
+            I started my professional career as dev around 2020 (18 years old). I am currently in active job search while doing freelance projects.
           </p>
 
           <TimelineEvent active>
