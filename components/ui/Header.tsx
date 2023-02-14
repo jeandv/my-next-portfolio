@@ -19,26 +19,26 @@ const navItems: { [key: string]: NavItemHeaderAnimation } = {
   '/': {
     name: 'home',
     x: 1,
-    y: -5,
+    y: -3,
     w: '60px',
   },
   '/about': {
     name: 'about',
     x: 65,
-    y: -5,
+    y: -3,
     w: '60px',
   },
   '/projects': {
     name: 'projects',
     x: 128,
-    y: -5,
+    y: -3,
     w: '78px',
   },
   '/blog': {
     name: 'blog',
     x: 207,
-    y: -5,
-    w: '53px',
+    y: -3,
+    w: '52px',
   },
 };
 

@@ -1,4 +1,5 @@
 export * from './ButtonTheme';
+export * from './CardProject';
 export * from './ExternalLink';
 export * from './Footer';
 export * from './Header';

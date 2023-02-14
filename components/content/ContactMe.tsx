@@ -41,7 +41,7 @@ export const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='name'>Name</label>
               <input
-                className='w-full rounded p-3 text-sm focus:outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
+                className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
                 placeholder='Name'
                 type='text'
                 id='name'
@@ -53,7 +53,7 @@ export const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='email'>Email</label>
                 <input
-                  className='w-full rounded p-3 text-sm focus:outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
+                  className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
                   placeholder='Email'
                   type='email'
                   id='email'
@@ -64,7 +64,7 @@ export const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='phone'>Phone</label>
                 <input
-                  className='w-full rounded p-3 text-sm focus:outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
+                  className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
                   placeholder='Phone'
                   type='tel'
                   id='phone'
@@ -76,7 +76,7 @@ export const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='message'>Message</label>
               <textarea
-                className='w-full h-32 rounded p-3 text-sm focus:outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
+                className='w-full h-32 rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
                 placeholder='Message'
                 id='message'
                 required

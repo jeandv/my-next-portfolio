@@ -27,3 +27,11 @@ export interface AnimationContainerProps {
   customClassName?: string;
   customDelay?: number;
 }
+
+export interface CardProjectProps {
+  id?: string;
+  title: string;
+  category: string[];
+  repo: string;
+  link: string;
+}
