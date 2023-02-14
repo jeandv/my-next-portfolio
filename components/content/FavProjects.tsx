@@ -7,11 +7,11 @@ import { ExternalLink } from '../ui';
 
 const useStyles = createStyles((theme: any) => ({
   card: {
-    height: 440,
+    height: 350,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    alignItems: 'flex-center',
     padding: '10px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -150,7 +150,7 @@ export const FavProjects = () => {
   return (
     <SectionContainer>
 
-      <AnimationContainer>
+      <AnimationContainer customClassName='flex flex-col justify-center items-center'>
 
         <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-start'>
           Top projects
@@ -167,7 +167,7 @@ export const FavProjects = () => {
           align='start'
           slidesToScroll={mobile ? 1 : 2}
           withControls={false}
-          style={{ cursor: 'grab' }}
+          style={{ cursor: 'grab', width: '900px' }}
           loop
         >
           {slides}
