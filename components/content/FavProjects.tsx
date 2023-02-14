@@ -150,7 +150,7 @@ export const FavProjects = () => {
   return (
     <SectionContainer>
 
-      <AnimationContainer customClassName='flex flex-col justify-center items-center'>
+      <AnimationContainer customClassName='flex flex-col justify-center items-start'>
 
         <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-start'>
           Top projects
