@@ -157,7 +157,7 @@ export const FavProjects = () => {
         </h2>
 
         <p className='text-gray-600 dark:text-gray-400 mb-10'>
-          These are my favorite projects and also the ones I consider the most complete and complex I have done, if you want to see all my projects go to my <a href={myGithub} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white hover:font-semibold underline transition-all ease'>GitHub</a> or go to <Link href='/projects' className='hover:text-black dark:hover:text-white hover:font-semibold underline transition-all ease'>/projects</Link> (I have more projects to show here but they are still in development phase)
+          These are my favorite projects and also the ones I consider the most complete and complex I have done, if you want to see all my projects go to my <a href={myGithub} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>GitHub</a> or go to <Link href='/projects' className='hover:text-black dark:hover:text-white underline transition-all ease'>/projects</Link> (I have more projects to show here but they are still in development phase)
         </p>
 
         <Carousel
