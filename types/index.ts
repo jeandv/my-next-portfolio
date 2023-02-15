@@ -31,7 +31,9 @@ export interface AnimationContainerProps {
 export interface CardProjectProps {
   id?: string;
   title: string;
-  category: string[];
+  des: string;
+  // category: string[];
+  category: string;
   repo: string;
   link: string;
 }

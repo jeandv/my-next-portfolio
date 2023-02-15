@@ -1,11 +1,8 @@
 'use client'
 
-// import Link from 'next/link';
-import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
-import { Badge } from '@mantine/core';
 import { Timeline, TimelineEvent } from '../content';
-import { AnimationContainer, SectionContainer } from '../utils';
+import { AnimationContainer, SectionContainer, getNameSkills } from '../utils';
 
 const animation = {
   hide: { y: -12, opacity: 0 },
@@ -26,7 +23,7 @@ const skills = [
   },
   {
     title: 'JavaScript libraries',
-    techs: ['Redux', 'TanStack Query', 'Formik', 'Jest']
+    techs: ['react-router-dom', 'Wouter', 'react-helmet', 'Redux', 'TanStack Query', 'Formik', 'Jest']
   },
   {
     title: 'Preprocessors, css style, component and motion libraries',
@@ -34,11 +31,15 @@ const skills = [
   },
   {
     title: 'Backend stack',
-    techs: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Firebase', 'Sanity CMS', 'Docker']
+    techs: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Firebase', 'Sanity CMS', 'Strapi', 'Docker']
   },
   {
     title: 'Softwares and tools',
-    techs: ['VS Code', 'Jira', 'Trello', 'Git', 'GitHub', 'WordPress', 'Elementor', 'Figma', 'Photoshop']
+    techs: ['VS Code', 'Jira', 'Trello', 'Git', 'GitHub', 'ESLint', 'Husky', 'WordPress', 'Elementor', 'Figma', 'Photoshop']
+  },
+  {
+    title: 'Agile methodologies and coding principles',
+    techs: ['SCRUM', 'Kanban', 'Clean Code', 'SOLID principles', 'Clean Architecture', 'Pixel perfect']
   }
 ];
 
@@ -46,10 +47,6 @@ const skills = [
 // const myGithubRepo = 'https://github.com/jeandv/my-next-portfolio';
 
 export const AboutSection = () => {
-
-  const { resolvedTheme } = useTheme();
-
-  const getNameTechSkills = (techs: string[]) => techs.map((tech, i) => <Badge key={i} color={resolvedTheme === 'dark' ? 'dark' : 'gray'} size='lg' radius='xs' variant='filled'>{tech}</Badge>);
 
   return (
     <SectionContainer>
@@ -127,7 +124,7 @@ export const AboutSection = () => {
                   <h3 className='font-bold text-1xl md:text-1xl tracking-tight mb-5 text-black dark:text-white text-start'>{title}</h3>
 
                   <AnimationContainer customClassName='flex items-center flex-wrap gap-3 mb-5'>
-                    {getNameTechSkills(techs)}
+                    {getNameSkills(techs)}
                   </AnimationContainer>
 
                 </div>

@@ -1,8 +1,9 @@
 'use client'
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { CardProject } from '../ui';
 import { AnimationContainer, SectionContainer } from '../utils';
+import { AllProjects } from '../content/AllProjects';
 
 const animation = {
   hide: { y: -12, opacity: 0 },
@@ -12,46 +13,52 @@ const animation = {
   },
 };
 
-const allProjects = [
+const allProjectsInfo = [
   {
     id: '1',
     title: 'MapsApp',
-    category: ['React', 'Context', 'TypeScript', 'CSS', 'Mapbox'],
+    des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum odio amet modi iste voluptatem.',
+    category: 'react - typescript',
     repo: 'https://github.com/jeandv/maps-app',
     link: 'https://mapsapp.vercel.app'
   },
   {
     id: '2',
-    title: 'ISR Pokedex',
-    category: ['Next.js', 'TypeScript', 'NextUI', 'Pokeapi'],
+    title: 'Pokedex ISR',
+    des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum odio amet modi iste voluptatem.',
+    category: 'next.js - typescript',
     repo: 'https://github.com/jeandv/pokedex-next',
     link: 'https://pokedex-jeandv.vercel.app'
   },
   {
     id: '3',
     title: 'Github Issues',
-    category: ['React', 'React Query', 'TypeScript', 'Bootstrap'],
+    des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum odio amet modi iste voluptatem.',
+    category: 'react - react query - typescript',
     repo: 'https://github.com/jeandv/react-query',
     link: 'https://github.com/jeandv/react-query'
   },
   {
     id: '4',
     title: 'OpenJira',
-    category: ['Next.js', 'Context', 'TypeScript', 'Node', 'MongoDB', 'MaterialUI'],
+    des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum odio amet modi iste voluptatem.',
+    category: 'next.js - typescript - node - mongoDB',
     repo: 'https://github.com/jeandv/open-jira',
     link: 'https://open-jira-jeandv.vercel.app'
   },
   {
     id: '5',
     title: 'MisPelis',
-    category: ['React', 'JavaScript', 'CSS'],
+    des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum odio amet modi iste voluptatem.',
+    category: 'react - javascript',
     repo: 'https://mispelis.vercel.app',
     link: 'https://github.com/jeandv/mispelis'
   },
   {
     id: '6',
     title: 'Gixfy',
-    category: ['React', 'JavaScript', 'Jest', 'Wouter', 'CSS'],
+    des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum odio amet modi iste voluptatem.',
+    category: 'react - javascript - jest - wouter',
     repo: 'https://gixfy.vercel.app',
     link: 'https://github.com/jeandv/gixfy'
   }
@@ -60,6 +67,10 @@ const allProjects = [
 const myGithub = 'https://github.com/jeandv';
 
 export const ProjectsSection = () => {
+
+  const [projectSearch, setProjectSearch] = useState<string>('');
+
+  const resultSearch = allProjectsInfo.filter(project => project.category.includes(projectSearch.toLowerCase()))
 
   return (
     <SectionContainer>
@@ -98,14 +109,15 @@ export const ProjectsSection = () => {
               className='peer h-full w-full outline-none rounded text-sm bg-white dark:bg-black px-2 group-hover:border-gray-800 dark:group-hover:border-gray-500 transition-all ease'
               type='text'
               id='search'
-              placeholder='Search for programming languages, frameworks, apis...' />
+              placeholder='Search for programming languages, frameworks, apis...'
+              onChange={e => setProjectSearch(e.target.value)} />
           </div>
 
         </AnimationContainer>
 
-        <article className='w-full flex justify-center items-center content-center flex-wrap gap-4'>
+        <article className='w-full flex justify-center items-center content-center flex-wrap gap-6'>
           {
-            allProjects.map(({ id, title, category, repo, link }) => <CardProject key={id} title={title} category={category} repo={repo} link={link} />)
+            AllProjects(resultSearch)
           }
         </article>
 
