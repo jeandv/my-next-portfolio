@@ -4,9 +4,9 @@ import { CardProjectProps } from '@/types';
 
 export const CardProject = ({ title, des, category, repo, link }: CardProjectProps) => {
   return (
-    <AnimationContainer customClassName='w-full h-52 flex flex-col justify-center items-center rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all ease'>
+    <AnimationContainer customClassName='w-full h-42 flex flex-col justify-center items-center rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 transition-all ease'>
 
-      <div className='flex flex-col justify-center items-start rounded gap-5'>
+      <div className='w-full flex flex-col justify-center items-start rounded gap-5'>
 
         <h3 className='text-lg font-medium text-gray-900 dark:text-white'>
           {title.toUpperCase()}
@@ -42,6 +42,7 @@ export const CardProject = ({ title, des, category, repo, link }: CardProjectPro
         </div>
 
       </div>
+
     </AnimationContainer>
   )
 }

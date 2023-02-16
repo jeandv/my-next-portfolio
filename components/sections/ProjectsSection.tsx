@@ -197,13 +197,13 @@ export const ProjectsSection = () => {
               className='peer h-full w-full outline-none rounded text-sm bg-white dark:bg-black px-2 group-hover:border-gray-800 dark:group-hover:border-gray-500 transition-all ease'
               type='text'
               id='search'
-              placeholder='Search for programming languages, frameworks, apis...'
+              placeholder='Search for languages, frameworks, libraries, apis, etc...'
               onChange={e => setProjectSearch(e.target.value)} />
           </div>
 
         </AnimationContainer>
 
-        <article className='w-full flex justify-center items-center content-center flex-wrap gap-6'>
+        <article className='w-full flex justify-center items-center content-center flex-wrap gap-6 mx-auto'>
           {
             AllProjects(resultSearch)
           }
