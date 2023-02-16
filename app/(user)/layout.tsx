@@ -18,7 +18,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <html>
-      <body className='bg-gray-50 dark:bg-gray-900'>
+      <body className='bg-gray-50 dark:bg-gray-900 transition ease'>
         <Providers>
 
           {/* <motion.div

@@ -13,7 +13,7 @@ export const ButtonTheme = () => {
     <button
       aria-label='Toggle Dark Mode'
       type='button'
-      className='group w-9 h-9 bg-dark rounded-lg bg-white dark:bg-black ring-1 ring-gray-200 hover:ring-black dark:ring-gray-700 dark:hover:ring-white text-gray-300 group-hover:text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-200 flex items-center justify-center transition-all ease delay-75'
+      className='group w-9 h-9 bg-dark rounded-lg bg-white dark:bg-black ring-1 ring-gray-200 hover:ring-black dark:ring-gray-700 dark:hover:ring-white text-gray-300 group-hover:text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-200 flex items-center justify-center transition ease'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       {changeTheme && (
@@ -23,7 +23,7 @@ export const ButtonTheme = () => {
           fill='none'
           stroke='currentColor'
           enableBackground='accumulate'
-          className='w-5 h-5 text-gray-300 group-hover:text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-200 transition-all ease delay-75'
+          className='w-5 h-5 text-gray-300 group-hover:text-gray-800 dark:text-gray-500 dark:group-hover:text-gray-200 transition ease'
         >
           {resolvedTheme === 'dark' ? (
             <path

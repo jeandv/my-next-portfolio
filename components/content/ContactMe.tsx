@@ -13,7 +13,7 @@ export const ContactMe = () => {
         <div className='flex justify-between items-center gap-6 mb-10'>
 
           <a href='mailto:jeanrdev@gmail.com' target='_blank' rel='noreferrer'>
-            <div className='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition-all ease'>
+            <div className='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
                 Email
               </h6>
@@ -24,7 +24,7 @@ export const ContactMe = () => {
           </a>
 
           <a href='https://walink.co/2369d5' target='_blank' rel='noreferrer'>
-            <div className='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition-all ease'>
+            <div className='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
                 Phone
               </h6>
@@ -41,7 +41,7 @@ export const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='name'>Name</label>
               <input
-                className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
+                className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                 placeholder='Name'
                 type='text'
                 id='name'
@@ -53,7 +53,7 @@ export const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='email'>Email</label>
                 <input
-                  className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
+                  className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                   placeholder='Email'
                   type='email'
                   id='email'
@@ -64,7 +64,7 @@ export const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='phone'>Phone</label>
                 <input
-                  className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
+                  className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                   placeholder='Phone'
                   type='tel'
                   id='phone'
@@ -76,7 +76,7 @@ export const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='message'>Message</label>
               <textarea
-                className='w-full h-32 rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition delay-75 ease'
+                className='w-full h-32 rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                 placeholder='Message'
                 id='message'
                 required
@@ -85,7 +85,7 @@ export const ContactMe = () => {
 
             <button
               type='submit'
-              className='flex w-full items-center justify-center rounded px-5 py-3 text-black dark:text-white bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 shadow-sm transition-all ease'
+              className='flex w-full items-center justify-center rounded px-5 py-3 text-black dark:text-white bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 shadow-sm transition ease'
             >
               <span className='font-medium'>Send</span>
 

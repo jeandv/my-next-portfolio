@@ -19,7 +19,7 @@ export const CardProject = ({ title, des, category, repo, link }: CardProjectPro
         <div className='w-full flex justify-between items-center gap-1'>
 
           <div className='flex justify-center items-start gap-3'>
-            {getNameSkills(category)}
+            {getNameSkills(category, false)}
           </div>
 
           <div className='flex justify-center items-end gap-3'>

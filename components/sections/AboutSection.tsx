@@ -124,7 +124,7 @@ export const AboutSection = () => {
                   <h3 className='font-bold text-1xl md:text-1xl tracking-tight mb-5 text-black dark:text-white text-start'>{title}</h3>
 
                   <AnimationContainer customClassName='flex items-center flex-wrap gap-3 mb-5'>
-                    {getNameSkills(techs)}
+                    {getNameSkills(techs, true)}
                   </AnimationContainer>
 
                 </div>
