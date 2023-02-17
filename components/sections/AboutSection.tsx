@@ -23,7 +23,7 @@ const skills = [
   },
   {
     title: 'JavaScript libraries',
-    techs: ['react-router-dom', 'Wouter', 'react-helmet', 'Redux', 'TanStack Query', 'Formik', 'Jest']
+    techs: ['Redux', 'TanStack Query', 'react-router-dom', 'Wouter', 'react-helmet', 'Formik', 'Jest']
   },
   {
     title: 'Preprocessors, css style, component and motion libraries',
@@ -43,11 +43,7 @@ const skills = [
   }
 ];
 
-// const myLinkedin = 'https://linkedin.com/in/jeandv';
-// const myGithubRepo = 'https://github.com/jeandv/my-next-portfolio';
-
 export const AboutSection = () => {
-
   return (
     <SectionContainer>
 
@@ -140,7 +136,7 @@ export const AboutSection = () => {
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Interests</h2>
 
           <p className='text-gray-600 dark:text-gray-400'>
-            Of all the things I want to learn I haven't decided yet and I feel I have to decide only one because it is almost impossible to know everything I want to know, I am interested in learning Backend with Java, Python or with Rust! (and if possible also about AI with Python). I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.
+            I am interested in learning Backend with Java, Python or with Rust. I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.
           </p>
 
           <p className='text-gray-600 dark:text-gray-400'>
@@ -148,20 +144,6 @@ export const AboutSection = () => {
           </p>
 
         </AnimationContainer>
-
-        {/* <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
-
-          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Do you want to know something in more detail?</h2>
-
-          <p className='text-gray-600 dark:text-gray-400'>
-            If you are interested in knowing more about me or my work experience or the mentioned technologies I use and have used, you can contact me from my <a href={myLinkedin} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>LinkedIn</a>, from <Link href='/contact' className='hover:text-black dark:hover:text-white underline transition-all ease'>/contact</Link> or my email "jeanrdev@gmail.com".
-          </p>
-
-          <p className='text-gray-600 dark:text-gray-400'>
-            About this portfolio, I made it with Next.js 13 + TypeScript, Tailwind for the styles and Framer Motion for the animations, if you want to know more about how I made this portfolio, what other technologies or libraries I used and what else I will add, you can visit the <a href={myGithubRepo} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>github repository</a> and as a spoiler I will add internationalization for Spanish, English, German and Portuguese languages!
-          </p>
-
-        </AnimationContainer> */}
 
       </div>
 

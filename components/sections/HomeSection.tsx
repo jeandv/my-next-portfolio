@@ -28,7 +28,7 @@ export const HomeSection = () => {
           </h2>
 
           <p className='text-1xl md:text-1xl text-gray-600 dark:text-gray-400'>
-            I enjoy programming, I help others and whenever I can I try to learn new things {':)'}
+            I enjoy programming, I help others and whenever I can I try to learn new things.
           </p>
 
         </AnimationContainer>
