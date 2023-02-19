@@ -4,9 +4,9 @@ import { TimelineEventProps } from '@/types';
 
 export const Timeline = ({ children }: { children: React.ReactNode }) => {
   return (
-    <AnimationContainer customClassName='mb-8'>
+    <AnimationContainer customClassName='w-full mb-8'>
 
-      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-start'>Experience</h2>
+      <h2 className='font-bold text-2xl lg:text-2xl tracking-tight mb-8 text-black dark:text-white text-center lg:text-start'>Experience</h2>
 
       {children}
 
@@ -17,7 +17,7 @@ export const Timeline = ({ children }: { children: React.ReactNode }) => {
 export const TimelineEvent = ({ active, children, last }: TimelineEventProps) => {
   return (
     <div
-      className={classNames('flex justify-start gap-6 border-neutral-800', {
+      className={classNames('w-full flex justify-start gap-6 border-neutral-800', {
         'border-l': !last,
         'pb-16': !last,
       })}
@@ -48,9 +48,9 @@ export const TimelineEvent = ({ active, children, last }: TimelineEventProps) =>
   );
 }
 
-const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p className='text-gray-600 dark:text-gray-400'>{children}</p>;
+const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p className='text-sm lg:text-base text-gray-600 dark:text-gray-400'>{children}</p>;
 
-const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-gray-600 dark:text-gray-400'>{children}</p>;
+const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-sm lg:text-base text-gray-600 dark:text-gray-400'>{children}</p>;
 
 TimelineEvent.Title = TimelineEventTitle;
 TimelineEvent.Description = TimelineEventDescription;

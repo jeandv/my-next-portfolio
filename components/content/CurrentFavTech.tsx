@@ -11,11 +11,11 @@ const animation = {
 
 export const CurrentFavTech = () => {
   return (
-    <AnimationContainer customClassName='mb-16'>
-      <div>
+    <AnimationContainer customClassName='flex flex-col justify-center items-center lg:items-start mb-16 mx-auto lg:mx-0'>
+      <div className='flex flex-col justify-center items-center lg:items-start'>
 
         <motion.p
-          className='mb-2.5 text-gray-600 dark:text-gray-400'
+          className='text-sm lg:text-base text-center lg:text-start mb-2.5 text-gray-600 dark:text-gray-400'
           initial={animation.hide}
           animate={animation.show}
           transition={{ delay: 0.6 }}
@@ -24,7 +24,7 @@ export const CurrentFavTech = () => {
         </motion.p>
 
         <motion.ul
-          className='flex items-center gap-3.5 text-gray-600 dark:text-gray-400'
+          className='flex items-center gap-3.5 text-gray-600 dark:text-gray-400 mx-auto'
           initial='hide'
           animate='show'
           transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}

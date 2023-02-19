@@ -150,20 +150,20 @@ export const FavProjects = () => {
   return (
     <SectionContainer>
 
-      <AnimationContainer customClassName='flex flex-col justify-center items-start'>
+      <AnimationContainer customClassName='w-full flex flex-col justify-center text-center lg:items-start'>
 
-        <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-start'>
+        <h2 className='font-bold text-2xl lg:text-2xl tracking-tight mb-8 text-black dark:text-white text-center lg:text-start'>
           Top projects
         </h2>
 
-        <p className='text-gray-600 dark:text-gray-400 mb-10'>
+        <p className='text-sm lg:text-base text-gray-600 dark:text-gray-400 mb-10 text-start'>
           These are my favorite projects and also the ones I consider the most complete and complex I have done, if you want to see all my projects go to my <a href={myGithub} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>GitHub</a> or go to <Link href='/projects' className='hover:text-black dark:hover:text-white underline transition-all ease'>/projects</Link>.
         </p>
 
         <Carousel
           slideSize='50%'
-          breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 2 }]}
-          slideGap='xl'
+          breakpoints={[{ maxWidth: 'xs', slideSize: '100%', slideGap: 1 }]}
+          slideGap='xs'
           align='start'
           slidesToScroll={mobile ? 1 : 2}
           withControls={false}

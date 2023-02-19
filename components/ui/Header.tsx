@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { ButtonTheme } from './';
-// import MobileMenuNav from '../MobileMenuNav';
+import { MobileMenuNav } from './';
 import { useScrollPosition } from '@/hooks';
 import { NavItemHeaderAnimation } from '@/types';
 
@@ -56,13 +56,13 @@ export const Header = () => {
     <motion.header
       className={classNames(
         scrollPosition > 0 ? 'backdrop-blur-md bg-white/60 dark:bg-black/30' : '',
-        'w-8/12 rounded-3xl sticky top-0 flex flex-col justify-center px-8 z-10 transition-all duration-300 ease-in-out'
+        'w-full rounded-3xl sticky top-0 flex flex-col justify-center px-8 z-10 transition-all duration-300 ease-in-out'
       )}
       initial={animation.hide}
       animate={animation.show}
       transition={{ delay: 0.5 }}
     >
-      <nav className='flex items-center justify-between w-full relative max-w-4xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-8 text-gray-900 bg-opacity-60 dark:text-gray-100'>
+      <nav className='w-full flex items-center justify-between relative border-gray-200 dark:border-gray-700 pt-8 pb-8 sm:pb-8 text-gray-900 bg-opacity-60 dark:text-gray-100'>
 
         <div>
           <h1>
@@ -74,7 +74,7 @@ export const Header = () => {
 
         <div className='ml-[-0.60rem]'>
 
-          {/* <MobileMenuNav /> */}
+          <MobileMenuNav />
 
           {/* <NavItem href='/' text='Home' />
 
