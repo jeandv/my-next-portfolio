@@ -143,3 +143,5 @@ const CrossIcon = (props: JSX.IntrinsicElements['svg']) => {
     </svg>
   );
 }
+
+export default MobileMenuNav;

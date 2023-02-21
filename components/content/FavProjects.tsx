@@ -127,7 +127,7 @@ const favProjects = [
     image:
       'https://cdn.sanity.io/images/jqaxrty6/production/32f71c8c2225276c64e64ce86777c3df09a878e6-1426x807.png',
     title: 'Gixfy',
-    category: 'React - JavaScript - Jest - Wouter - CSS',
+    category: 'React - JavaScript - Jest - Wouter',
     repo: 'https://gixfy.vercel.app',
     link: 'https://github.com/jeandv/gixfy'
   }
