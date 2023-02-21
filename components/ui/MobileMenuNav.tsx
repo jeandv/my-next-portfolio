@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import cn from 'classnames';
 import useDelayedRender from 'use-delayed-render';
-import styles from '../../styles/MobileMenu.module.css';
+import styles from '../../styles/mobileMenu.module.css';
 
 export const MobileMenuNav = () => {
 
