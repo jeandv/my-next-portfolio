@@ -18,7 +18,7 @@ const allProjectsInfo = [
     id: '1',
     title: 'Pokédex Vanilla',
     des: 'Project using the pokeapi api, you can search the pokemons you want.',
-    category: 'javascript - pokeapi',
+    category: 'javascript',
     repo: 'https://jeandv.github.io/pokedex',
     link: 'https://jeandv.github.io/pokedex'
   },
@@ -34,7 +34,7 @@ const allProjectsInfo = [
     id: '3',
     title: 'Github User Finder',
     des: 'frontendmentor.io challenge where I use the github api to be able to search for github users.',
-    category: 'javascript - github api',
+    category: 'javascript',
     repo: 'https://jeandv.github.io/pokedex',
     link: 'https://jeandv.github.io/pokedex'
   },
@@ -56,17 +56,17 @@ const allProjectsInfo = [
   },
   {
     id: '7',
-    title: 'MapsApp',
+    title: 'MapBoxApp',
     des: 'In this project I learned how to consume the mapbox api and use its different functionalities.',
-    category: 'typescript - react - axios - mapbox api',
+    category: 'typescript - react - axios',
     repo: 'https://github.com/jeandv/maps-app',
     link: 'https://mapsapp.vercel.app'
   },
   {
     id: '8',
     title: 'Github Issues',
-    des: 'First project using TanStack Query, I learned what it is for, how to use it and when to use it.',
-    category: 'typescript - react - react query - github api',
+    des: 'First project using TanStack Query with Github API, I learned what it is for, how to use it and when to use it.',
+    category: 'typescript - react - react query',
     repo: 'https://github.com/jeandv/react-query/tree/main/02-react-query-issues-main',
     link: 'https://github.com/jeandv/react-query/tree/main/02-react-query-issues-main'
   },
@@ -74,7 +74,7 @@ const allProjectsInfo = [
     id: '9',
     title: 'MERN Events Ecommerce',
     des: 'Event registration app is a project test to evaluate my skills of the MERN stack using Redux and Stripe.',
-    category: 'react - redux - node.js - express.js - mongodb - stripe',
+    category: 'react - node - express - mongodb',
     repo: 'https://github.com/jeandv/events-test-mern',
     link: 'https://github.com/jeandv/events-test-mern'
   },
@@ -90,15 +90,15 @@ const allProjectsInfo = [
     id: '11',
     title: 'Pokédex Next.js (ISR)',
     des: 'Search and save your pokémons favs! I learned the use of GetStaticProps, Paths, the Incremental Static Generation and the Regeneration.',
-    category: 'typescript - next.js - axios - nextui - poke api',
+    category: 'typescript - next.js - axios',
     repo: 'https://github.com/jeandv/pokedex-next',
     link: 'https://pokedex-jeandv.vercel.app'
   },
   {
     id: '12',
     title: 'Open Jira',
-    des: 'MERN project to learn how to do the main functionality of Jira.',
-    category: 'typescript - next.js - materialui - node.js - express.js - mongodb',
+    des: 'MERN project using TypeScript to learn how to do the main functionality of Jira.',
+    category: 'next.js - node - express - mongodb',
     repo: 'https://github.com/jeandv/open-jira',
     link: 'https://open-jira-jeandv.vercel.app'
   },
@@ -106,7 +106,7 @@ const allProjectsInfo = [
     id: '13',
     title: 'Clon Mercado Libre',
     des: 'This is one of the Angular challenges done in CADIF1 Academy.',
-    category: 'typescript - angular - bootstrap - angular material',
+    category: 'typescript - angular - bootstrap',
     repo: 'https://github.com/jeandv/mercadolibre-des4',
     link: 'https://mercadolibre-des4.vercel.app'
   },
@@ -130,7 +130,7 @@ const allProjectsInfo = [
     id: '16',
     title: 'Node Backend Projects',
     des: 'Terminal projects (console), rest servers, api rests, etc.',
-    category: 'node.js - express.js - mongodb - docker',
+    category: 'node - express - mongodb',
     repo: 'https://github.com/jeandv/pract-nodejs',
     link: 'https://github.com/jeandv/pract-nodejs'
   },
@@ -163,7 +163,7 @@ export const ProjectsSection = () => {
   return (
     <SectionContainer>
 
-      <div className='flex flex-col gap-6'>
+      <div className='w-full flex flex-col gap-6'>
 
         <motion.div
           initial={animation.hide}
@@ -173,19 +173,20 @@ export const ProjectsSection = () => {
           <h2 className='font-bold text-4xl md:text-5xl tracking-tight mb-8 text-black dark:text-white text-center'>
             Projects
           </h2>
+
         </motion.div>
 
-        <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
+        <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
-          <p className='text-gray-600 dark:text-gray-400'>
+          <p className='w-full text-gray-600 dark:text-gray-400'>
             These are most of the projects I've done since I started programming, some of them are personal projects, freelance, work, practice or for other situation. If you want to see absolutely all my projects go to my <a href={myGithub} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>github.com/jeandv</a> :D
           </p>
 
         </AnimationContainer>
 
-        <AnimationContainer customClassName='group flex flex-col justify-center items-center mb-8'>
+        <AnimationContainer customClassName='w-full group flex flex-col justify-center items-center mb-8'>
 
-          <div className='flex items-center w-3/6 h-12 rounded shadow-lg bg-white dark:bg-black border border-gray-200 dark:border-gray-800 group-hover:border-gray-800 dark:group-hover:border-gray-500 transition-all ease'>
+          <div className='w-full flex items-center lg:w-3/6 h-12 rounded shadow-lg bg-white dark:bg-black border border-gray-200 dark:border-gray-800 group-hover:border-gray-800 dark:group-hover:border-gray-500 transition-all ease'>
 
             <div className='grid place-items-center h-full w-12 text-gray-700 dark:text-gray-500'>
               <svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
@@ -197,7 +198,7 @@ export const ProjectsSection = () => {
               className='peer h-full w-full outline-none rounded text-sm bg-white dark:bg-black px-2 group-hover:border-gray-800 dark:group-hover:border-gray-500 transition-all ease'
               type='text'
               id='search'
-              placeholder='Search for languages, frameworks, libraries, apis, etc...'
+              placeholder='Languages, frameworks, libraries, etc...'
               onChange={e => setProjectSearch(e.target.value)} />
           </div>
 

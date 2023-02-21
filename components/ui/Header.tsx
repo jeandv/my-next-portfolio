@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { ButtonTheme } from './';
 import { MobileMenuNav } from './';
-import { useScrollPosition } from '@/hooks';
+// import { useScrollPosition } from '@/hooks';
 import { NavItemHeaderAnimation } from '@/types';
 
 const animation = {
@@ -24,19 +24,19 @@ const navItems: { [key: string]: NavItemHeaderAnimation } = {
   },
   '/about': {
     name: 'about',
-    x: 65,
+    x: 63,
     y: -3,
     w: '60px',
   },
   '/projects': {
     name: 'projects',
-    x: 128,
+    x: 123,
     y: -3,
     w: '78px',
   },
   '/blog': {
     name: 'blog',
-    x: 207,
+    x: 200,
     y: -3,
     w: '52px',
   },
@@ -50,29 +50,29 @@ export const Header = () => {
 
   const classNames = (...classes: string[]) => classes.filter(Boolean).join(' ');
 
-  const scrollPosition = useScrollPosition();
+  // const scrollPosition = useScrollPosition();
 
   return (
     <motion.header
       className={classNames(
-        scrollPosition > 0 ? 'backdrop-blur-md bg-white/60 dark:bg-black/30' : '',
-        'w-full rounded-3xl sticky top-0 flex flex-col justify-center px-8 z-10 transition-all duration-300 ease-in-out'
+        // scrollPosition > 0 ? 'backdrop-blur-md bg-white/60 dark:bg-black/30' : '',
+        'min-w-xs max-w-screen-md rounded-3xl sticky top-0 flex flex-col justify-center pl-4 z-10 transition ease-in-out mx-auto'
       )}
       initial={animation.hide}
       animate={animation.show}
       transition={{ delay: 0.5 }}
     >
-      <nav className='w-full flex items-center justify-between relative border-gray-200 dark:border-gray-700 pt-8 pb-8 sm:pb-8 text-gray-900 bg-opacity-60 dark:text-gray-100'>
+      <nav className='w-full flex items-center justify-start lg:justify-between flex-row-reverse lg:flex-row relative border-gray-200 dark:border-gray-700 py-8 sm:pb-8 text-gray-900 bg-opacity-60 dark:text-gray-100 gap-5 lg:gap-0'>
 
-        <div>
+        {/* <div>
           <h1>
             <Link href='/'>
               <strong>Jeandv</strong>();
             </Link>
           </h1>
-        </div>
+        </div> */}
 
-        <div className='ml-[-0.60rem]'>
+        <div className='ml-[-0.80rem]'>
 
           <MobileMenuNav />
 
@@ -92,7 +92,7 @@ export const Header = () => {
                 {/* Desktop version, hidden on mobile, animates y axis */}
                 <div className='hidden lg:block'>
                   <motion.div
-                    className='absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
+                    className='absolute bg-neutral-200 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
                     layoutId='test2'
                     initial={{ opacity: 0, x: navItems[pathname].x, y: navItems[pathname].y }}
                     animate={{
@@ -120,7 +120,7 @@ export const Header = () => {
                   key={path}
                   href={path}
                   className={clsx(
-                    'hidden lg:inline-block transition-all ease hover:text-neutral-800 dark:hover:text-neutral-200 py-[2px] px-[10px]',
+                    'hidden lg:inline-block transition ease hover:text-neutral-800 dark:hover:text-neutral-200 py-[2px] px-[10px]',
                     {
                       'text-neutral-500': !isActive,
                       'font-bold': isActive,

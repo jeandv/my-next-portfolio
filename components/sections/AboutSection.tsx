@@ -47,7 +47,7 @@ export const AboutSection = () => {
   return (
     <SectionContainer>
 
-      <div className='flex flex-col gap-6'>
+      <div className='w-full flex flex-col gap-6'>
 
         <motion.div
           initial={animation.hide}
@@ -59,7 +59,7 @@ export const AboutSection = () => {
           </h2>
         </motion.div>
 
-        <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
+        <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
           <p className='text-gray-600 dark:text-gray-400'>
             I'm a passionate developer with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can.
@@ -99,7 +99,7 @@ export const AboutSection = () => {
 
         </Timeline>
 
-        <AnimationContainer customClassName='flex flex-col gap-5 mb-8'>
+        <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Skills and Tools</h2>
 
@@ -131,12 +131,12 @@ export const AboutSection = () => {
 
         </AnimationContainer>
 
-        <AnimationContainer customClassName='flex flex-col gap-5'>
+        <AnimationContainer customClassName='w-full flex flex-col gap-5'>
 
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Interests</h2>
 
           <p className='text-gray-600 dark:text-gray-400'>
-            I am interested in learning Backend with Java, Python or with Rust. I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.
+            I am interested in learning Backend with Java, Go or with Rust. I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.
           </p>
 
           <p className='text-gray-600 dark:text-gray-400'>

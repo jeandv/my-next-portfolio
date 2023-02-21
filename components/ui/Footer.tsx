@@ -3,21 +3,21 @@ import Link from 'next/link';
 import { ExternalLink } from './';
 import { AnimationContainer } from '../utils';
 
-const animation = {
-  hide: { y: -8, opacity: 0 },
-  show: {
-    y: 0,
-    opacity: 1,
-  },
-};
+// const animation = {
+//   hide: { y: -8, opacity: 0 },
+//   show: {
+//     y: 0,
+//     opacity: 1,
+//   },
+// };
 
 export const Footer = () => {
   return (
-    <footer className='flex flex-col justify-center items-center max-w-4xl mx-auto w-full'>
+    <footer className='w-full flex flex-col justify-center items-center max-w-4xl mx-auto'>
       <hr className='w-full border-1 border-gray-200 dark:border-gray-800 mb-8' />
 
 
-      <AnimationContainer customClassName='w-full max-w-2xl grid place-items-center grid-cols-1 gap-4 pb-8 sm:grid-cols-3'>
+      <AnimationContainer customClassName='w-full max-w-2xl grid place-items-center grid-cols-3 gap-1 lg:gap-4 pb-8 sm:grid-cols-3 mx-3'>
 
         <div className='flex flex-col space-y-4'>
 

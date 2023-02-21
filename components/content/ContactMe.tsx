@@ -10,9 +10,9 @@ export const ContactMe = () => {
 
       <div className='w-full flex justify-between items-center flex-col mx-auto max-w-screen-xl'>
 
-        <div className='flex justify-between items-center gap-6 mb-10'>
+        <div className='w-full flex justify-between items-center flex-col lg:flex-row gap-6 mb-10'>
 
-          <a href='mailto:jeanrdev@gmail.com' target='_blank' rel='noreferrer'>
+          <a href='mailto:jeanrdev@gmail.com' target='_blank' rel='noreferrer' className='w-full'>
             <div className='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
                 Email
@@ -23,7 +23,7 @@ export const ContactMe = () => {
             </div>
           </a>
 
-          <a href='https://walink.co/2369d5' target='_blank' rel='noreferrer'>
+          <a href='https://walink.co/2369d5' target='_blank' rel='noreferrer' className='w-full'>
             <div className='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
                 Phone
@@ -36,8 +36,8 @@ export const ContactMe = () => {
 
         </div>
 
-        <div className='flex justify-center items-center flex-col'>
-          <form action='' className='space-y-4'>
+        <div className='w-full flex justify-center items-center flex-col'>
+          <form action='' className='w-full space-y-4'>
             <div>
               <label className='sr-only' htmlFor='name'>Name</label>
               <input
@@ -85,7 +85,7 @@ export const ContactMe = () => {
 
             <button
               type='submit'
-              className='flex w-full items-center justify-center rounded px-5 py-3 text-black dark:text-white bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 shadow-sm transition ease'
+              className='flex items-center justify-center rounded px-5 py-3 text-black dark:text-white bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 shadow-sm transition ease mx-auto'
             >
               <span className='font-medium'>Send</span>
 

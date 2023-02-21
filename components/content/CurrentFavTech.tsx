@@ -24,7 +24,7 @@ export const CurrentFavTech = () => {
         </motion.p>
 
         <motion.ul
-          className='flex items-center gap-3.5 text-gray-600 dark:text-gray-400 mx-auto'
+          className='flex justify-center items-center flex-wrap gap-3.5 text-gray-600 dark:text-gray-400 mx-auto'
           initial='hide'
           animate='show'
           transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}

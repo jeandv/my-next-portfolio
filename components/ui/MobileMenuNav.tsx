@@ -53,77 +53,40 @@ export const MobileMenuNav = () => {
         <ul
           className={cn(
             styles.menu,
-            'flex flex-col absolute bg-gray-100 dark:bg-gray-900',
+            'flex flex-col items-start justify-center absolute right-0 bg-gray-100 dark:bg-gray-900 text-end mr-6',
             isMenuRendered && styles.menuRendered
           )}
         >
           <li
-            className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
+            className=' border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
             style={{ transitionDelay: '150ms' }}
           >
-            <Link href='/' className='flex w-auto pb-4'>
+            <Link href='/' className='pb-8'>
               Home
             </Link>
           </li>
           <li
-            className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
+            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
             style={{ transitionDelay: '175ms' }}
           >
-            <Link href='/guestbook' className='flex w-auto pb-4'>
-              Guestbook
+            <Link href='/about' className='pb-4'>
+              About
             </Link>
           </li>
           <li
-            className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
+            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
             style={{ transitionDelay: '200ms' }}
           >
-            <Link href='/dashboard' className='flex w-auto pb-4'>
-              Dashboard
+            <Link href='/projects' className='pb-4'>
+              Projects
             </Link>
           </li>
           <li
-            className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
+            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
             style={{ transitionDelay: '250ms' }}
           >
-            <Link href='/blog' className='flex w-auto pb-4'>
+            <Link href='/blog' className='pb-4'>
               Blog
-            </Link>
-          </li>
-          <li
-            className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
-            style={{ transitionDelay: '275ms' }}
-          >
-            <Link href='/snippets' className='flex w-auto pb-4'>
-              Snippets
-            </Link>
-          </li>
-          <li
-            className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
-            style={{ transitionDelay: '300ms' }}
-          >
-            <a
-              href='https://leerob.substack.com'
-              className='flex w-auto pb-4'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Newsletter
-            </a>
-          </li>
-          <li
-            className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
-            style={{ transitionDelay: '325ms' }}
-          >
-            <Link href='/tweets' className='flex w-auto pb-4'>
-              Tweets
-            </Link>
-          </li>
-          <li
-            className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
-            style={{ transitionDelay: '350ms' }}
-          >
-            <Link href='/uses' className='flex w-auto pb-4'>
-              Uses
             </Link>
           </li>
         </ul>

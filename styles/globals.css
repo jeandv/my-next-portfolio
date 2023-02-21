@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #000;
+  background-color: #6a00ff;
   color: #ffffff;
 }
 
-html {
+html,body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 #__next {

@@ -32,7 +32,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
           {children}
 
-          {/* <Footer /> */}
+          <Footer />
 
         </Providers>
       </body>
