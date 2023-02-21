@@ -1,8 +1,5 @@
+import { AboutSection } from '@/components/sections';
 
-const About = () => {
-  return (
-    <div>this is the about section!!</div>
-  )
-}
+const About = () => <AboutSection />;
 
 export default About;

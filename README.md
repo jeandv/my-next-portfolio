@@ -1,4 +1,5 @@
-![banner-portfolio](https://user-images.githubusercontent.com/90219458/217353850-650ad629-4501-4658-a872-467a845c050a.jpg)
+
+![banner-portfolio](https://user-images.githubusercontent.com/90219458/217354077-6c130f6b-02db-4bd4-85b1-29a734e7648e.jpg)
 
 💻💼 This is: ⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡ ❗❗❗❗❗❗
 

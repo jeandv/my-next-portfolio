@@ -7,10 +7,9 @@
   color: #ffffff;
 }
 
-html {
-  min-width: 360px;
+html,body {
   scroll-behavior: smooth;
-  cursor: crosshair;
+  overflow-x: hidden;
 }
 
 #__next {
@@ -20,7 +19,6 @@ html {
   min-height: 100vh;
 }
 
-/* https://seek-oss.github.io/capsize/ */
 .capsize::before {
   content: '';
   margin-bottom: -0.098em;
@@ -71,7 +69,7 @@ html {
   content: '#';
 }
 
-.prose *:hover>.anchor {
+.prose *:hover > .anchor {
   @apply visible;
 }
 
@@ -93,7 +91,7 @@ html {
   @apply m-0;
 }
 
-.prose> :first-child {
+.prose > :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
@@ -174,7 +172,7 @@ pre {
   @apply px-5 py-3 font-mono text-sm font-bold text-gray-800 bg-gray-200 border border-b-0 border-gray-200 rounded-t-lg dark:text-gray-200 dark:border-gray-700 dark:bg-gray-800;
 }
 
-.rehype-code-title+pre {
+.rehype-code-title + pre {
   @apply mt-0 rounded-t-none;
 }
 
@@ -190,15 +188,15 @@ input[type='email'] {
   appearance: none;
 }
 
-.metric-card>a {
+.metric-card > a {
   @apply no-underline;
 }
 
-.metric-card>p {
+.metric-card > p {
   @apply my-2;
 }
 
-.step>h3 {
+.step > h3 {
   @apply my-0;
 }
 
@@ -214,21 +212,41 @@ table {
   white-space: nowrap;
 }
 
-.prose .callout>p {
+.prose .callout > p {
   margin: 0 !important;
 }
 
-.darkBackgroundCirclesColors{
+.darkBackgroundCirclesColors {
   inset: 0px;
   position: absolute;
   z-index: -1;
-  background:radial-gradient(circle at top left, rgba(139, 0, 255, 0.22) 0%, rgba(0, 0, 0, 0) 15%, rgba(128, 128, 128, 0) 100%), radial-gradient(circle at 85% 30%, rgba(0, 136, 255, 0.28) 0%, rgba(0, 0, 0, 0) 30%, rgba(128, 128, 128, 0) 15%);
+  background: radial-gradient(
+      circle at top left,
+      rgba(139, 0, 255, 0.22) 0%,
+      rgba(0, 0, 0, 0) 15%,
+      rgba(128, 128, 128, 0) 100%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(0, 136, 255, 0.28) 0%,
+      rgba(0, 0, 0, 0) 30%,
+      rgba(128, 128, 128, 0) 15%
+    );
 }
 
 @media (min-width: 900px) {
-
-.darkBackgroundCirclesColors{ 
-  background:radial-gradient(circle at 15% 55%, rgba(139, 0, 255, 0.22) 0%, rgba(0, 0, 0, 0) 25%, rgba(128, 128, 128, 0) 100%), radial-gradient(circle at 85% 30%, rgba(0, 136, 255, 0.28) 0%, rgba(0, 0, 0, 0) 30%, rgba(128, 128, 128, 0) 25%);
-}
-
+  .darkBackgroundCirclesColors {
+    background: radial-gradient(
+        circle at 15% 55%,
+        rgba(139, 0, 255, 0.22) 0%,
+        rgba(0, 0, 0, 0) 25%,
+        rgba(128, 128, 128, 0) 100%
+      ),
+      radial-gradient(
+        circle at 85% 30%,
+        rgba(0, 136, 255, 0.28) 0%,
+        rgba(0, 0, 0, 0) 30%,
+        rgba(128, 128, 128, 0) 25%
+      );
+  }
 }

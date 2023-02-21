@@ -1,8 +1,4 @@
 
-const Blog = () => {
-  return (
-    <div>MY BLOGGG!!!!</div>
-  )
-}
+const Blog = () => <div>MY BLOGGG!!!!</div>;
 
 export default Blog;
