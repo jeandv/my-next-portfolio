@@ -41,7 +41,7 @@ export const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='name'>Name</label>
               <input
-                className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
+                className='w-full rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                 placeholder='Name'
                 type='text'
                 id='name'
@@ -53,7 +53,7 @@ export const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='email'>Email</label>
                 <input
-                  className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
+                  className='w-full rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                   placeholder='Email'
                   type='email'
                   id='email'
@@ -64,7 +64,7 @@ export const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='phone'>Phone</label>
                 <input
-                  className='w-full rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
+                  className='w-full rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                   placeholder='Phone'
                   type='tel'
                   id='phone'
@@ -76,7 +76,7 @@ export const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='message'>Message</label>
               <textarea
-                className='w-full h-32 rounded p-3 text-sm outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
+                className='w-full h-32 rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                 placeholder='Message'
                 id='message'
                 required
@@ -87,7 +87,7 @@ export const ContactMe = () => {
               type='submit'
               className='flex items-center justify-center rounded px-5 py-3 text-black dark:text-white bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 shadow-sm transition ease mx-auto'
             >
-              <span className='font-medium'>Send</span>
+              <span className='font-medium text-base'>Send</span>
 
               <svg
                 xmlns='http://www.w3.org/2000/svg'

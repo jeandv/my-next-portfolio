@@ -8,11 +8,11 @@ export const CardProject = ({ title, des, category, repo, link }: CardProjectPro
 
       <div className='w-full flex flex-col justify-center items-start rounded gap-5'>
 
-        <h3 className='text-lg font-medium text-gray-900 dark:text-white'>
+        <h3 className='text-2xl lg:text-2xl font-medium text-gray-900 dark:text-white'>
           {title.toUpperCase()}
         </h3>
 
-        <p className='w-full text-base text-gray-600 dark:text-gray-400'>
+        <p className='text-base text-gray-600 dark:text-gray-400'>
           {des}
         </p>
 

@@ -16,7 +16,7 @@ export const HomeSection = () => {
             Jean Rondón
           </h1>
 
-          <h2 className='flex items-center gap-2 text-gray-700 dark:text-gray-200 mb-8 mx-auto lg:mx-0'>
+          <h2 className='flex items-center gap-2 text-2xl lg:text-1xl text-gray-700 dark:text-gray-200 mb-8 mx-auto lg:mx-0'>
 
             <span className='font-semibold tracking-tight'>Frontend</span>
             Developer
@@ -27,7 +27,7 @@ export const HomeSection = () => {
 
           </h2>
 
-          <p className='text-base text-center lg:text-start mb-5 lg:mb-0 text-gray-600 dark:text-gray-400 mx-auto lg:mx-0'>
+          <p className='w-full text-base text-center lg:text-start mb-5 lg:mb-0 text-gray-600 dark:text-gray-400 mx-auto lg:mx-0'>
             I enjoy programming and whenever I can I try to learn new things.
           </p>
 
