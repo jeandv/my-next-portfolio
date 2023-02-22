@@ -48,9 +48,9 @@ export const TimelineEvent = ({ active, children, last }: TimelineEventProps) =>
   );
 }
 
-const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p className='text-sm lg:text-base text-gray-600 dark:text-gray-400'>{children}</p>;
+const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p className='text-base text-gray-600 dark:text-gray-400'>{children}</p>;
 
-const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-sm lg:text-base text-gray-600 dark:text-gray-400'>{children}</p>;
+const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-base text-gray-600 dark:text-gray-400'>{children}</p>;
 
 TimelineEvent.Title = TimelineEventTitle;
 TimelineEvent.Description = TimelineEventDescription;

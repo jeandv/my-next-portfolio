@@ -27,7 +27,7 @@ export const HomeSection = () => {
 
           </h2>
 
-          <p className='text-sm lg:text-base text-center lg:text-start mb-5 lg:mb-0 text-gray-600 dark:text-gray-400 mx-auto lg:mx-0'>
+          <p className='text-base text-center lg:text-start mb-5 lg:mb-0 text-gray-600 dark:text-gray-400 mx-auto lg:mx-0'>
             I enjoy programming and whenever I can I try to learn new things.
           </p>
 

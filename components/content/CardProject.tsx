@@ -12,7 +12,7 @@ export const CardProject = ({ title, des, category, repo, link }: CardProjectPro
           {title.toUpperCase()}
         </h3>
 
-        <p className='text-gray-600 dark:text-gray-400'>
+        <p className='w-full text-base text-gray-600 dark:text-gray-400'>
           {des}
         </p>
 
