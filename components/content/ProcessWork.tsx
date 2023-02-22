@@ -60,7 +60,7 @@ export const ProcessWork = () => {
                 {title}
               </h3>
 
-              <p className='mt-2 text-1xl md:text-1xl text-gray-600 dark:text-gray-400'>
+              <p className='mt-2 text-base text-gray-600 dark:text-gray-400'>
                 {des}
               </p>
 

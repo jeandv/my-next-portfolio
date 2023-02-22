@@ -154,7 +154,7 @@ export const FavProjects = () => {
         Top projects
       </h2>
 
-      <p className='text-sm lg:text-base text-gray-600 dark:text-gray-400 mb-10 text-start'>
+      <p className='w-full text-base text-gray-600 dark:text-gray-400 mb-10 text-start'>
         These are my favorite projects and also the ones I consider the most complete and complex I have done, if you want to see all my projects go to my <a href={myGithub} target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white underline transition-all ease'>GitHub</a> or go to <Link href='/projects' className='hover:text-black dark:hover:text-white underline transition-all ease'>/projects</Link>.
       </p>
 
@@ -165,7 +165,7 @@ export const FavProjects = () => {
         align='center'
         slidesToScroll={mobile ? 1 : 2}
         withControls={false}
-        style={{ cursor: 'grab' }}
+        style={{ width: '100%', cursor: 'grab' }}
         loop
       >
         {slides}

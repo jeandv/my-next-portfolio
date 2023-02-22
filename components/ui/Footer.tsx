@@ -14,8 +14,8 @@ import { AnimationContainer } from '../utils';
 export const Footer = () => {
   return (
     <footer className='w-full flex flex-col justify-center items-center max-w-4xl mx-auto'>
-      <hr className='w-full border-1 border-gray-200 dark:border-gray-800 mb-8' />
 
+      <hr className='w-full border-1 border-gray-200 dark:border-gray-800 mb-8' />
 
       <AnimationContainer customClassName='w-full max-w-2xl grid place-items-center grid-cols-3 gap-1 lg:gap-4 pb-8 sm:grid-cols-3 mx-3'>
 

@@ -17,7 +17,7 @@ export const ContactMe = () => {
               <h6 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
                 Email
               </h6>
-              <p className='text-sm lg:text-base mt-2 text-gray-600 dark:text-gray-400'>
+              <p className='text-base mt-2 text-gray-600 dark:text-gray-400'>
                 jeanrdev@gmail.com
               </p>
             </div>
@@ -28,7 +28,7 @@ export const ContactMe = () => {
               <h6 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
                 Phone
               </h6>
-              <p className='text-sm lg:text-base mt-2 text-gray-600 dark:text-gray-400'>
+              <p className='text-base mt-2 text-gray-600 dark:text-gray-400'>
                 +58 0416 943 86 66
               </p>
             </div>
