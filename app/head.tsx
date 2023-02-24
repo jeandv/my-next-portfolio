@@ -9,8 +9,8 @@ const Head = () => {
   const titleFixedToShow = pathname.slice(1).charAt(0).toUpperCase() + pathname.slice(2);
 
   const meta = {
-    title: `Jean Rondón · ${pathname === '/' ? 'Portfolio' : titleFixedToShow}`,
-    description: `Hi! My name is Jean, I'm from Venezuela and I have +2 year of work experience in JavaScript/TypeScript and React, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16. I love what I do and I help others with what I can, I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron implementing good practices, clean architecture, pixel perfect and agile methodologies.`,
+    title: `Jean Rondón ${pathname === '/' ? '' : '· ' + titleFixedToShow}`,
+    description: `Hi! My name is Jean Rondón I'm from Venezuela and I have +2 year of work experience in JavaScript/TypeScript and React, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16. I love what I do and I help others with what I can, I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron implementing good practices, clean architecture, pixel perfect and agile methodologies.`,
     keywords: 'Jean Rondon, Jeandv, Jean Rondon portafolio, Jeandv portafolio, Jeandv portfolio, Jean Rondon portfolio, Jeandv github, Jean Rondon github, Jeandv LinkedIn, Jean Rondon LinkedIn, Web, Desarrollo web, Programador web, Diseño web, Paginas web, Aplicaciones web, Aplicaciones móviles, Aplicaciones escritorio, Desarrollo frontend, Programador frontend, HTML, CSS, Javascript, Typescript, React, Angular.',
     image: '../public/banner-portfolio.jpg',
     type: 'website'
@@ -19,6 +19,7 @@ const Head = () => {
   return (
     <>
       <title>{meta.title}</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta name='robots' content='follow, index' />
       <meta content={meta.description} name='description' />
       <meta name='keywords' content={meta.keywords} />
@@ -35,7 +36,6 @@ const Head = () => {
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
-      <meta name='viewport' content='width=device-width, initial-scale=1' />
     </>
   )
 }
