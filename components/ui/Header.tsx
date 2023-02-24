@@ -26,19 +26,19 @@ const navItems: { [key: string]: NavItemHeaderAnimation } = {
   },
   '/about': {
     name: 'about',
-    x: 63,
+    x: 65,
     y: -3,
     w: '60px',
   },
   '/projects': {
     name: 'projects',
-    x: 123,
+    x: 127,
     y: -3,
     w: '78px',
   },
   '/blog': {
     name: 'blog',
-    x: 200,
+    x: 208,
     y: -3,
     w: '52px',
   },
@@ -58,7 +58,7 @@ export const Header = () => {
     <motion.header
       className={classNames(
         scrollPosition > 0 ? 'backdrop-blur-md bg-white/60 dark:bg-black/30' : '',
-        'min-w-xs max-w-screen-md rounded-b-3xl sticky top-0 flex flex-col justify-center items-center pl-4 z-10 transition ease-in-out mx-auto'
+        'w-full lg:min-w-xs lg:max-w-screen-md rounded-b-3xl sticky top-0 flex flex-col justify-center items-center z-10 transition ease-in-out mx-auto'
       )}
       initial={animation.hide}
       animate={animation.show}
