@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import { ButtonTheme } from './';
 import { MobileMenuNav } from './';
-// import { useScrollPosition } from '@/hooks';
+import { useScrollPosition } from '@/hooks';
 import { NavItemHeaderAnimation } from '@/types';
 
 const animation = {
@@ -26,19 +26,19 @@ const navItems: { [key: string]: NavItemHeaderAnimation } = {
   },
   '/about': {
     name: 'about',
-    x: 63,
+    x: 65,
     y: -3,
     w: '60px',
   },
   '/projects': {
     name: 'projects',
-    x: 123,
+    x: 127,
     y: -3,
     w: '78px',
   },
   '/blog': {
     name: 'blog',
-    x: 200,
+    x: 208,
     y: -3,
     w: '52px',
   },
@@ -52,19 +52,19 @@ export const Header = () => {
 
   const classNames = (...classes: string[]) => classes.filter(Boolean).join(' ');
 
-  // const scrollPosition = useScrollPosition();
+  const scrollPosition = useScrollPosition();
 
   return (
     <motion.header
       className={classNames(
-        // scrollPosition > 0 ? 'backdrop-blur-md bg-white/60 dark:bg-black/30' : '',
-        'min-w-xs max-w-screen-md rounded-3xl sticky top-0 flex flex-col justify-center pl-4 z-10 transition ease-in-out mx-auto'
+        scrollPosition > 0 ? 'backdrop-blur-md bg-white/60 dark:bg-black/30' : '',
+        'w-full lg:min-w-xs lg:max-w-screen-md rounded-b-3xl sticky top-0 flex flex-col justify-center items-center z-10 transition ease-in-out mx-auto'
       )}
       initial={animation.hide}
       animate={animation.show}
       transition={{ delay: 0.5 }}
     >
-      <nav className='w-full flex items-center justify-start lg:justify-between flex-row-reverse lg:flex-row relative border-gray-200 dark:border-gray-700 py-8 sm:pb-8 text-gray-900 bg-opacity-60 dark:text-gray-100 gap-5 lg:gap-0'>
+      <nav className='w-full flex items-center justify-start lg:justify-between flex-row-reverse lg:flex-row relative border-gray-200 dark:border-gray-700 px-5 py-8 sm:pb-8 text-gray-900 bg-opacity-60 dark:text-gray-100 gap-5 lg:gap-0'>
 
         {/* <div>
           <h1>

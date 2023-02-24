@@ -23,12 +23,10 @@ export const MobileMenuNav = () => {
     if (isMenuOpen) {
 
       setIsMenuOpen(false);
-      document.body.style.overflow = '';
 
     } else {
 
       setIsMenuOpen(true);
-      document.body.style.overflow = 'hidden';
 
     }
 
@@ -55,12 +53,12 @@ export const MobileMenuNav = () => {
         <ul
           className={cn(
             styles.menu,
-            'flex flex-col items-start justify-center absolute right-0 bg-gray-100 dark:bg-gray-900 text-end mr-6',
+            'flex flex-col items-start justify-center absolute right-0 backdrop-blur-sm bg-white/60 dark:bg-black/20 text-end p-5 rounded-br-2xl mr-5',
             isMenuRendered && styles.menuRendered
           )}
         >
           <li
-            className=' border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
+            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
             style={{ transitionDelay: '150ms' }}
           >
             <Link href='/' className='pb-8'>
