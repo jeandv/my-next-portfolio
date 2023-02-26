@@ -10,12 +10,15 @@ import {
   ContactMe,
 } from '../content';
 import { SectionContainer } from '../utils';
+import { CirclesColorBg } from '../ui';
 
 export const HomeSection = () => {
   return (
     <SectionContainer>
 
       <Hero />
+
+      <CirclesColorBg />
 
       <CurrentFavTech />
 
