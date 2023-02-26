@@ -93,7 +93,7 @@ export const AboutSection = () => {
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black dark:text-white text-start'>Interests</h2>
 
           <p className='text-base text-gray-600 dark:text-gray-400'>
-            I am interested in learning Backend with Java, Go or with Rust. I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.
+            I am interested in learning Backend with Java, Go or with Python. I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.
           </p>
 
           <p className='text-base text-gray-600 dark:text-gray-400'>
