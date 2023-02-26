@@ -11,6 +11,6 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
       <main className={interVariable.className + ' min-w-xs max-w-screen-md flex flex-col justify-center items-center mx-auto'}>
         {children}
       </main>
-    </ThemeProvider >
+    </ThemeProvider>
   )
 } 

@@ -1,99 +1,10 @@
-'use client'
+'use client';
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import cn from 'classnames';
-import useDelayedRender from 'use-delayed-render';
 import styles from '../../styles/mobileMenu.module.css';
-
-export const MobileMenuNav = () => {
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
-    isMenuOpen,
-    {
-      enterDelay: 20,
-      exitDelay: 1000
-    }
-  );
-
-  const toggleMenu = () => {
-
-    if (isMenuOpen) {
-
-      setIsMenuOpen(false);
-
-    } else {
-
-      setIsMenuOpen(true);
-
-    }
-
-  }
-
-  useEffect(() => {
-    return function cleanup() {
-      document.body.style.overflow = '';
-    };
-  }, []);
-
-  return (
-    <>
-      <button
-        className={cn(styles.burger, 'visible lg:hidden')}
-        aria-label='Toggle menu'
-        type='button'
-        onClick={toggleMenu}
-      >
-        <MenuIcon data-hide={isMenuOpen} />
-        <CrossIcon data-hide={!isMenuOpen} />
-      </button>
-      {isMenuMounted && (
-        <ul
-          className={cn(
-            styles.menu,
-            'flex flex-col items-start justify-center absolute right-0 backdrop-blur-sm bg-white/60 dark:bg-black/20 text-end p-5 rounded-br-2xl mr-5',
-            isMenuRendered && styles.menuRendered
-          )}
-        >
-          <li
-            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
-            style={{ transitionDelay: '150ms' }}
-          >
-            <Link href='/' className='pb-8'>
-              Home
-            </Link>
-          </li>
-          <li
-            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
-            style={{ transitionDelay: '175ms' }}
-          >
-            <Link href='/about' className='pb-4'>
-              About
-            </Link>
-          </li>
-          <li
-            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
-            style={{ transitionDelay: '200ms' }}
-          >
-            <Link href='/projects' className='pb-4'>
-              Projects
-            </Link>
-          </li>
-          <li
-            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
-            style={{ transitionDelay: '250ms' }}
-          >
-            <Link href='/blog' className='pb-4'>
-              Blog
-            </Link>
-          </li>
-        </ul>
-      )}
-    </>
-  );
-}
+import { useEffect } from 'react';
+import cn from 'classnames';
+import { useMenuNav } from '@/hooks';
+import { LinksMenuNav } from './';
 
 const MenuIcon = (props: JSX.IntrinsicElements['svg']) => {
   return (
@@ -103,8 +14,7 @@ const MenuIcon = (props: JSX.IntrinsicElements['svg']) => {
       height='20'
       viewBox='0 0 20 20'
       fill='none'
-      {...props}
-    >
+      {...props}>
       <path
         d='M2.5 7.5H17.5'
         stroke='currentColor'
@@ -136,12 +46,50 @@ const CrossIcon = (props: JSX.IntrinsicElements['svg']) => {
       strokeLinejoin='round'
       fill='none'
       shapeRendering='geometricPrecision'
-      {...props}
-    >
+      {...props}>
       <path d='M18 6L6 18' />
       <path d='M6 6l12 12' />
     </svg>
   );
 }
 
-export default MobileMenuNav;
+export const MobileMenuNav = () => {
+
+  const { isMenuOpen, toggleMenu, isMenuMounted, isMenuRendered } = useMenuNav();
+
+  useEffect(() => {
+    return function cleanup() {
+      document.body.style.overflow = '';
+    };
+  }, []);
+
+  return (
+    <>
+      <button
+        className={cn(styles.burger, 'visible lg:hidden')}
+        aria-label='Toggle menu'
+        type='button'
+        onClick={toggleMenu}>
+
+        <MenuIcon data-hide={isMenuOpen} />
+
+        <CrossIcon data-hide={!isMenuOpen} />
+
+      </button>
+      {
+        isMenuMounted && (
+          <ul
+            className={cn(
+              styles.menu,
+              'flex flex-col items-start justify-center absolute right-0 backdrop-blur-sm bg-white/60 dark:bg-black/20 text-end p-5 rounded-br-2xl mr-5',
+              isMenuRendered && styles.menuRendered
+            )}>
+
+            <LinksMenuNav />
+
+          </ul>
+        )
+      }
+    </>
+  );
+}

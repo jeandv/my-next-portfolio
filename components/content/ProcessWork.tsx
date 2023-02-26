@@ -41,13 +41,13 @@ const myWorkProcess = [
 
 export const ProcessWork = () => {
   return (
-    <AnimationContainer customClassName='mb-4'>
+    <AnimationContainer customClassName='w-full mb-4'>
 
       <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-12 text-black dark:text-white text-start'>
         My work process
       </h2>
 
-      <div className='grid grid-cols-3 gap-6 mb-8 mx-auto'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 mx-auto'>
         {
           myWorkProcess.map(({ id, title, des, delay }) => (
             <AnimationContainer

@@ -53,4 +53,5 @@ const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p c
 const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-base text-gray-600 dark:text-gray-400'>{children}</p>;
 
 TimelineEvent.Title = TimelineEventTitle;
+
 TimelineEvent.Description = TimelineEventDescription;

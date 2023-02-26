@@ -1,5 +1,3 @@
-'use client'
-
 import '../../styles/globals.css';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {

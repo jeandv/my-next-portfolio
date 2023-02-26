@@ -1,8 +1,8 @@
 {
   "name": "my-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "My portfolio with Blog using Next.js 13 + TypeScript, Tailwind and Sanity CMS",
+  "description": "Hi! My name is Jean Rondón I'm from Venezuela and I have +2 year of work experience in JavaScript/TypeScript and React, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16. I love what I do and I help others with what I can, I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron implementing good practices, clean architecture, pixel perfect and agile methodologies.",
   "author": "Jean Rondón <jeanrdev@gmail.com>",
   "repository": "https://github.com/jeandv/my-next-portfolio",
   "license": "MIT",
@@ -36,6 +36,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sanity": "^3.0.0",
+    "sharp": "^0.31.3",
     "styled-components": "^5.2.0",
     "tailwindcss": "^3.2.4",
     "typescript": "4.9.4",

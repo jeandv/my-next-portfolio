@@ -33,7 +33,7 @@ export interface CardProjectProps {
   title: string;
   des: string;
   // category: string[];
-  category: any; // FIX THIS
+  category: string; // FIX THIS
   repo: string;
   link: string;
 }
