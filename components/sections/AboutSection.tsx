@@ -1,16 +1,7 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion';
-import { Timeline, TimelineEvent } from '../content';
-import { AnimationContainer, SectionContainer, getNameSkills } from '../utils';
-
-const animation = {
-  hide: { y: -12, opacity: 0 },
-  show: {
-    y: 0,
-    opacity: 1,
-  },
-};
+import { AnimationContainer, SectionContainer, ShowSkills, TitleSectionPageContainer } from '../utils';
+import { CurrentTimeLineExp } from '../content';
 
 const skills = [
   {
@@ -49,15 +40,7 @@ export const AboutSection = () => {
 
       <div className='w-full flex flex-col gap-6'>
 
-        <motion.div
-          initial={animation.hide}
-          animate={animation.show}
-          transition={{ delay: 0.5 }}
-        >
-          <h2 className='font-bold text-4xl md:text-5xl tracking-tight mb-8 text-black dark:text-white text-center'>
-            About me
-          </h2>
-        </motion.div>
+        <TitleSectionPageContainer title='About me' />
 
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
@@ -71,33 +54,11 @@ export const AboutSection = () => {
 
         </AnimationContainer>
 
-        <Timeline>
+        <p className='text-base text-gray-600 dark:text-gray-400 mb-6'>
+          I started my professional career as dev around 2020 (18 years old). I am currently in active job search while doing freelance projects.
+        </p>
 
-          <p className='text-base text-gray-600 dark:text-gray-400 mb-6'>
-            I started my professional career as dev around 2020 (18 years old). I am currently in active job search while doing freelance projects.
-          </p>
-
-          <TimelineEvent active>
-
-            <TimelineEvent.Title>Freelance | feb. 2022 - Currently</TimelineEvent.Title>
-
-            <TimelineEvent.Description>
-              Design and complete development of web pages/applications in a freelancer way applying agile methodologies, clean architecture, SOLID principles and pixel perfect in the projects I have done, I have developed almost all types of projects from Landing pages, Manageable stores with registration and login, Manageable blogs, dashboards, web pages with a variety of sections and more from prototyping, design using Balsamiq Wireframes, Adobe Photoshop and Figma, also from the design to the programming and migration.
-            </TimelineEvent.Description>
-
-          </TimelineEvent>
-
-          <TimelineEvent last>
-
-            <TimelineEvent.Title>Studio Iluxion | may. 2022 - jul. 2022</TimelineEvent.Title>
-
-            <TimelineEvent.Description>
-              Web designer and responsive web designer and frontend programmer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery implementing SCRUM, pixel perfect and clean code.
-            </TimelineEvent.Description>
-
-          </TimelineEvent>
-
-        </Timeline>
+        <CurrentTimeLineExp />
 
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
@@ -114,13 +75,13 @@ export const AboutSection = () => {
           <div className='flex flex-col items-start gap-3 mt-3'>
 
             {
-              skills.map(({ title, techs }, i) => (
-                <div key={i}>
+              skills.map(({ title, techs }) => (
+                <div key={title}>
 
                   <h3 className='font-bold text-1xl md:text-1xl tracking-tight mb-5 text-black dark:text-white text-start'>{title}</h3>
 
                   <AnimationContainer customClassName='flex items-center flex-wrap gap-3 mb-5'>
-                    {getNameSkills(techs, true)}
+                    <ShowSkills skills={techs} />
                   </AnimationContainer>
 
                 </div>

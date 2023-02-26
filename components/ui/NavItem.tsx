@@ -1,25 +1,45 @@
-import Link from 'next/link';
+'use client';
+
 import { usePathname } from 'next/navigation';
-import cn from 'classnames';
-import { NavItemProps } from '@/types';
+import { motion } from 'framer-motion';
+import { LinksNav, navItems } from './';
 
-export const NavItem = ({ href, text }: NavItemProps) => {
+export const NavItem = () => {
 
-  const pathname = usePathname();
+  let pathname = usePathname() as string;
 
-  const isActive = pathname === href;
+  if (pathname.includes('/blog/')) pathname = '/blog';
 
   return (
-    <Link
-      href={href}
-      className={cn(
-        isActive
-          ? 'font-semibold text-gray-800 dark:text-gray-200'
-          : 'font-normal text-gray-600 dark:text-gray-400',
-        'hidden lg:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
-      )}
-    >
-      <span className='capsize'>{text}</span>
-    </Link>
+    <>
+      {
+        navItems[pathname] ? (
+          <>
+            <div className='hidden lg:block'>
+              <motion.div
+                className='absolute bg-neutral-200 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
+                layoutId='test2'
+                initial={{ opacity: 0, x: navItems[pathname].x, y: navItems[pathname].y }}
+                animate={{
+                  opacity: 1,
+                  x: navItems[pathname].x,
+                  width: navItems[pathname].w,
+                }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 350,
+                  damping: 30,
+                }}
+              />
+            </div>
+          </>
+        ) : null}
+
+      {
+
+        <LinksNav />
+
+      }
+    </>
   );
 }

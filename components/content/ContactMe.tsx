@@ -37,7 +37,7 @@ export const ContactMe = () => {
         </div>
 
         <div className='w-full flex justify-center items-center flex-col'>
-          <form action='' className='w-full space-y-4'>
+          <form action='https://formsubmit.co/jeanrdev@gmail.com' method='POST' className='w-full space-y-4'>
             <div>
               <label className='sr-only' htmlFor='name'>Name</label>
               <input
@@ -45,6 +45,7 @@ export const ContactMe = () => {
                 placeholder='Name'
                 type='text'
                 id='name'
+                name='name'
                 required
               />
             </div>
@@ -57,6 +58,7 @@ export const ContactMe = () => {
                   placeholder='Email'
                   type='email'
                   id='email'
+                  name='email'
                   required
                 />
               </div>
@@ -68,6 +70,7 @@ export const ContactMe = () => {
                   placeholder='Phone'
                   type='tel'
                   id='phone'
+                  name='phone'
                   required
                 />
               </div>
@@ -79,6 +82,7 @@ export const ContactMe = () => {
                 className='w-full h-32 rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
                 placeholder='Message'
                 id='message'
+                name='message'
                 required
               ></textarea>
             </div>
