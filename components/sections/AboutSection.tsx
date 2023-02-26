@@ -54,10 +54,6 @@ export const AboutSection = () => {
 
         </AnimationContainer>
 
-        <p className='text-base text-gray-600 dark:text-gray-400 mb-6'>
-          I started my professional career as dev around 2020 (18 years old). I am currently in active job search while doing freelance projects.
-        </p>
-
         <CurrentTimeLineExp />
 
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
