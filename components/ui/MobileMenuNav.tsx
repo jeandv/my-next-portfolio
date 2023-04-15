@@ -3,13 +3,13 @@
 import styles from '../../styles/mobileMenu.module.css';
 import { useEffect } from 'react';
 import cn from 'classnames';
-import { useMenuNav } from '@/hooks';
-import { LinksMenuNav } from './';
+import useMenuNav from '@/hooks/useMenuNav';
+import LinksMenuNav from './LinksMenuNav';
 
 const MenuIcon = (props: JSX.IntrinsicElements['svg']) => {
   return (
     <svg
-      className='h-5 w-5 absolute text-gray-900 dark:text-gray-100'
+      className='h-5 w-5 absolute text-gray-100'
       width='20'
       height='20'
       viewBox='0 0 20 20'
@@ -36,7 +36,7 @@ const MenuIcon = (props: JSX.IntrinsicElements['svg']) => {
 const CrossIcon = (props: JSX.IntrinsicElements['svg']) => {
   return (
     <svg
-      className='h-5 w-5 absolute text-gray-900 dark:text-gray-100'
+      className='h-5 w-5 absolute text-gray-100'
       viewBox='0 0 24 24'
       width='24'
       height='24'
@@ -53,7 +53,7 @@ const CrossIcon = (props: JSX.IntrinsicElements['svg']) => {
   );
 }
 
-export const MobileMenuNav = () => {
+const MobileMenuNav = () => {
 
   const { isMenuOpen, toggleMenu, isMenuMounted, isMenuRendered } = useMenuNav();
 
@@ -81,7 +81,7 @@ export const MobileMenuNav = () => {
           <ul
             className={cn(
               styles.menu,
-              'flex flex-col items-start justify-center absolute right-0 backdrop-blur-sm bg-white/60 dark:bg-black/20 text-end p-5 rounded-br-2xl mr-5',
+              'flex flex-col items-start justify-center absolute right-0 backdrop-blur-sm bg-black/20 text-end p-5 rounded-br-2xl mr-5',
               isMenuRendered && styles.menuRendered
             )}>
 
@@ -93,3 +93,5 @@ export const MobileMenuNav = () => {
     </>
   );
 }
+
+export default MobileMenuNav;

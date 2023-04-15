@@ -1,4 +1,5 @@
-import { AnimationContainer } from '../utils';
+import AnimationContainer from "../utils/AnimationContainer";
+
 
 const myWorkProcess = [
   {
@@ -39,11 +40,11 @@ const myWorkProcess = [
   },
 ];
 
-export const ProcessWork = () => {
+const ProcessWork = () => {
   return (
     <AnimationContainer customClassName='w-full mb-4'>
 
-      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-12 text-black dark:text-white text-start'>
+      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-12 text-white text-start'>
         My work process
       </h2>
 
@@ -52,15 +53,15 @@ export const ProcessWork = () => {
           myWorkProcess.map(({ id, title, des, delay }) => (
             <AnimationContainer
               key={id}
-              customClassName='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'
+              customClassName='rounded border border-gray-800 hover:borderW-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'
               customDelay={delay}
             >
 
-              <h3 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
+              <h3 className='font-bold text-1xl tracking-tight text-white text-start'>
                 {title}
               </h3>
 
-              <p className='mt-2 text-base text-gray-600 dark:text-gray-400'>
+              <p className='mt-2 text-base text-gray-400'>
                 {des}
               </p>
 
@@ -72,3 +73,5 @@ export const ProcessWork = () => {
     </AnimationContainer>
   )
 }
+
+export default ProcessWork;

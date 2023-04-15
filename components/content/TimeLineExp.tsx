@@ -1,12 +1,14 @@
+'use client';
+
 import classNames from 'classnames';
-import { AnimationContainer } from '../utils';
+import AnimationContainer from '../utils/AnimationContainer';
 import { TimelineEventProps } from '@/types';
 
 export const Timeline = ({ children }: { children: React.ReactNode }) => {
   return (
     <AnimationContainer customClassName='w-full mb-16'>
 
-      <h2 className='font-bold text-2xl tracking-tight mb-8 text-black dark:text-white text-center lg:text-start'>Experience</h2>
+      <h2 className='font-bold text-2xl tracking-tight mb-8 text-white text-center lg:text-start'>Experience</h2>
 
       {children}
 
@@ -48,9 +50,9 @@ export const TimelineEvent = ({ active, children, last }: TimelineEventProps) =>
   );
 }
 
-const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p className='text-base text-gray-600 dark:text-gray-400'>{children}</p>;
+const TimelineEventTitle = ({ children }: { children: React.ReactNode }) => <p className='text-base text-gray-400'>{children}</p>;
 
-const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-base text-gray-600 dark:text-gray-400'>{children}</p>;
+const TimelineEventDescription = ({ children }: { children: React.ReactNode }) => <p className='text-base text-gray-400'>{children}</p>;
 
 TimelineEvent.Title = TimelineEventTitle;
 

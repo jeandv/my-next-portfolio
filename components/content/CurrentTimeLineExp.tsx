@@ -1,12 +1,14 @@
-import { Timeline, TimelineEvent, } from './';
+'use client';
 
-export const CurrentTimeLineExp = () => {
+import { Timeline, TimelineEvent } from './TimeLineExp';
+
+const CurrentTimeLineExp = () => {
   return (
     <Timeline>
 
       <TimelineEvent active>
 
-        <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-black dark:hover:text-white hover:underline transition-all ease'>IA Interactive</a> | mar. 2023 - Currently</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> | mar. 2023 - Currently</TimelineEvent.Title>
 
         <TimelineEvent.Description>
           Frontend development implementing agile methodologies and best practices such as SOLID principles, pixel perfect, clean architecture and clean code using the following technologies: Git, HTML, CSS, SASS, JavaScript, TypeScript, React, Next.js, Redux, others...
@@ -37,3 +39,5 @@ export const CurrentTimeLineExp = () => {
     </Timeline>
   )
 }
+
+export default CurrentTimeLineExp;

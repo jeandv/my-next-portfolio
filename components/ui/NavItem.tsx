@@ -2,9 +2,9 @@
 
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { LinksNav, navItems } from './';
+import LinksNav, { navItemsSelected } from './LinksNav';
 
-export const NavItem = () => {
+const NavItem = () => {
 
   let pathname = usePathname() as string;
 
@@ -13,17 +13,17 @@ export const NavItem = () => {
   return (
     <>
       {
-        navItems[pathname] ? (
+        navItemsSelected[pathname] ? (
           <>
             <div className='hidden lg:block'>
               <motion.div
-                className='absolute bg-neutral-200 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]'
+                className='absolute bg-neutral-800 h-[34px] rounded-md z-[-1]'
                 layoutId='test2'
-                initial={{ opacity: 0, x: navItems[pathname].x, y: navItems[pathname].y }}
+                initial={{ opacity: 0, x: navItemsSelected[pathname].x, y: navItemsSelected[pathname].y }}
                 animate={{
                   opacity: 1,
-                  x: navItems[pathname].x,
-                  width: navItems[pathname].w,
+                  x: navItemsSelected[pathname].x,
+                  width: navItemsSelected[pathname].w,
                 }}
                 transition={{
                   type: 'spring',
@@ -43,3 +43,5 @@ export const NavItem = () => {
     </>
   );
 }
+
+export default NavItem;

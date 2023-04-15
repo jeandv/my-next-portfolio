@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { AnimationContainerProps } from '@/types';
 
-export const AnimationContainer = ({ children, customClassName, customDelay = 0.3 }: AnimationContainerProps) => {
+const AnimationContainer = ({ children, customClassName, customDelay = 0.3 }: AnimationContainerProps) => {
   return (
     <motion.div
       className={customClassName}
@@ -18,3 +18,5 @@ export const AnimationContainer = ({ children, customClassName, customDelay = 0.
     </motion.div>
   )
 }
+
+export default AnimationContainer;

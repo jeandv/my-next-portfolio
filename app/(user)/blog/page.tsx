@@ -1,6 +1,6 @@
-'use client';
+import SectionContainer from "@/components/utils/SectionContainer";
+import TitleSectionPageContainer from "@/components/utils/TitleSectionPageContainer";
 
-import { SectionContainer, TitleSectionPageContainer } from '@/components/utils';
 
 const Blog = () => (
   <SectionContainer>

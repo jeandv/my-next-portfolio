@@ -1,18 +1,20 @@
-import { HeaderAnimation } from '../utils';
-import { MobileMenuNav, NavItem, ButtonTheme } from './';
+import Link from 'next/link';
+import HeaderAnimation from '../utils/HeaderAnimation';
+import MobileMenuNav from './MobileMenuNav';
+import NavItem from './NavItem';
 
-export const Header = () => {
+const Header = () => {
   return (
     <HeaderAnimation>
-      <nav className='w-full flex items-center justify-start lg:justify-between flex-row-reverse lg:flex-row relative border-gray-200 dark:border-gray-700 px-5 py-8 sm:pb-8 text-gray-900 bg-opacity-60 dark:text-gray-100 gap-5 lg:gap-0'>
+      <nav className='w-full flex items-center justify-start lg:justify-between flex-row-reverse lg:flex-row relative border-gray-700 px-5 py-8 sm:pb-8 bg-opacity-60 text-gray-100 gap-5 lg:gap-0'>
 
-        {/* <div>
+        <div>
           <h1>
             <Link href='/'>
               <strong>Jeandv</strong>();
             </Link>
           </h1>
-        </div> */}
+        </div>
 
         <div className='ml-[-0.80rem]'>
 
@@ -22,9 +24,9 @@ export const Header = () => {
 
         </div>
 
-        <ButtonTheme />
-
       </nav>
     </HeaderAnimation>
   )
 }
+
+export default Header;

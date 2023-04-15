@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import { NavItemHeaderAnimation } from '@/types';
 
-export const navItems: { [key: string]: NavItemHeaderAnimation } = {
+export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
   '/': {
     name: 'home',
     x: 1,
@@ -20,23 +20,23 @@ export const navItems: { [key: string]: NavItemHeaderAnimation } = {
     name: 'projects',
     x: 127,
     y: -3,
-    w: '78px',
+    w: '70px',
   },
   '/blog': {
     name: 'blog',
-    x: 208,
+    x: 203,
     y: -3,
-    w: '52px',
+    w: '45px',
   },
 };
 
-export const LinksNav = () => {
+const LinksNav = () => {
 
   let pathname = usePathname() as string;
   return (
     <>
       {
-        Object.entries(navItems).map(([path, { name }]) => {
+        Object.entries(navItemsSelected).map(([path, { name }]) => {
 
           const isActive = path === pathname;
 
@@ -45,7 +45,7 @@ export const LinksNav = () => {
               key={path}
               href={path}
               className={clsx(
-                'hidden lg:inline-block transition ease hover:text-neutral-800 dark:hover:text-neutral-200 py-[2px] px-[10px]',
+                'hidden lg:inline-block transition ease hover:text-neutral-200 py-[2px] px-[10px]',
                 {
                   'text-neutral-500': !isActive,
                   'font-bold': isActive,
@@ -61,3 +61,5 @@ export const LinksNav = () => {
     </>
   )
 }
+
+export default LinksNav;

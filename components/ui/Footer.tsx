@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { AnimationContainer } from '../utils';
-import { ExternalLink } from './';
+import AnimationContainer from '../utils/AnimationContainer';
+import ExternalLink from './ExternalLink';
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className='w-full lg:min-w-xs lg:max-w-screen-md flex flex-col justify-center items-center mx-auto'>
 
-      <hr className='w-full border-1 border-gray-200 dark:border-gray-800 mb-8' />
+      <hr className='w-full border-1 border-gray-800 mb-8' />
 
       <AnimationContainer customClassName='w-full max-w-2xl grid place-items-center grid-cols-3 gap-1 lg:gap-4 pb-8 sm:grid-cols-3 mx-3'>
 
@@ -103,3 +103,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer;

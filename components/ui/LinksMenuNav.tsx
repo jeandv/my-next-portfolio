@@ -23,14 +23,14 @@ const LinksMenu = [
   },
 ]
 
-export const LinksMenuNav = () => {
+const LinksMenuNav = () => {
   return (
     <>
       {
         LinksMenu.map(({ name, path, delay }) => (
           <li
             key={name}
-            className='border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold'
+            className='border-gray-700 text-gray-100 text-sm font-semibold'
             style={{ transitionDelay: delay }}>
             <Link href={path} className='pb-4'>
               {name}
@@ -41,3 +41,5 @@ export const LinksMenuNav = () => {
     </>
   )
 }
+
+export default LinksMenuNav;

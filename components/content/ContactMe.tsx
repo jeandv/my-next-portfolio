@@ -1,10 +1,10 @@
-import { AnimationContainer } from '../utils';
+import AnimationContainer from '../utils/AnimationContainer';
 
-export const ContactMe = () => {
+const ContactMe = () => {
   return (
     <AnimationContainer customClassName='w-full'>
 
-      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-black dark:text-white text-center lg:text-start'>
+      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-white text-center lg:text-start'>
         Contact me
       </h2>
 
@@ -13,22 +13,22 @@ export const ContactMe = () => {
         <div className='w-full flex justify-between items-center flex-col lg:flex-row gap-6 mb-10'>
 
           <a href='mailto:jeanrdev@gmail.com' target='_blank' rel='noreferrer' className='w-full'>
-            <div className='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
-              <h6 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
+            <div className='rounded border border-gray-800 hover:border-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
+              <h6 className='font-bold text-1xl tracking-tight text-white text-start'>
                 Email
               </h6>
-              <p className='text-base mt-2 text-gray-600 dark:text-gray-400'>
+              <p className='text-base mt-2 text-gray-400'>
                 jeanrdev@gmail.com
               </p>
             </div>
           </a>
 
           <a href='https://walink.co/2369d5' target='_blank' rel='noreferrer' className='w-full'>
-            <div className='rounded border border-gray-200 dark:border-gray-800 hover:border-white dark:hover:border-gray-900 bg-gray-50 dark:bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
-              <h6 className='font-bold text-1xl tracking-tight text-black dark:text-white text-start'>
+            <div className='rounded border border-gray-800 hover:border-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
+              <h6 className='font-bold text-1xl tracking-tight text-white text-start'>
                 Phone
               </h6>
-              <p className='text-base mt-2 text-gray-600 dark:text-gray-400'>
+              <p className='text-base mt-2 text-gray-400'>
                 +58 0416 943 86 66
               </p>
             </div>
@@ -41,7 +41,7 @@ export const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='name'>Name</label>
               <input
-                className='w-full rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
+                className='w-full rounded p-3 text-base outline-none border bg-black border-gray-800 focus:border-gray-500 transition ease'
                 placeholder='Name'
                 type='text'
                 id='name'
@@ -54,7 +54,7 @@ export const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='email'>Email</label>
                 <input
-                  className='w-full rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
+                  className='w-full rounded p-3 text-base outline-none border bg-black border-gray-800 focus:border-gray-500 transition ease'
                   placeholder='Email'
                   type='email'
                   id='email'
@@ -66,7 +66,7 @@ export const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='phone'>Phone</label>
                 <input
-                  className='w-full rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
+                  className='w-full rounded p-3 text-base outline-none border bg-black border-gray-800 focus:border-gray-500 transition ease'
                   placeholder='Phone'
                   type='tel'
                   id='phone'
@@ -79,7 +79,7 @@ export const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='message'>Message</label>
               <textarea
-                className='w-full h-32 rounded p-3 text-base outline-none border bg-white dark:bg-black border-gray-200 dark:border-gray-800 focus:border-gray-800 dark:focus:border-gray-500 transition ease'
+                className='w-full h-32 rounded p-3 text-base outline-none border bg-black border-gray-800 focus:border-gray-500 transition ease'
                 placeholder='Message'
                 id='message'
                 name='message'
@@ -89,7 +89,7 @@ export const ContactMe = () => {
 
             <button
               type='submit'
-              className='flex items-center justify-center rounded px-5 py-3 text-black dark:text-white bg-white hover:bg-gray-200 dark:bg-black dark:hover:bg-gray-800 shadow-sm transition ease mx-auto'
+              className='flex items-center justify-center rounded px-5 py-3 text-white bg-black hover:bg-gray-800 shadow-sm transition ease mx-auto'
             >
               <span className='font-medium text-base'>Send</span>
 
@@ -117,3 +117,5 @@ export const ContactMe = () => {
     </AnimationContainer >
   )
 }
+
+export default ContactMe;
