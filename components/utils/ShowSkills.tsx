@@ -1,23 +1,21 @@
 'use client';
 
-import { useTheme } from 'next-themes';
 import { Badge } from '@mantine/core';
 
-export const ShowSkills = ({ skills }: { skills: string | string[] }) => {
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { resolvedTheme } = useTheme();
+const ShowSkills = ({ skills }: { skills: string | string[] }) => {
 
   if (skills instanceof Array) {
     return (
       <>
         {
-          skills.map((skill) => <Badge key={skill} color={resolvedTheme === 'dark' ? 'dark' : 'gray'} size='lg' radius='xs' variant='filled'>{skill}</Badge>)
+          skills.map((skill) => <Badge key={skill} color='gray' size='lg' radius='xs' variant='filled'>{skill}</Badge>)
         }
       </>
     )
   }
 
+  return <Badge color='gray' size='lg' radius='xs' variant='filled'>{skills}</Badge>
 
-  return <Badge color={resolvedTheme === 'dark' ? 'dark' : 'gray'} size='lg' radius='xs' variant='filled'>{skills}</Badge>
 }
+
+export default ShowSkills;

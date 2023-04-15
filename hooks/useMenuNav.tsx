@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import useDelayedRender from 'use-delayed-render';
 
-export const useMenuNav = () => {
+const useMenuNav = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,3 +30,5 @@ export const useMenuNav = () => {
     isMenuRendered
   }
 }
+
+export default useMenuNav;

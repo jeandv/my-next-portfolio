@@ -1,30 +1,21 @@
-'use client';
-
 import '../../styles/globals.css';
-import { Providers } from '../providers';
-import { Inter } from '@next/font/google';
-import { Header, Footer } from '@/components/ui';
-
-const interVariable = Inter();
+import Header from '@/components/ui/Header';
+import Footer from '@/components/ui/Footer';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html>
-      <body className='bg-gray-50 dark:bg-gray-900 transition ease'>
+      <body className='bg-gray-900 transition ease'>
 
-        <Providers>
+        <Header />
 
-          <Header />
+        <main className='min-w-xs max-w-screen-md flex flex-col justify-center items-center mx-auto'>
 
-          <main className={interVariable.className + ' min-w-xs max-w-screen-md flex flex-col justify-center items-center mx-auto'}>
+          {children}
 
-            {children}
+        </main>
 
-          </main>
-
-          <Footer />
-
-        </Providers>
+        <Footer />
 
       </body>
     </html>

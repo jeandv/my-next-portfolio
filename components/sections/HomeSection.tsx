@@ -1,18 +1,15 @@
-'use client';
+import AboutMe from '../content/AboutMe';
+import ContactMe from '../content/ContactMe';
+import CurrentFavTech from '../content/CurrentFavTech';
+import CurrentTimeLineExp from '../content/CurrentTimeLineExp';
+import FavProjects from '../content/FavProjects';
+import Hero from '../content/Hero';
+import ProcessWork from '../content/ProcessWork';
+import CirclesColorBg from '../ui/CirclesColorBg';
+import SectionContainer from '../utils/SectionContainer';
 
-import {
-  Hero,
-  CurrentFavTech,
-  AboutMe,
-  CurrentTimeLineExp,
-  FavProjects,
-  ProcessWork,
-  ContactMe,
-} from '../content';
-import { SectionContainer } from '../utils';
-import { CirclesColorBg } from '../ui';
 
-export const HomeSection = () => {
+const HomeSection = () => {
   return (
     <SectionContainer>
 
@@ -39,3 +36,5 @@ export const HomeSection = () => {
     </SectionContainer>
   )
 }
+
+export default HomeSection;

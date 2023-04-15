@@ -10,7 +10,7 @@ const animation = {
   },
 };
 
-export const CirclesColorBg = () => {
+const CirclesColorBg = () => {
   return (
     <motion.div
       className='darkBackgroundCirclesColors'
@@ -20,3 +20,5 @@ export const CirclesColorBg = () => {
     ></motion.div>
   )
 }
+
+export default CirclesColorBg;

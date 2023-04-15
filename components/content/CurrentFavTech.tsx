@@ -1,7 +1,7 @@
-import { AnimationContainer } from '../utils';
-import { AllFavTechs } from '../icons';
+import AllFavTechs from '../icons/AllFavTechs';
+import AnimationContainer from '../utils/AnimationContainer';
 
-export const CurrentFavTech = () => {
+const CurrentFavTech = () => {
   return (
     <AnimationContainer customClassName='flex flex-col justify-center items-center lg:items-start mb-16 mx-auto lg:mx-0'>
       <div className='flex flex-col justify-center items-center lg:items-start'>
@@ -12,3 +12,5 @@ export const CurrentFavTech = () => {
     </AnimationContainer>
   )
 }
+
+export default CurrentFavTech;

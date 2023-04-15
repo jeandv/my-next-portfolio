@@ -44,7 +44,7 @@
 }
 
 .menuRendered li {
-  @apply border-gray-200 dark:border-gray-600 w-full;
+  @apply border-gray-600 w-full;
   transform: translateX(0);
   opacity: 1;
 }

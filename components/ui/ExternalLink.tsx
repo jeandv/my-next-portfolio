@@ -1,6 +1,6 @@
 import { ExternalLinkProps } from '@/types';
 
-export const ExternalLink = ({ href, customClassName = 'flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease', children }: ExternalLinkProps) => (
+const ExternalLink = ({ href, customClassName = 'flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease', children }: ExternalLinkProps) => (
   <a
     className={customClassName}
     target='_blank'
@@ -10,3 +10,5 @@ export const ExternalLink = ({ href, customClassName = 'flex items-center gap-2 
     {children}
   </a>
 );
+
+export default ExternalLink;
