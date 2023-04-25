@@ -1,8 +1,5 @@
-'use client';
-
 import Image from 'next/image';
 import AnimationContainer from '../utils/AnimationContainer';
-
 
 const Hero = () => {
   return (

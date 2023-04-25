@@ -8,7 +8,6 @@ import ProcessWork from '../content/ProcessWork';
 import CirclesColorBg from '../ui/CirclesColorBg';
 import SectionContainer from '../utils/SectionContainer';
 
-
 const HomeSection = () => {
   return (
     <SectionContainer>

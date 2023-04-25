@@ -1,10 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-
 import CardProject from './CardProject';
-import { CardProjectProps } from '@/types';
 import AnimationContainer from '../utils/AnimationContainer';
+import { CardProjectProps } from '@/types';
 
 const allProjectsInfo = [
   {
