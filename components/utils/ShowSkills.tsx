@@ -8,13 +8,13 @@ const ShowSkills = ({ skills }: { skills: string | string[] }) => {
     return (
       <>
         {
-          skills.map((skill) => <Badge key={skill} color='gray' size='lg' radius='xs' variant='filled'>{skill}</Badge>)
+          skills.map((skill) => <Badge key={skill} color='dark' size='lg' radius='xs' variant='filled'>{skill}</Badge>)
         }
       </>
     )
   }
 
-  return <Badge color='gray' size='lg' radius='xs' variant='filled'>{skills}</Badge>
+  return <Badge color='dark' size='lg' radius='xs' variant='filled'>{skills}</Badge>
 
 }
 

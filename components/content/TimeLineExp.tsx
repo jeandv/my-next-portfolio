@@ -1,5 +1,3 @@
-'use client';
-
 import classNames from 'classnames';
 import AnimationContainer from '../utils/AnimationContainer';
 import { TimelineEventProps } from '@/types';

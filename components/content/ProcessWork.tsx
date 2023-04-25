@@ -1,5 +1,4 @@
-import AnimationContainer from "../utils/AnimationContainer";
-
+import AnimationContainer from '../utils/AnimationContainer';
 
 const myWorkProcess = [
   {

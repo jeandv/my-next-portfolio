@@ -1,10 +1,8 @@
-'use client';
-
-import CurrentTimeLineExp from "../content/CurrentTimeLineExp";
-import AnimationContainer from "../utils/AnimationContainer";
-import SectionContainer from "../utils/SectionContainer";
-import ShowSkills from "../utils/ShowSkills";
-import TitleSectionPageContainer from "../utils/TitleSectionPageContainer";
+import CurrentTimeLineExp from '../content/CurrentTimeLineExp';
+import AnimationContainer from '../utils/AnimationContainer';
+import SectionContainer from '../utils/SectionContainer';
+import ShowSkills from '../utils/ShowSkills';
+import TitleSectionPageContainer from '../utils/TitleSectionPageContainer';
 
 const skills = [
   {
