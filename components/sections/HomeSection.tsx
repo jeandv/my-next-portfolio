@@ -5,7 +5,6 @@ import CurrentTimeLineExp from '../content/CurrentTimeLineExp';
 import FavProjects from '../content/FavProjects';
 import Hero from '../content/Hero';
 import ProcessWork from '../content/ProcessWork';
-import CirclesColorBg from '../ui/CirclesColorBg';
 import SectionContainer from '../utils/SectionContainer';
 
 const HomeSection = () => {
@@ -13,8 +12,6 @@ const HomeSection = () => {
     <SectionContainer>
 
       <Hero />
-
-      <CirclesColorBg />
 
       <CurrentFavTech />
 
