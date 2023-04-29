@@ -163,7 +163,7 @@ const SearchAllProjects = () => {
           </div>
 
           <input
-            className='peer h-full w-full outline-none rounded text-sm bg-black px-2 group-hover:border-gray-500 transition-all ease'
+            className='peer h-full w-full outline-none rounded text-sm text-white bg-black px-2 group-hover:border-gray-500 transition-all ease'
             type='text'
             id='search'
             placeholder='Languages, frameworks, libraries, etc...'
