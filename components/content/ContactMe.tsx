@@ -41,7 +41,7 @@ const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='name'>Name</label>
               <input
-                className='w-full rounded p-3 text-base outline-none border bg-black border-gray-800 focus:border-gray-500 transition ease'
+                className='w-full rounded p-3 text-base outline-none border text-white bg-black border-gray-800 focus:border-gray-500 transition ease'
                 placeholder='Name'
                 type='text'
                 id='name'
@@ -54,7 +54,7 @@ const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='email'>Email</label>
                 <input
-                  className='w-full rounded p-3 text-base outline-none border bg-black border-gray-800 focus:border-gray-500 transition ease'
+                  className='w-full rounded p-3 text-base outline-none border text-white bg-black border-gray-800 focus:border-gray-500 transition ease'
                   placeholder='Email'
                   type='email'
                   id='email'
@@ -66,7 +66,7 @@ const ContactMe = () => {
               <div>
                 <label className='sr-only' htmlFor='phone'>Phone</label>
                 <input
-                  className='w-full rounded p-3 text-base outline-none border bg-black border-gray-800 focus:border-gray-500 transition ease'
+                  className='w-full rounded p-3 text-base outline-none border text-white bg-black border-gray-800 focus:border-gray-500 transition ease'
                   placeholder='Phone'
                   type='tel'
                   id='phone'
@@ -79,7 +79,7 @@ const ContactMe = () => {
             <div>
               <label className='sr-only' htmlFor='message'>Message</label>
               <textarea
-                className='w-full h-32 rounded p-3 text-base outline-none border bg-black border-gray-800 focus:border-gray-500 transition ease'
+                className='w-full h-32 rounded p-3 text-base outline-none border text-white bg-black border-gray-800 focus:border-gray-500 transition ease'
                 placeholder='Message'
                 id='message'
                 name='message'
