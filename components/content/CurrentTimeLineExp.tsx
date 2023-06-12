@@ -11,7 +11,7 @@ const CurrentTimeLineExp = () => {
         <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> | mar. 2023 - Currently</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          Frontend development implementing agile methodologies and best practices such as SOLID principles, pixel perfect, clean architecture and clean code using the following technologies: Git, HTML, CSS, SASS, JavaScript, TypeScript, React, Next.js, Redux, others...
+          Frontend development and maintenance of projects implementing agile methodologies (Kanban in Jira) and best practices such as SOLID principles, pixel perfect, clean architecture, clean code and using microfrontends and storybook practices to facilitate the use of reusable components using the following technologies and tools: Jira, SCRUM, Git, Github, Bitbucket, HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, React, Next.js, Redux, Jest, Storybook, Microfrontends concepts and practices.
         </TimelineEvent.Description>
 
       </TimelineEvent>
