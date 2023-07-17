@@ -87,11 +87,11 @@ const favProjects = [
   },
   {
     image:
-      'https://cdn.sanity.io/images/jqaxrty6/production/0844f66435c099fb020b8235657491a3166bd713-1280x800.png',
-    title: 'ISR Pokedex',
-    category: 'Next.js - TypeScript - NextUI - Pokeapi',
-    repo: 'https://github.com/jeandv/pokedex-next',
-    link: 'https://pokedex-jeandv.vercel.app'
+      'https://cdn.sanity.io/images/jqaxrty6/production/9d452c28dc252302b90e6e2408b81ce3ed111957-1440x803.png',
+    title: 'OpenJira',
+    category: 'Next.js - Context - TypeScript - Node - MongoDB - MaterialUI',
+    repo: 'https://github.com/jeandv/open-jira',
+    link: 'https://open-jira-jeandv.vercel.app'
   },
   {
     image:
@@ -103,11 +103,11 @@ const favProjects = [
   },
   {
     image:
-      'https://cdn.sanity.io/images/jqaxrty6/production/9d452c28dc252302b90e6e2408b81ce3ed111957-1440x803.png',
-    title: 'OpenJira',
-    category: 'Next.js - Context - TypeScript - Node - MongoDB - MaterialUI',
-    repo: 'https://github.com/jeandv/open-jira',
-    link: 'https://open-jira-jeandv.vercel.app'
+      'https://cdn.sanity.io/images/jqaxrty6/production/0844f66435c099fb020b8235657491a3166bd713-1280x800.png',
+    title: 'ISR Pokedex',
+    category: 'Next.js - TypeScript - NextUI - Pokeapi',
+    repo: 'https://github.com/jeandv/pokedex-next',
+    link: 'https://pokedex-jeandv.vercel.app'
   },
   {
     image:

@@ -9,7 +9,7 @@ const AboutMe = () => {
       </h2>
 
       <p className='text-base text-gray-400'>
-        I'm a passionate dev with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old.
+        I'm a passionate dev with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. <a href="#contact" className='font-semibold hover:text-white ease delay-100'><u>Contact me</u></a> if you are interested in working with me on a project or if you have any general questions about me :)
       </p>
 
     </AnimationContainer>

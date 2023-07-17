@@ -27,7 +27,7 @@ export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
     x: 203,
     y: -3,
     w: '45px',
-  },
+  }
 };
 
 const LinksNav = () => {

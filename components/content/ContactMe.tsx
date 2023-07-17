@@ -4,7 +4,7 @@ const ContactMe = () => {
   return (
     <AnimationContainer customClassName='w-full'>
 
-      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-white text-center lg:text-start'>
+      <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-8 text-white text-center lg:text-start' id='contact'>
         Contact me
       </h2>
 
@@ -37,7 +37,7 @@ const ContactMe = () => {
         </div>
 
         <div className='w-full flex justify-center items-center flex-col'>
-          <form action='https://formsubmit.co/jeanrdev@gmail.com' method='POST' className='w-full space-y-4'>
+          <form action='https://formspree.io/f/xdorkorr' method='POST' className='w-full space-y-4'>
             <div>
               <label className='sr-only' htmlFor='name'>Name</label>
               <input
