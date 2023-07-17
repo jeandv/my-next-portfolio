@@ -13,12 +13,7 @@ const Hero = () => {
 
         <h2 className='flex items-center gap-2 text-1xl lg:text-1xl text-gray-200 mb-8 mx-auto lg:mx-0'>
 
-          <span className='font-semibold tracking-tight'>Frontend</span>
-          Developer
-
-          <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
-            <path strokeLinecap='round' strokeLinejoin='round' d='M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5' />
-          </svg>
+          <span className='font-semibold'>JavaScript</span>Developer
 
         </h2>
 
