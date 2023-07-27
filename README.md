@@ -1,11 +1,24 @@
 
 ![banner-portfolio](https://user-images.githubusercontent.com/90219458/217354077-6c130f6b-02db-4bd4-85b1-29a734e7648e.jpg)
 
-💻💼 This is: ⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡ ❗❗❗❗❗❗
+⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡
 
-Web: https://jeandv.vercel.app
+I'm a passionate developer with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can.
 
-soon more details of my portfolio here :)
+I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect and agile methodologies for example such as the SCRUM framework.
+
+I am currently learning the way to be a DevOps, the reason why I am interested in this area is to know something different from programming and at the same time very useful in the present and in the future, in short I take it as an investment in myself in case I have a job that requires this skill.
+
+Email: jeanrdev@gmail.com
+[CV](https://rxresu.me/jeandv/cv-jean-rondon)
+[Portfolio](https://jeandv.vercel.app)
+[LinkedIn](https://linkedin.com/in/jeandv)
+[Whatsapp](https://walink.co/2369d5)
+[GitHub](https://github.com/jeandv)
+
+Soon more details of my portfolio here :)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
