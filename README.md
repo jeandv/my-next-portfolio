@@ -9,14 +9,51 @@ I also use in web, mobile and desktop development Next.js, Angular, Ionic and El
 
 I am currently learning the way to be a DevOps, the reason why I am interested in this area is to know something different from programming and at the same time very useful in the present and in the future, in short I take it as an investment in myself in case I have a job that requires this skill.
 
-Email: jeanrdev@gmail.com -
-[CV](https://rxresu.me/jeandv/cv-jean-rondon) -
-[Portfolio](https://jeandv.vercel.app) -
-[LinkedIn](https://linkedin.com/in/jeandv) -
-[GitHub](https://github.com/jeandv) -
-[Whatsapp](https://walink.co/2369d5)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Soon more details of my portfolio here :)
+## Description 💬
+
+✔ Hice esta pokedex para poder practicar y entender bien como utilizar con sus mejores practicas Next.js + TypeScript y para los estilos utilice NextUI, en aprendí el uso de GetStaticProps, getStaticPaths y el Incremental Static Regeneration y el Generation (ISR) (ISG)
+
+## Autor 🤠
+
+· Email: jeanrdev@gmail.com <br>
+· [CV](https://rxresu.me/jeandv/cv-jean-rondon) <br>
+· [Portfolio](https://jeandv.vercel.app) <br>
+· [LinkedIn](https://linkedin.com/in/jeandv) <br>
+· [GitHub](https://github.com/jeandv) <br>
+· [Whatsapp](https://walink.co/2369d5)
+
+## Website URL 👁‍🗨
+
+✔ Here! -> [jeandv.vercel.app](https://jeandv.vercel.app)
+
+## Used tech tools 🛠️
+
+· Tailwind CSS <br>
+· Framer Motion <br>
+· Mantine <br>
+· TypeScript <br>
+· Next.js <br>
+· Sanity <br>
+
+## Used dev tools 🛠️
+
+· ESlint <br>
+· Postcss <br>
+· Prettier <br>
+
+## Instalation 💻
+
+✔ Follow the steps in: "Getting Started" 👇
+
+## Contact 📧
+
+✔ If you want to contact me you can write me to jeanrdev@gmail.com or to my [LinkedIn](https://www.linkedin.com/in/jeandv/) for inquiries or you can also talk to me by [Whatsapp](https://walink.co/2369d5)
+
+# Preview 🔎
+
+![image](https://github.com/jeandv/my-next-portfolio/assets/90219458/be01776e-9647-405f-99ea-e64e4923019f)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
