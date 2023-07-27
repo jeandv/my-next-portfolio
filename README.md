@@ -13,8 +13,8 @@ Email: jeanrdev@gmail.com -
 [CV](https://rxresu.me/jeandv/cv-jean-rondon) -
 [Portfolio](https://jeandv.vercel.app) -
 [LinkedIn](https://linkedin.com/in/jeandv) -
-[Whatsapp](https://walink.co/2369d5) -
-[GitHub](https://github.com/jeandv)
+[GitHub](https://github.com/jeandv) -
+[Whatsapp](https://walink.co/2369d5)
 
 Soon more details of my portfolio here :)
 
