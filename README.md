@@ -14,7 +14,7 @@ Email: jeanrdev@gmail.com -
 [Portfolio](https://jeandv.vercel.app) -
 [LinkedIn](https://linkedin.com/in/jeandv) -
 [Whatsapp](https://walink.co/2369d5) -
-[GitHub](https://github.com/jeandv) -
+[GitHub](https://github.com/jeandv)
 
 Soon more details of my portfolio here :)
 
