@@ -9,12 +9,12 @@ I also use in web, mobile and desktop development Next.js, Angular, Ionic and El
 
 I am currently learning the way to be a DevOps, the reason why I am interested in this area is to know something different from programming and at the same time very useful in the present and in the future, in short I take it as an investment in myself in case I have a job that requires this skill.
 
-Email: jeanrdev@gmail.com
-[CV](https://rxresu.me/jeandv/cv-jean-rondon)
-[Portfolio](https://jeandv.vercel.app)
-[LinkedIn](https://linkedin.com/in/jeandv)
-[Whatsapp](https://walink.co/2369d5)
-[GitHub](https://github.com/jeandv)
+Email: jeanrdev@gmail.com -
+[CV](https://rxresu.me/jeandv/cv-jean-rondon) -
+[Portfolio](https://jeandv.vercel.app) -
+[LinkedIn](https://linkedin.com/in/jeandv) -
+[Whatsapp](https://walink.co/2369d5) -
+[GitHub](https://github.com/jeandv) -
 
 Soon more details of my portfolio here :)
 
