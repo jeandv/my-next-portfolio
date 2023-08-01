@@ -13,7 +13,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
         <Header />
 
-        <main className='min-w-xs max-w-screen-md flex flex-col justify-center items-center mx-auto'>
+        <main className='flex flex-col justify-center items-center mx-auto'>
 
           {children}
 

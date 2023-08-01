@@ -4,11 +4,11 @@ import ExternalLink from './ExternalLink';
 
 const Footer = () => {
   return (
-    <footer className='w-full lg:min-w-xs lg:max-w-screen-md flex flex-col justify-center items-center mx-auto'>
+    <footer className='w-full lg:max-w-screen-md flex flex-col justify-center items-center mx-auto'>
 
       <hr className='w-full border-1 border-gray-800 mb-8' />
 
-      <AnimationContainer customClassName='w-full max-w-2xl grid place-items-center grid-cols-3 gap-1 lg:gap-4 pb-8 sm:grid-cols-3 mx-3'>
+      <AnimationContainer customClassName='w-full grid place-items-center grid-cols-3 gap-1 lg:gap-4 pb-8 sm:grid-cols-3 mx-3'>
 
         <div className='flex flex-col space-y-4'>
 

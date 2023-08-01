@@ -8,8 +8,8 @@
 }
 
 html,body {
-  min-width: 360px;
   scroll-behavior: smooth;
+  box-sizing: content-box;
 }
 
 #__next {
