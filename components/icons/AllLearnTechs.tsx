@@ -23,7 +23,7 @@ const AllLearningTechs = () => {
       </motion.p>
 
       <motion.ul
-        className='flex justify-center items-center flex-wrap gap-3.5 text-gray-400'
+        className='flex justify-center items-center flex-wrap gap-3.5 text-[#444]'
         initial='hide'
         animate='show'
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}

@@ -50,7 +50,7 @@ const ContactMe = () => {
               />
             </div>
 
-            <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
+            <div className='grid grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2'>
               <div>
                 <label className='sr-only' htmlFor='email'>Email</label>
                 <input
