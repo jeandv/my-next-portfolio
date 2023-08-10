@@ -2,14 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 html,body {
   scroll-behavior: smooth;
+}
+
+body, * {
   box-sizing: content-box;
+  cursor: none;
+}
+
+::selection {
+  background-color: #fff;
+  color: #000;
+}
+
+/* CUSTOM CURSOR  */
+
+.flare {
+  position: fixed;
+  border: 2px solid #ffffff2b;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important;
+  backdrop-filter: blur(1px);
+  background-color: #0000005e;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  cursor: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .flare {
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
 }
 
 #__next {
@@ -169,7 +204,7 @@ pre {
 }
 
 .rehype-code-title {
-  @apply px-5 py-3 font-mono text-sm font-bold border border-b-0 rounded-t-lg text-gray-200 border-gray-700 bg-gray-800;
+  @apply px-5 py-3 font-mono text-sm font-bold border border-b-0 rounded-t-lg text-gray-200 border-gray-700 bg-gray-900;
 }
 
 .rehype-code-title + pre {
@@ -177,7 +212,7 @@ pre {
 }
 
 .highlight-line {
-  @apply block px-4 -mx-4 border-l-4 border-blue-500 bg-gray-800;
+  @apply block px-4 -mx-4 border-l-4 border-blue-500 bg-gray-900;
 }
 
 /* Remove Safari input shadow on mobile */

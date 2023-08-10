@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans]
+        sans: ['var(--font-graphik)'],
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -46,9 +46,6 @@ module.exports = {
         },
       })
     }
-  },
-  variants: {
-    typography: ['dark']
   },
   plugins: [
     require('@tailwindcss/typography')

@@ -17,10 +17,6 @@ const Hero = () => {
 
         </h2>
 
-        <p className='w-full text-base text-center lg:text-start mb-5 lg:mb-0 text-gray-400 mx-auto lg:mx-0'>
-          I enjoy programming and whenever I can I try to learn new things.
-        </p>
-
       </AnimationContainer>
 
       <AnimationContainer customClassName='w-[80px] sm:w-[176px] relative mb-6 lg:mb-0'>
@@ -28,10 +24,10 @@ const Hero = () => {
           alt='Jean Rondón'
           height={176}
           width={176}
-          src='/jean-rondon.jpg'
+          src='/jeandv.jpg'
           sizes='30vw'
           priority
-          className='rounded-3xl filter grayscale hover:grayscale-0 transition ease'
+          className='rounded-[8px] filter grayscale hover:grayscale-0 transition ease'
         />
       </AnimationContainer>
 

@@ -15,23 +15,27 @@ const skills = [
   },
   {
     title: 'JavaScript libraries',
-    techs: ['Redux', 'TanStack Query', 'react-router-dom', 'Wouter', 'react-helmet', 'Formik', 'Jest']
+    techs: ['Redux', 'TanStack Query', 'Zustand', 'Formik', 'Jest', 'Storybook']
   },
   {
     title: 'Preprocessors, css style, component and motion libraries',
-    techs: ['Pug', 'Scss', 'Sass', 'Less', 'Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'Framer Motion']
+    techs: ['Pug', 'Scss', 'Sass', 'Less', 'Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'NextUI', 'Framer Motion']
   },
   {
     title: 'Backend stack',
-    techs: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Firebase', 'Sanity CMS', 'Strapi', 'Docker']
+    techs: ['noSQL', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Postman', 'Firebase', 'Sanity CMS']
   },
   {
     title: 'Softwares and tools',
-    techs: ['VS Code', 'Jira', 'Trello', 'Git', 'GitHub', 'ESLint', 'Husky', 'WordPress', 'Elementor', 'Figma', 'Photoshop']
+    techs: ['VS Code', 'Jira', 'Git', 'GitHub', 'Bitbucket', 'ESLint', 'Husky', 'Figma', 'Photoshop', 'WordPress', 'Elementor']
   },
   {
     title: 'Agile methodologies and coding principles',
-    techs: ['GitFlow', 'SCRUM', 'Kanban', 'Clean Code', 'SOLID principles', 'Clean Architecture', 'Pixel perfect']
+    techs: ['GitFlow', 'SCRUM', 'Clean Code', 'SOLID', 'Clean Architecture', 'Pixel perfect']
+  },
+  {
+    title: 'Currently or interest in learning...',
+    techs: ['SQL', 'Nest', 'GraphQL', 'PostgreSQL', 'Socket.IO', 'Linux', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform', 'Jenkins', 'Blender']
   }
 ];
 
@@ -66,7 +70,7 @@ const AboutSection = () => {
           </p>
 
           <p className='text-base text-gray-400'>
-            Event though the scope of web development is wide, I was very interested and focused on Frontend development and UI/UX design.
+            Event though the scope of web development is wide, I was very interested and focused on Frontend development.
           </p>
 
           <div className='flex flex-col items-start gap-3 mt-3'>
