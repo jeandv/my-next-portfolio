@@ -12,7 +12,7 @@ body, * {
 }
 
 ::selection {
-  background-color: #fff;
+  background-color: #fefefe;
   color: #000;
 }
 

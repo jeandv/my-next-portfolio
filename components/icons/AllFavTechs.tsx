@@ -14,7 +14,7 @@ const AllFavTechs = () => {
   return (
     <>
       <motion.p
-        className='text-base text-center lg:text-start mb-2.5 text-gray-400'
+        className='text-base text-center lg:text-start mb-2.5 text-[#444]'
         initial={animation.hide}
         animate={animation.show}
         transition={{ delay: 0.6 }}
