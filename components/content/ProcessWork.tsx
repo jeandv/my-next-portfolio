@@ -52,7 +52,7 @@ const ProcessWork = () => {
           myWorkProcess.map(({ id, title, des, delay }) => (
             <AnimationContainer
               key={id}
-              customClassName='rounded border border-gray-800 hover:borderW-gray-900 bg-gray-900 p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'
+              customClassName='rounded border border-gray-800 hover:border-gray-900 bg-[#080809] p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'
               customDelay={delay}
             >
 
