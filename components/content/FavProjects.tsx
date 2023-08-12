@@ -148,10 +148,6 @@ const FavProjects = () => {
         Top projects
       </h2>
 
-      <p className='text-base text-gray-400 mb-10 text-start'>
-        These are my favorite projects and also the ones I consider the most complete and complex I have done, if you want to see all my projects go to my <a href={myGithub} target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>GitHub</a>.
-      </p>
-
       <Carousel
         slideSize='50%'
         breakpoints={[{ maxWidth: 'xs', slideSize: '100%', slideGap: 1 }]}

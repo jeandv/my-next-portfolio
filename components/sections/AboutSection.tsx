@@ -3,41 +3,8 @@ import AnimationContainer from '../utils/AnimationContainer';
 import SectionContainer from '../utils/SectionContainer';
 import ShowSkills from '../utils/ShowSkills';
 import TitleSectionPageContainer from '../utils/TitleSectionPageContainer';
-
-const skills = [
-  {
-    title: 'Languages',
-    techs: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
-  },
-  {
-    title: 'Frameworks and libraries',
-    techs: ['jQuery', 'Angular', 'React', 'Next.js', 'Ionic', 'Electron.js']
-  },
-  {
-    title: 'JavaScript libraries',
-    techs: ['Redux', 'TanStack Query', 'Zustand', 'Formik', 'Jest', 'Storybook']
-  },
-  {
-    title: 'Preprocessors, css style, component and motion libraries',
-    techs: ['Pug', 'Scss', 'Sass', 'Less', 'Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'NextUI', 'Framer Motion']
-  },
-  {
-    title: 'Backend stack',
-    techs: ['noSQL', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Postman', 'Firebase', 'Sanity CMS']
-  },
-  {
-    title: 'Softwares and tools',
-    techs: ['VS Code', 'Jira', 'Git', 'GitHub', 'Bitbucket', 'ESLint', 'Husky', 'Figma', 'Photoshop', 'WordPress', 'Elementor']
-  },
-  {
-    title: 'Agile methodologies and coding principles',
-    techs: ['GitFlow', 'SCRUM', 'Clean Code', 'SOLID', 'Clean Architecture', 'Pixel perfect']
-  },
-  {
-    title: 'Currently or interest in learning...',
-    techs: ['SQL', 'Nest', 'GraphQL', 'PostgreSQL', 'Socket.IO', 'Linux', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform', 'Jenkins', 'Blender']
-  }
-];
+import ProcessWork from '../content/ProcessWork';
+import { skills } from '../utils/mySkills';
 
 const AboutSection = () => {
   return (
@@ -50,11 +17,11 @@ const AboutSection = () => {
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
           <p className='text-base text-gray-400'>
-            I'm a passionate developer with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can.
+            I am a passionate dev with +2 years of work experience in JavaScript/TypeScript and love learning new technologies since I discovered programming, I am currently learning the way to be a DevOps specialist.
           </p>
 
           <p className='text-base text-gray-400'>
-            I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect, GitFlow practices and agile methodologies for example such as the SCRUM framework.
+            I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect, GitFlow practices and agile methodologies.
           </p>
 
         </AnimationContainer>
@@ -92,6 +59,8 @@ const AboutSection = () => {
           </div>
 
         </AnimationContainer>
+
+        <ProcessWork />
 
         <AnimationContainer customClassName='w-full flex flex-col gap-5'>
 
