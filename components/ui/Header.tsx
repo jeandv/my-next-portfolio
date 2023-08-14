@@ -11,7 +11,7 @@ const Header = () => {
         <div>
           <h1>
             <Link href='/'>
-              <strong>Jeandv</strong>();
+              <strong>Man</strong>();
             </Link>
           </h1>
         </div>

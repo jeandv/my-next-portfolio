@@ -30,7 +30,7 @@ const AboutSection = () => {
 
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
-          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Skills & Tools</h2>
+          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black text-start'>Skills & Tools</h2>
 
           <p className='text-base text-gray-400'>
             A look at all the programming languages, libraries, and tools I've worked with, I started programming about 4 years ago. I have tried a few programming languages and technology stack, both Backend and Frontend.
@@ -46,7 +46,7 @@ const AboutSection = () => {
               skills.map(({ title, techs }) => (
                 <div key={title}>
 
-                  <h3 className='font-bold text-1xl md:text-1xl tracking-tight mb-5 text-white text-start'>{title}</h3>
+                  <h3 className='font-bold text-1xl md:text-1xl tracking-tight mb-5 text-black text-start'>{title}</h3>
 
                   <AnimationContainer customClassName='flex items-center flex-wrap gap-3 mb-5'>
                     <ShowSkills skills={techs} />
@@ -64,7 +64,7 @@ const AboutSection = () => {
 
         <AnimationContainer customClassName='w-full flex flex-col gap-5'>
 
-          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Interests & Goals</h2>
+          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-black text-start'>Interests & Goals</h2>
 
           <p className='text-base text-gray-400'>
             I am interested in learning Backend with other language like Java, Go or with Python. I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.

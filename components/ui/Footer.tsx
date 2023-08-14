@@ -98,6 +98,10 @@ const Footer = () => {
           </ExternalLink>
 
         </div>
+
+        <p className='text-gray-500'>
+          Template by <a href='https://github.com/jeandv' className='text-gray-500 hover:text-gray-600 transition ease'>Jean Rondon</a>
+        </p>
       </AnimationContainer>
 
     </footer>
