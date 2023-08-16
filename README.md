@@ -1,5 +1,4 @@
-
-![banner-portfolio](https://user-images.githubusercontent.com/90219458/217354077-6c130f6b-02db-4bd4-85b1-29a734e7648e.jpg)
+![Captura de pantalla 2023-08-16 152704](https://github.com/jeandv/my-next-portfolio/assets/90219458/9ce46345-0d5c-43cb-9be8-7d8d1387af0a)
 
 ⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡
 
