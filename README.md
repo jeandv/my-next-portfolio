@@ -10,10 +10,6 @@ I am currently learning the way to be a DevOps, the reason why I am interested i
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Description 💬
-
-✔ Hice esta pokedex para poder practicar y entender bien como utilizar con sus mejores practicas Next.js + TypeScript y para los estilos utilice NextUI, en aprendí el uso de GetStaticProps, getStaticPaths y el Incremental Static Regeneration y el Generation (ISR) (ISG)
-
 ## Autor 🤠
 
 · Email: jeanrdev@gmail.com <br>
