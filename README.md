@@ -1,4 +1,4 @@
-![Captura de pantalla 2023-08-16 152704](https://github.com/jeandv/my-next-portfolio/assets/90219458/9ce46345-0d5c-43cb-9be8-7d8d1387af0a)
+![40shots_so](https://github.com/jeandv/my-next-portfolio/assets/90219458/da737d03-e841-4ce0-a9e3-e5f187073412)
 
 ⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡
 
@@ -45,10 +45,6 @@ I am currently learning the way to be a DevOps, the reason why I am interested i
 ## Contact 📧
 
 ✔ If you want to contact me you can write me to jeanrdev@gmail.com or to my [LinkedIn](https://www.linkedin.com/in/jeandv/) for inquiries or you can also talk to me by [Whatsapp](https://walink.co/2369d5)
-
-# Preview 🔎
-
-![40shots_so](https://github.com/jeandv/my-next-portfolio/assets/90219458/da737d03-e841-4ce0-a9e3-e5f187073412)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
