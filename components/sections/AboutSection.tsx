@@ -74,10 +74,6 @@ const AboutSection = () => {
             For now I'm learning how to make applications with real time communication such as a chat using Socket.IO, I'm also starting to learn the way to be Devops using Docker, Kubernetes, AWS or others.
           </p>
 
-          <p className='text-base text-gray-400'>
-            I am also interested in learning other things besides programming such as 3D design with Blender and video editing with Davinci Resolve (these last two I would take as a hobby).
-          </p>
-
         </AnimationContainer>
 
       </div>
