@@ -17,11 +17,15 @@ const AboutSection = () => {
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
           <p className='text-base text-gray-400'>
-            I am a passionate dev with +2 years of work experience in JavaScript/TypeScript and love learning new technologies since I discovered programming, I am currently learning the way to be a DevOps specialist.
+            I am a passionate and versatile developer with over two years of JavaScript experience and a constant interest in learning new technologies. I am currently learning the path to be a DevOps and master tools or practices such as "Linux, AWS, CI/CD, Docker, Kubernetes, Jenkins and Terraform" to perform cost optimized, reliable and secure full software delivery and maintenance.
           </p>
 
           <p className='text-base text-gray-400'>
-            I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect, GitFlow practices and agile methodologies.
+            I have a solid experience in web, mobile, and desktop Frontend development, using frameworks and technologies such as "React, Next.js, Angular, Ionic, and Electron". I also have skills in Backend development with "Node", Express and MongoDB. UX design with "Figma" always following the best practices of prototyping and coding, clean architecture, "SOLID" principles, pixel perfect, GitFlow, and agile methodologies.
+          </p>
+
+          <p className='text-base text-gray-400'>
+            In addition to my regular work, I also work on my own projects, creating useful software or products from design and development to deployment in AWS that contribute and help to solve problems or try to solve them or give inspiration to the user connecting the AI to an API and using the "Actions" of OpenAI or others, to give commands and interact with the API and, finally, provide a result to the user.
           </p>
 
         </AnimationContainer>
