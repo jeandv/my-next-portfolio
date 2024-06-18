@@ -145,7 +145,7 @@ const FavProjects = () => {
     <AnimationContainer customClassName='w-full flex flex-col justify-center text-center lg:items-start mb-16'>
 
       <h2 className='font-bold text-2xl lg:text-2xl tracking-tight mb-8 text-white text-center lg:text-start'>
-        Top projects
+        Projects
       </h2>
 
       <Carousel

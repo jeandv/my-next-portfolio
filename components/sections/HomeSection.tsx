@@ -2,7 +2,7 @@ import AboutMe from '../content/AboutMe';
 import ContactMe from '../content/ContactMe';
 import CurrentFavTech from '../content/CurrentFavTech';
 import CurrentLearning from '../content/CurrentLearning';
-import CurrentTimeLineExp from '../content/CurrentTimeLineExp';
+import CurrentTimeLineExp, { calculateDuration } from '../content/CurrentTimeLineExp';
 import FavProjects from '../content/FavProjects';
 import Hero from '../content/Hero';
 import AnimationContainer from '../utils/AnimationContainer';
@@ -29,10 +29,10 @@ const HomeSection = () => {
 
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
-          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Skills & Tools</h2>
+          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Skills</h2>
 
           <p className='text-base text-gray-400'>
-            A look at all the programming languages, libraries, and tools I've worked with, I started programming about 4 years ago. I have tried a few programming languages and technology stack, both Backend and Frontend.
+            A look at all the programming languages, libraries, and tools I've worked with, I started programming about +{calculateDuration('2020-01-01', false)} ago. I have tried a few programming languages and technology stack, both Backend and Frontend.
           </p>
 
           <p className='text-base text-gray-400'>
