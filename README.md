@@ -1,11 +1,52 @@
+![40shots_so](https://github.com/jeandv/my-next-portfolio/assets/90219458/da737d03-e841-4ce0-a9e3-e5f187073412)
 
-![banner-portfolio](https://user-images.githubusercontent.com/90219458/217354077-6c130f6b-02db-4bd4-85b1-29a734e7648e.jpg)
+⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡
 
-💻💼 This is: ⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡ ❗❗❗❗❗❗
+I'm a passionate developer with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can.
 
-Web: https://jeandv.vercel.app
+I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect and agile methodologies for example such as the SCRUM framework.
 
-soon more details of my portfolio here :)
+I am currently learning the way to be a DevOps, the reason why I am interested in this area is to know something different from programming and at the same time very useful in the present and in the future, in short I take it as an investment in myself in case I have a job that requires this skill.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Autor 🤠
+
+· Email: jeanrdev@gmail.com <br>
+· [CV](https://rxresu.me/jeandv/cv-jean-rondon) <br>
+· [Portfolio](https://jeandv.vercel.app) <br>
+· [LinkedIn](https://linkedin.com/in/jeandv) <br>
+· [GitHub](https://github.com/jeandv) <br>
+· [Whatsapp](https://walink.co/2369d5)
+
+## Website URL 👁‍🗨
+
+✔ Here! -> [jeandv.vercel.app](https://jeandv.vercel.app)
+
+## Used tech tools 🛠️
+
+· Tailwind CSS <br>
+· Framer Motion <br>
+· Mantine <br>
+· TypeScript <br>
+· Next.js <br>
+· Sanity <br>
+
+## Used dev tools 🛠️
+
+· ESlint <br>
+· Postcss <br>
+· Prettier <br>
+
+## Instalation 💻
+
+✔ Follow the steps in: "Getting Started" 👇
+
+## Contact 📧
+
+✔ If you want to contact me you can write me to jeanrdev@gmail.com or to my [LinkedIn](https://www.linkedin.com/in/jeandv/) for inquiries or you can also talk to me by [Whatsapp](https://walink.co/2369d5)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

@@ -17,7 +17,7 @@ export const skills = [
   },
   {
     title: 'Backend stack',
-    techs: ['noSQL', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Postman', 'Firebase', 'Sanity CMS']
+    techs: ['noSQL', 'Node.js', 'Express.js', 'MongoDB', 'Postman', 'Firebase', 'Sanity CMS']
   },
   {
     title: 'Softwares and tools',
@@ -29,6 +29,6 @@ export const skills = [
   },
   {
     title: 'Currently or interest in learning...',
-    techs: ['SQL', 'Nest', 'GraphQL', 'PostgreSQL', 'Socket.IO', 'Linux', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform', 'Jenkins', 'Blender']
+    techs: ['SQL', 'Nest', 'GraphQL', 'PostgreSQL', 'Socket.IO', 'Linux', 'AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform', 'Jenkins']
   }
 ];
