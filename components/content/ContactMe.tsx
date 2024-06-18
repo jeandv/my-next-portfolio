@@ -12,8 +12,8 @@ const ContactMe = () => {
 
         <div className='w-full flex justify-between items-center flex-col lg:flex-row gap-6 mb-10'>
 
-          <a href='mailto:jeanrdev@gmail.com' target='_blank' rel='noreferrer' className='w-full'>
-            <div className='rounded border border-gray-800 hover:border-gray-900 bg-[#080809] p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
+          {/* <a href='mailto:jeanrdev@gmail.com' target='_blank' rel='noreferrer' className='w-full'> */}
+            <div className='w-full rounded border border-gray-800 hover:border-gray-900 bg-[#080809] p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-white text-start'>
                 Email
               </h6>
@@ -21,18 +21,18 @@ const ContactMe = () => {
                 jeanrdev@gmail.com
               </p>
             </div>
-          </a>
+          {/* </a> */}
 
-          <a href='https://walink.co/2369d5' target='_blank' rel='noreferrer' className='w-full'>
-            <div className='rounded border border-gray-800 hover:border-gray-900 bg-[#080809] p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
+          {/* <a href='https://walink.co/2369d5' target='_blank' rel='noreferrer' className='w-full'> */}
+            <div className='w-full rounded border border-gray-800 hover:border-gray-900 bg-[#080809] p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-white text-start'>
                 Phone
               </h6>
               <p className='text-base mt-2 text-gray-400'>
-                +58 416 943 86 66
+                +58 4122901679
               </p>
             </div>
-          </a>
+          {/* </a> */}
 
         </div>
 

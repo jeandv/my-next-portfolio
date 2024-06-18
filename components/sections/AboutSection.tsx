@@ -1,4 +1,4 @@
-import CurrentTimeLineExp from '../content/CurrentTimeLineExp';
+import CurrentTimeLineExp, { calculateDuration } from '../content/CurrentTimeLineExp';
 import AnimationContainer from '../utils/AnimationContainer';
 import SectionContainer from '../utils/SectionContainer';
 import ShowSkills from '../utils/ShowSkills';
@@ -17,7 +17,7 @@ const AboutSection = () => {
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
           <p className='text-base text-gray-400'>
-            I am a passionate and versatile developer with over two years of JavaScript experience and a constant interest in learning new technologies. I am currently learning the path to be a DevOps and master tools or practices such as "Linux, AWS, CI/CD, Docker, Kubernetes, Jenkins and Terraform" to perform cost optimized, reliable and secure full software delivery and maintenance.
+            I am a passionate and versatile developer with over +{calculateDuration('2021-01-01', false)} of JavaScript experience and a constant interest in learning new technologies. I am currently learning the path to be a DevOps and master tools or practices such as "Linux, AWS, CI/CD, Docker, Kubernetes, Jenkins and Terraform" to perform cost optimized, reliable and secure full software delivery and maintenance.
           </p>
 
           <p className='text-base text-gray-400'>
@@ -34,10 +34,10 @@ const AboutSection = () => {
 
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
 
-          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Skills & Tools</h2>
+          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Skills</h2>
 
           <p className='text-base text-gray-400'>
-            A look at all the programming languages, libraries, and tools I've worked with, I started programming about 4 years ago. I have tried a few programming languages and technology stack, both Backend and Frontend.
+            A look at all the programming languages, libraries, and tools I've worked with, I started programming about +{calculateDuration('2020-01-01', false)} ago. I have tried a few programming languages and technology stack, both Backend and Frontend.
           </p>
 
           <p className='text-base text-gray-400'>
@@ -66,6 +66,24 @@ const AboutSection = () => {
 
         <ProcessWork />
 
+        {/* <AnimationContainer customClassName='w-full flex flex-col gap-5'>
+
+          <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Interests & Goals</h2>
+
+          <p className='text-base text-gray-400'>
+            I am interested in learning Backend with other language like Java, Go or with Python. I also want to know how to make a video game with Unity or other and I am very interested in being a content creator whether programming or something else.
+          </p>
+
+          <p className='text-base text-gray-400'>
+            For now I'm learning how to make applications with real time communication such as a chat using Socket.IO, I'm also starting to learn the way to be Devops using Docker, Kubernetes, AWS or others.
+          </p>
+
+          <p className='text-base text-gray-400'>
+            I am also interested in learning other things besides programming such as 3D design with Blender and video editing with Davinci Resolve (these last two I would take as a hobby).
+          </p>
+
+        </AnimationContainer> */}
+        
       </div>
 
     </SectionContainer>
