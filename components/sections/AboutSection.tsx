@@ -83,7 +83,7 @@ const AboutSection = () => {
           </p>
 
         </AnimationContainer> */}
-
+        
       </div>
 
     </SectionContainer>
