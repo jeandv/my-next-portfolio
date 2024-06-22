@@ -33,7 +33,7 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent>
 
-        <TimelineEvent.Title>Freelance | Feb. 2022 - {calculateDuration('2022-02-01', true)}</TimelineEvent.Title>
+        <TimelineEvent.Title>Freelance | Feb. 2022 - Mar. 2023</TimelineEvent.Title>
 
         <TimelineEvent.Description>
           Design and development of web pages applying agile methodologies, clean architecture, SOLID principles and pixel perfect in all projects, I have developed almost all types of projects from Landing pages, stores, blogs and dashboards.
@@ -43,7 +43,7 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent last>
 
-        <TimelineEvent.Title>Studio Iluxion | May. 2022 - {calculateDuration('2022-05-01', true)}</TimelineEvent.Title>
+        <TimelineEvent.Title>Studio Iluxion | May. 2022 - Jul. 2022</TimelineEvent.Title>
 
         <TimelineEvent.Description>
           Web designer and responsive web designer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery implementing SCRUM, pixel perfect and clean code.
