@@ -17,7 +17,6 @@ I am currently learning the way to be a DevOps, the reason why I am interested i
 · [Portfolio](https://jeandv.vercel.app) <br>
 · [LinkedIn](https://linkedin.com/in/jeandv) <br>
 · [GitHub](https://github.com/jeandv) <br>
-· [Whatsapp](https://walink.co/2369d5)
 
 ## Website URL 👁‍🗨
 
