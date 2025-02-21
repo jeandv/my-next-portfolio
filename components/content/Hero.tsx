@@ -24,7 +24,7 @@ const Hero = () => {
           alt='Jean Rondón'
           height={176}
           width={176}
-          src='./jeandv.jpg'
+          src='/jeandv.jpg'
           sizes='30vw'
           priority
           className='rounded-[8px] filter grayscale hover:grayscale-0 transition ease'
