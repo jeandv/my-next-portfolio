@@ -1,12 +1,12 @@
-![40shots_so](https://github.com/jeandv/my-next-portfolio/assets/90219458/da737d03-e841-4ce0-a9e3-e5f187073412)
 
-⚡My new portfolio with Blog using Next.js 13 + TypeScript, Tailwind CSS and Sanity CMS⚡
+<img width="848" alt="Captura de pantalla 2025-02-21 a la(s) 4 09 50 p  m" src="https://github.com/user-attachments/assets/7fb39984-22d2-4016-8e41-7382c7c9c7c7" />
 
-I'm a passionate developer with +2 year of work experience in JavaScript/TypeScript, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16 years old. I love what I do and I help others with what I can.
+Developer with over +3 years of JavaScript experience and a constant interest in learning new technologies. I have solid experience in Frontend development for web, mobile, and desktop applications, using technologies and frameworks like JavaScript, TypeScript, React, Next.js, Angular, Electron.js, and Ionic. Additionally, I have skills in Backend development with Node.js, Express, and MongoDB (NoSQL). I consistently follow best practices in prototyping, coding, clean architecture, SOLID principles, pixel-perfect design, GitFlow, and agile methodologies. I am currently on the path to becoming a DevOps professional, working with tools and technologies such as AWS, CI/CD, Docker, Kubernetes, Jenkins, and Terraform.
 
-I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron, to add I also have experience working in Backend with Node and in the UX design part with Figma always implementing good practices in prototyping and coding, clean architecture, SOLID principles, pixel perfect and agile methodologies for example such as the SCRUM framework.
-
-I am currently learning the way to be a DevOps, the reason why I am interested in this area is to know something different from programming and at the same time very useful in the present and in the future, in short I take it as an investment in myself in case I have a job that requires this skill.
+Email: jeanrdev@gmail.com
+Portfolio: jeanrondon.vercel.app
+CV: rxresu.me/jeandv/cv-jean-rondon
+GitHub: github.com/jeandv
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
