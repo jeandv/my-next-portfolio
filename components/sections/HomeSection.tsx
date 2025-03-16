@@ -1,7 +1,6 @@
 import AboutMe from '../content/AboutMe';
 import ContactMe from '../content/ContactMe';
 import CurrentFavTech from '../content/CurrentFavTech';
-import CurrentLearning from '../content/CurrentLearning';
 import CurrentTimeLineExp, { calculateDuration } from '../content/CurrentTimeLineExp';
 import FavProjects from '../content/FavProjects';
 import Hero from '../content/Hero';
@@ -17,7 +16,6 @@ const HomeSection = () => {
       <Hero />
 
       <CurrentFavTech />
-      <CurrentLearning />
 
       <div className='w-full flex flex-col items-start'>
 
