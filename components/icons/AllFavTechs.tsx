@@ -19,7 +19,7 @@ const AllFavTechs = () => {
         animate={animation.show}
         transition={{ delay: 0.6 }}
       >
-        Current favorite stack
+        Current stack
       </motion.p>
 
       <motion.ul
