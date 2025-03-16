@@ -23,16 +23,16 @@ const ContactMe = () => {
             </div>
           {/* </a> */}
 
-          {/* <a href='https://walink.co/2369d5' target='_blank' rel='noreferrer' className='w-full'> */}
+          <a href='https://wa.link/ke5dhr' target='_blank' rel='noreferrer' className='w-full'>
             <div className='w-full rounded border border-gray-800 hover:border-gray-900 bg-[#080809] p-4 shadow-sm sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-white text-start'>
                 Phone
               </h6>
               <p className='text-base mt-2 text-gray-400'>
-                +58 4122901679
+                +584122901679
               </p>
             </div>
-          {/* </a> */}
+          </a>
 
         </div>
 
