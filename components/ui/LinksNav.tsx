@@ -22,12 +22,12 @@ export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
     y: -3,
     w: '75px',
   },
-  // '/blog': {
-  //   name: 'blog',
-  //   x: 209,
-  //   y: -3,
-  //   w: '50px',
-  // }
+   'https://rxresu.me/jeandv/cv-jean-rondon': {
+     name: 'cv',
+     x: 209,
+     y: -3,
+     w: '50px',
+   }
 };
 
 const LinksNav = () => {
