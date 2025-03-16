@@ -26,7 +26,13 @@ const CurrentTimeLineExp = () => {
         <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> | Mar. 2023 - {calculateDuration('2023-03-01', true)}</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          Frontend development and maintenance of projects implementing agile methodologies (Kanban in Jira) and best practices such as SOLID principles, pixel perfect, clean architecture, clean code using Jira, SCRUM practices, Git, GitFlow practices, Bitbucket, HTML, CSS, Pug, SASS, Tailwind, JavaScript, TypeScript, React, Next.js, Redux, Zustand, Jest and using microfrontends and Storybook to facilitate the use of reusable components.
+          Frontend development and maintenance of projects implementing agile methodologies (SCRUM) and best practices such as SOLID principles, pixel perfect, clean architecture and using microfrontends practices with the following technologies and tools: Git, Bitbucket, HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, React, Next.js, Redux, Jest, Storybook, Microfrontends and GitFlow.
+
+I have actively participated in the development and maintenance of digital projects for a leading chain in the film entertainment industry with a presence throughout Latin America and Spain. In these projects, innovative solutions were used, including one based on microfrontends alongside Storybook, which enabled the creation of isolated, highly reusable, and easy-to-maintain components.
+
+The projects were developed using Next.js and TypeScript, technologies that significantly improved efficiency, scalability, and code robustness. Additionally, agile methodologies such as SCRUM were applied to ensure continuous and efficient delivery, along with SOLID design principles to ensure clean and maintainable code.
+
+Efforts were also focused on achieving pixel-perfect designs, implementing clean architectures, and following GitFlow practices for optimal version control. All of this contributed to delivering high-quality digital experiences for millions of users on the platform.
         </TimelineEvent.Description>
 
       </TimelineEvent>
