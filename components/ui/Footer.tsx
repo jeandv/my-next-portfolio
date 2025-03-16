@@ -13,16 +13,6 @@ const Footer = () => {
         <div className='flex flex-col space-y-4'>
 
           <Link
-            href='/'
-            className='flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease'
-          >
-            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='w-5 h-5'>
-              <path fillRule='evenodd' d='M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z' clipRule='evenodd' />
-            </svg>
-            Home
-          </Link>
-
-          <Link
             href='/about'
             className='flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease'
           >
@@ -66,30 +56,20 @@ const Footer = () => {
         <div className='flex flex-col space-y-4'>
 
           <Link
-            href='/blog'
-            className='flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease'
-          >
-            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='w-5 h-5'>
-              <path d='M10.75 16.82A7.462 7.462 0 0115 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0018 15.06v-11a.75.75 0 00-.546-.721A9.006 9.006 0 0015 3a8.963 8.963 0 00-4.25 1.065V16.82zM9.25 4.065A8.963 8.963 0 005 3c-.85 0-1.673.118-2.454.339A.75.75 0 002 4.06v11a.75.75 0 00.954.721A7.506 7.506 0 015 15.5c1.579 0 3.042.487 4.25 1.32V4.065z' />
-            </svg>
-            Blog
-          </Link>
-
-          <Link
-            href='/contact'
+            href='https://wa.link/ke5dhr'
             className='flex items-center gap-2 text-gray-500 hover:text-gray-600 transition ease'
           >
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='w-5 h-5'>
               <path fillRule='evenodd' d='M1 11.27c0-.246.033-.492.099-.73l1.523-5.521A2.75 2.75 0 015.273 3h9.454a2.75 2.75 0 012.651 2.019l1.523 5.52c.066.239.099.485.099.732V15a2 2 0 01-2 2H3a2 2 0 01-2-2v-3.73zm3.068-5.852A1.25 1.25 0 015.273 4.5h9.454a1.25 1.25 0 011.205.918l1.523 5.52c.006.02.01.041.015.062H14a1 1 0 00-.86.49l-.606 1.02a1 1 0 01-.86.49H8.236a1 1 0 01-.894-.553l-.448-.894A1 1 0 006 11H2.53l.015-.062 1.523-5.52z' clipRule='evenodd' />
             </svg>
-            Contact
+            WhatsApp
           </Link>
 
           <ExternalLink href='https://rxresu.me/jeandv/cv-jean-rondon'>
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' className='w-5 h-5'>
               <path fillRule='evenodd' d='M4.5 2A1.5 1.5 0 003 3.5v13A1.5 1.5 0 004.5 18h11a1.5 1.5 0 001.5-1.5V7.621a1.5 1.5 0 00-.44-1.06l-4.12-4.122A1.5 1.5 0 0011.378 2H4.5zm2.25 8.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5zm0 3a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5z' clipRule='evenodd' />
             </svg>
-            My CV
+            CV
           </ExternalLink>
 
         </div>
