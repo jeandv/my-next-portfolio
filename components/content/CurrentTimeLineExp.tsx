@@ -27,12 +27,18 @@ const CurrentTimeLineExp = () => {
 
         <TimelineEvent.Description>
           Frontend development and maintenance of projects implementing agile methodologies (SCRUM) and best practices such as SOLID principles, pixel perfect, clean architecture and using microfrontends practices with the following technologies and tools: Git, Bitbucket, HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, React, Next.js, Redux, Jest, Storybook, Microfrontends and GitFlow.
+        </TimelineEvent.Description>
 
-I have actively participated in the development and maintenance of digital projects for a leading chain in the film entertainment industry with a presence throughout Latin America and Spain. In these projects, innovative solutions were used, including one based on microfrontends alongside Storybook, which enabled the creation of isolated, highly reusable, and easy-to-maintain components.
+        <TimelineEvent.Description>
+          I have actively participated in the development and maintenance of digital projects for a leading chain in the film entertainment industry with a presence throughout Latin America and Spain. In these projects, innovative solutions were used, including one based on microfrontends alongside Storybook, which enabled the creation of isolated, highly reusable, and easy-to-maintain components.
+        </TimelineEvent.Description>
 
-The projects were developed using Next.js and TypeScript, technologies that significantly improved efficiency, scalability, and code robustness. Additionally, agile methodologies such as SCRUM were applied to ensure continuous and efficient delivery, along with SOLID design principles to ensure clean and maintainable code.
+        <TimelineEvent.Description>
+          The projects were developed using Next.js and TypeScript, technologies that significantly improved efficiency, scalability, and code robustness. Additionally, agile methodologies such as SCRUM were applied to ensure continuous and efficient delivery, along with SOLID design principles to ensure clean and maintainable code.
+        </TimelineEvent.Description>
 
-Efforts were also focused on achieving pixel-perfect designs, implementing clean architectures, and following GitFlow practices for optimal version control. All of this contributed to delivering high-quality digital experiences for millions of users on the platform.
+        <TimelineEvent.Description>
+          Efforts were also focused on achieving pixel-perfect designs, implementing clean architectures, and following GitFlow practices for optimal version control. All of this contributed to delivering high-quality digital experiences for millions of users on the platform.
         </TimelineEvent.Description>
 
       </TimelineEvent>
