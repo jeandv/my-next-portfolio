@@ -46,6 +46,7 @@ const ContactMe = () => {
                 type='text'
                 id='name'
                 name='name'
+                minlength='3'
                 required
               />
             </div>
@@ -59,6 +60,7 @@ const ContactMe = () => {
                   type='email'
                   id='email'
                   name='email'
+                  minlength='10'
                   required
                 />
               </div>
@@ -71,6 +73,7 @@ const ContactMe = () => {
                   type='tel'
                   id='phone'
                   name='phone'
+                  minlength='6'
                   required
                 />
               </div>
@@ -83,6 +86,7 @@ const ContactMe = () => {
                 placeholder='Message'
                 id='message'
                 name='message'
+                minlength='20'
                 required
               ></textarea>
             </div>
