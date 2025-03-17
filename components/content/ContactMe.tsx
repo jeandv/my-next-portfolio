@@ -13,7 +13,7 @@ const ContactMe = () => {
         <div className='w-full flex justify-between items-center flex-col lg:flex-row gap-6 mb-10'>
 
           {/* <a href='mailto:jeanrdev@gmail.com' target='_blank' rel='noreferrer' className='w-full'> */}
-            <div className='w-full rounded border border-gray-800 hover:border-gray-900 bg-[#080809] p-4 shadow-sm sm:p-6 transition ease'>
+            <div className='w-full rounded border border-gray-800 bg-[#080809] p-4 shadow-sm sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-white text-start'>
                 Email
               </h6>
@@ -24,7 +24,7 @@ const ContactMe = () => {
           {/* </a> */}
 
           <a href='https://wa.link/ke5dhr' target='_blank' rel='noreferrer' className='w-full'>
-            <div className='w-full rounded border border-gray-800 hover:border-gray-900 bg-[#080809] p-4 shadow-sm sm:p-6 transition ease'>
+            <div className='w-full rounded border border-gray-800 bg-[#080809] p-4 shadow-sm sm:p-6 transition ease'>
               <h6 className='font-bold text-1xl tracking-tight text-white text-start'>
                 Phone
               </h6>
