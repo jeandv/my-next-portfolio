@@ -9,19 +9,19 @@ const ContactMe = () => {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleNameChange = (e) => {
+  const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
 
-  const handleEmailChange = (e) => {
+  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
 
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
     setPhone(e.target.value);
   };
 
-  const handleMessageChange = (e) => {
+  const handleMessageChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     setMessage(e.target.value);
   };
 
