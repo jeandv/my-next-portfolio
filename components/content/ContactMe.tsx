@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import AnimationContainer from '../utils/AnimationContainer';
 
 const ContactMe = () => {
