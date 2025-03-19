@@ -87,7 +87,6 @@ const ContactMe = () => {
                 type="text"
                 id="name"
                 name="name"
-                minLength="3"
                 required
                 value={name}
                 onChange={handleNameChange}
@@ -105,7 +104,6 @@ const ContactMe = () => {
                   type="email"
                   id="email"
                   name="email"
-                  minLength="10"
                   required
                   value={email}
                   onChange={handleEmailChange}
@@ -122,7 +120,6 @@ const ContactMe = () => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  minLength="6"
                   required
                   value={phone}
                   onChange={handlePhoneChange}
@@ -139,7 +136,6 @@ const ContactMe = () => {
                 placeholder="Message"
                 id="message"
                 name="message"
-                minLength="20"
                 required
                 value={message}
                 onChange={handleMessageChange}
