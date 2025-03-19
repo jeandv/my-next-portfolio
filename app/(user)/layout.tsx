@@ -35,7 +35,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
       <Head />
 
-      <body className='bg-[#080809] transition ease'>
+      <body className='bg-[#080809] transition ease bg-grad'>
 
         <Header />
 
