@@ -45,6 +45,32 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent>
 
+        <TimelineEvent.Title><a href='https://www.zima-blue.com' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Zima-Blue/a> | May. 2025 - {calculateDuration('2025-05-01', true)}</TimelineEvent.Title>
+
+        <TimelineEvent.Description>
+         Successfully integrated Sanity with Next.js, ensuring a seamless connection between the CMS and frontend, thereby enhancing client content management and optimizing workflow efficiency.
+        </TimelineEvent.Description>
+
+        <TimelineEvent.Description>
+         Defined and structured documents and schemas within Sanity, establishing a clear, organized, and user-friendly content management system for clients.
+        </TimelineEvent.Description>
+
+        <TimelineEvent.Description>
+         Engineered dynamic SEO functionalities in Sanity, empowering clients to independently modify meta tags, titles, and descriptions without requiring developer intervention.
+        </TimelineEvent.Description>
+
+        <TimelineEvent.Description>
+          Implemented Portable Text for content documents, granting clients the flexibility to customize rich text elements while maintaining the integrity of the site structure.
+        </TimelineEvent.Description>
+
+        <TimelineEvent.Description>
+          Optimized GROQ queries to significantly improve data loading efficiency, ensuring rapid server response times and a smoother user experience.
+        </TimelineEvent.Description>
+
+      </TimelineEvent>
+
+      <TimelineEvent>
+
         <TimelineEvent.Title>Freelance | Feb. 2022 - Mar. 2023</TimelineEvent.Title>
 
         <TimelineEvent.Description>
