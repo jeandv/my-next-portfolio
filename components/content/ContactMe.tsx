@@ -56,19 +56,19 @@ const ContactMe = () => {
           </div>
           {/* </a> */}
 
-          <a
+         {/* <a
             href="https://wa.link/ke5dhr"
             target="_blank"
             rel="noreferrer"
             className="w-full"
-          >
+          >*/}
             <div className="w-full rounded border border-gray-800 bg-[#080809] p-4 shadow-sm sm:p-6 transition ease">
               <h6 className="font-bold text-1xl tracking-tight text-white text-start">
                 Phone
               </h6>
               <p className="text-base mt-2 text-gray-400">+584122901679</p>
             </div>
-          </a>
+          {/*  </a>*/}
         </div>
 
         <div className="w-full flex justify-center items-center flex-col">
