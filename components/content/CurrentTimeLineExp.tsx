@@ -23,18 +23,14 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent active>
 
-        <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> | Mar. 2023 - {calculateDuration('2023-03-01', true)}</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> · México | Mar. 2023 - {calculateDuration('2023-03-01', true)}</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          Frontend development and maintenance of projects implementing agile methodologies (SCRUM) and best practices such as SOLID principles, pixel perfect, clean architecture and using microfrontends practices with the following technologies and tools: Git, Bitbucket, HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, React, Next.js, Redux, Jest, Storybook, Microfrontends and GitFlow.
+          Frontend development and maintenance of projects implementing agile methodologies and best practices such as SOLID principles, pixel perfect, clean architecture and using microfrontends practices with the following technologies and tools: Git, Bitbucket, HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, React, Next.js, Redux, Jest, Storybook, Microfrontends and GitFlow.
         </TimelineEvent.Description>
 
         <TimelineEvent.Description>
           I have actively participated in the development and maintenance of digital projects for a leading chain in the film entertainment industry with a presence throughout Latin America and Spain. In these projects, innovative solutions were used, including one based on microfrontends alongside Storybook, which enabled the creation of isolated, highly reusable, and easy-to-maintain components.
-        </TimelineEvent.Description>
-
-        <TimelineEvent.Description>
-          The projects were developed using Next.js and TypeScript, technologies that significantly improved efficiency, scalability, and code robustness. Additionally, agile methodologies such as SCRUM were applied to ensure continuous and efficient delivery, along with SOLID design principles to ensure clean and maintainable code.
         </TimelineEvent.Description>
 
         <TimelineEvent.Description>
@@ -45,7 +41,7 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent>
 
-        <TimelineEvent.Title><a href='https://www.zima-blue.com' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Zima-Blue/a> | May. 2025 - {calculateDuration('2025-05-01', true)}</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.zima-blue.com' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Zima-Blue/a> · Portugal | May. 2025 - {calculateDuration('2025-05-01', true)}</TimelineEvent.Title>
 
         <TimelineEvent.Description>
          Successfully integrated Sanity with Next.js, ensuring a seamless connection between the CMS and frontend, thereby enhancing client content management and optimizing workflow efficiency.
@@ -71,17 +67,17 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent>
 
-        <TimelineEvent.Title>Freelance | Feb. 2022 - Mar. 2023</TimelineEvent.Title>
+        <TimelineEvent.Title>Freelance · Venezuela | Feb. 2022 - Mar. 2023</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          Design and development of web pages applying agile methodologies, clean architecture, SOLID principles and pixel perfect in all projects, I have developed almost all types of projects from Landing pages, stores, blogs and dashboards.
+          Design and complete development of web pages/applications applying clean architecture and pixel perfect in the projects I have done, I have developed almost all types of projects from Landing pages, Manageable stores with registration and login, Manageable blogs, dashboards, web pages with a variety of sections.
         </TimelineEvent.Description>
 
       </TimelineEvent>
 
       <TimelineEvent last>
 
-        <TimelineEvent.Title>Studio Iluxion | May. 2022 - Jul. 2022</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://iluxion.pe' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Studio Iluxion</a> · Perú | May. 2022 - Jul. 2022</TimelineEvent.Title>
 
         <TimelineEvent.Description>
           Web designer and responsive web designer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery implementing SCRUM, pixel perfect and clean code.
