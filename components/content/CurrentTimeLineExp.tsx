@@ -41,7 +41,7 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent>
 
-        <TimelineEvent.Title><a href='https://www.zima-blue.com' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Zima-Blue/a> · Portugal | May. 2025 - {calculateDuration('2025-05-01', true)}</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.zima-blue.com' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Zima-Blue</a> · Portugal | May. 2025 - {calculateDuration('2025-05-01', true)}</TimelineEvent.Title>
 
         <TimelineEvent.Description>
          Successfully integrated Sanity with Next.js, ensuring a seamless connection between the CMS and frontend, thereby enhancing client content management and optimizing workflow efficiency.
