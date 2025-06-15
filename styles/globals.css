@@ -9,6 +9,9 @@ html,body {
 body, * {
   box-sizing: content-box;
   cursor: none;
+}
+
+body {
   background: #1a1a1a;
 }
 
