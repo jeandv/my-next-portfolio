@@ -9,6 +9,7 @@ html,body {
 body, * {
   box-sizing: content-box;
   cursor: none;
+  background: #1a1a1a;
 }
 
 ::selection {
