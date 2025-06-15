@@ -28,7 +28,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html
       lang='en'
       className={clsx(
-        'text-black bg-white dark:text-white dark:bg-[#111010]',
+        'text-black bg-white dark:text-white dark:bg-[#1a1a1a]',
         graphik.variable
       )}
     >
