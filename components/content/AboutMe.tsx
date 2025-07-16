@@ -10,7 +10,7 @@ const AboutMe = () => {
       </h2>
 
       <p className='text-base text-gray-400'>
-       Frontend Developer with +{calculateDuration('2022-01-01', false)} years of JavaScript experience and a constant interest in learning new technologies. I have solid experience in Frontend development, using technologies and frameworks like JavaScript, TypeScript, React, Next.js. Additionally, I have skills in Backend development with Node.js, Express, and MongoDB (NoSQL). I consistently follow best practices in prototyping, clean architecture, SOLID principles, pixel-perfect, GitFlow, and agile methodologies. I am currently exploring to be DevOps, by doing projects with tools and technologies such as (AWS, CI/CD, Docker, Kubernetes, Jenkins, Terraform)
+I'm a Frontend Developer with over {calculateDuration('2022-01-01', false)}+ years of experience specializing in JavaScript. I'm passionate about building robust web, mobile, and desktop applications using modern technologies. I adhere to best practices in every stage of development, including clean architecture, SOLID principles, pixel-perfect design, GitFlow, and agile methodologies.
       </p>
 
     </AnimationContainer>
