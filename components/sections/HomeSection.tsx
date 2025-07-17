@@ -15,8 +15,6 @@ const HomeSection = () => {
 
       <Hero />
 
-      <CurrentFavTech />
-
       <div className='w-full flex flex-col items-start'>
 
         <AboutMe />
@@ -30,15 +28,10 @@ const HomeSection = () => {
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Skills</h2>
 
           <p className='text-base text-gray-400'>
-            A look at all the programming languages, libraries, and tools I've worked with, I started programming about +{calculateDuration('2020-01-01', false)} ago. I have tried a few programming languages and technology stack, both Backend and Frontend.
+            A look at all the programming languages, libraries, and tools I've worked with, I started programming about +{calculateDuration('2020-01-01', false)} ago. See more in my <a href="https://github.com/jeandv" target="_blank">Github</a>
           </p>
-
-          <p className='text-base text-gray-400'>
-            Event though the scope of web development is wide, I was very interested and focused on Frontend development.
-          </p>
-
+          
           <div className='flex flex-col items-start gap-3 mt-3'>
-
             {
               skills.map(({ title, techs }) => (
                 <div key={title}>
@@ -52,7 +45,6 @@ const HomeSection = () => {
                 </div>
               ))
             }
-
           </div>
 
         </AnimationContainer>

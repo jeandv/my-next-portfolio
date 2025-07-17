@@ -33,7 +33,7 @@ const AboutSection = () => {
           </p>
 
           <p className='text-base text-gray-400'>
-            Event though the scope of web development is wide, I was very interested and focused on Frontend development.
+            Event though the scope of web development is wide, I was very interested and focused on Frontend development. See more in my <a href="https://github.com/jeandv" target="_blank">Github</a>
           </p>
 
           <div className='flex flex-col items-start gap-3 mt-3'>
