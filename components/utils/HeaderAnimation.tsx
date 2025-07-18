@@ -18,7 +18,7 @@ const HeaderAnimation = ({ children }: { children: React.ReactNode; }) => {
     <motion.header
       className={classNames(
         scrollPosition > 0 ? 'backdrop-blur-md bg-black/30' : '',
-        'w-[70%] sticky top-0 flex flex-col justify-center items-center z-10 transition ease-in-out mx-auto rounded-b-[30px]'
+        'w-full lg:w-1/2 sticky top-0 flex flex-col justify-center items-center z-10 transition ease-in-out mx-auto rounded-b-[30px]'
       )}
       initial={animation.hide}
       animate={animation.show}
