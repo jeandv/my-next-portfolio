@@ -9,7 +9,7 @@ const Hero = () => {
           Jean Rondón
         </h1>
         <h2 className='flex items-center text-1xl lg:text-1xl text-gray-200 mb-8 mx-auto lg:mx-0'>
-          <strong className='font-semibold'>Frontend </strong> Developer
+          <strong className='font-semibold mr-1'>Frontend</strong>Developer
         </h2>
       </AnimationContainer>
     </div>
