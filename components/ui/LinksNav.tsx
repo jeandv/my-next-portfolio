@@ -21,25 +21,16 @@ export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
     x: 130,
     y: -3,
     w: '75px',
-  },
-   'https://rxresu.me/jeandv/cv-jean-rondon': {
-     name: 'cv',
-     x: 209,
-     y: -3,
-     w: '50px',
-   }
+  }
 };
 
 const LinksNav = () => {
-
   let pathname = usePathname() as string;
   return (
     <>
       {
         Object.entries(navItemsSelected).map(([path, { name }]) => {
-
           const isActive = path === pathname;
-
           return (
             <Link
               key={path}
@@ -51,9 +42,7 @@ const LinksNav = () => {
                   'font-bold': isActive,
                 }
               )}>
-
               {name}
-
             </Link>
           )
         })
