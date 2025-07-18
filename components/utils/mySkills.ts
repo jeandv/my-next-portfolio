@@ -1,7 +1,7 @@
 export const skills = [
   {
     title: 'Frontend stack',
-    techs: ['JavaScript', 'TypeScript', 'jQuery', 'React.js', 'Next.js', 'Angular', 'Ionic', 'Electron.js', 'Redux', 'TanStack Query', 'Zustand', 'Jest', 'Storybook', 'Pug', 'Sass', 'Tailwind', 'Framer Motion']
+    techs: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'jQuery', 'React.js', 'Next.js', 'Angular', 'Ionic', 'Electron.js', 'Redux', 'TanStack Query', 'Zustand', 'Jest', 'Storybook', 'Pug', 'Sass', 'Tailwind', 'Framer Motion']
   },
   {
     title: 'Backend stack',
