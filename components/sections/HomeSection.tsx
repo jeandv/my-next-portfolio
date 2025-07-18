@@ -26,13 +26,10 @@ const HomeSection = () => {
             {
               skills.map(({ title, techs }) => (
                 <div key={title}>
-
                   <h3 className='font-bold text-1xl md:text-1xl tracking-tight mb-5 text-white text-start'>{title}</h3>
-
                   <AnimationContainer customClassName='flex items-center flex-wrap gap-3 mb-5'>
                     <ShowSkills skills={techs} />
                   </AnimationContainer>
-
                 </div>
               ))
             }
