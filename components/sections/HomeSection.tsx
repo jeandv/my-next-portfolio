@@ -12,25 +12,16 @@ import ShowSkills from '../utils/ShowSkills';
 const HomeSection = () => {
   return (
     <SectionContainer>
-
       <Hero />
-
       <div className='w-full flex flex-col items-start'>
-
         <AboutMe />
-
         <CurrentTimeLineExp />
-
         <FavProjects />
-
         <AnimationContainer customClassName='w-full flex flex-col gap-5 mb-8'>
-
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Skills</h2>
-
           <p className='text-base text-gray-400'>
-            A look at all the programming languages, libraries, and tools I've worked with, I started programming about +{calculateDuration('2020-01-01', false)} ago. See more in my <a href="https://github.com/jeandv" target="_blank">Github</a>
-          </p>
-          
+            A look at all the programming languages, libraries, and tools I've worked with, I started programming about +{calculateDuration('2020-01-01', false)} ago. See more in my <a href="https://github.com/jeandv" target="_blank" className="hover:text-white"><u>github.com/jeandv</u></a>
+          </p> 
           <div className='flex flex-col items-start gap-3 mt-3'>
             {
               skills.map(({ title, techs }) => (
@@ -46,13 +37,9 @@ const HomeSection = () => {
               ))
             }
           </div>
-
         </AnimationContainer>
-
         <ContactMe />
-
       </div>
-
     </SectionContainer>
   )
 }
