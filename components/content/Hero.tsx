@@ -3,8 +3,8 @@ import AnimationContainer from '../utils/AnimationContainer';
 
 const Hero = () => {
   return (
-    <div className='w-full flex justify-between flex-col-reverse lg:flex-row items-center mb-[40px]'>
-      <AnimationContainer customClassName='flex flex-col items-center lg:item-start justify-between p-0 lg:pr-8'>
+    <div className='w-full flex justify-center flex-col-reverse lg:flex-row items-center mb-[40px]'>
+      <AnimationContainer customClassName='flex flex-col items-center justify-between p-0 lg:pr-8'>
         <h1 className='font-bold text-3xl lg:text-5xl text-center lg:text-start tracking-tight mb-3 text-white mx-auto lg:mx-0'>
           Jean Rondón
         </h1>
