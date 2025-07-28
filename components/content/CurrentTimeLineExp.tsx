@@ -26,7 +26,7 @@ const CurrentTimeLineExp = () => {
         <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> · México | Mar. 2023 - {calculateDuration('2023-03-01', true)}</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-Frontend development applying best practices like SOLID principles, pixel-perfect design,clean architecture and agile methodologies. Implemented microfrontends for reusable and easily maintainable components.
+Frontend development applying best practices like SOLID principles, pixel-perfect design, clean architecture and agile methodologies. Implemented microfrontends for reusable and easily maintainable components.
         </TimelineEvent.Description>
 
         <TimelineEvent.Description>
