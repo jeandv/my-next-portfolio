@@ -8,7 +8,7 @@ const AboutMe = () => {
         About me
       </h2>
       <p className='text-base text-gray-400'>
-        I'm a Frontend Developer with over {calculateDuration('2022-01-01', false)}+ years of experience specializing in JavaScript. I'm passionate about building robust web, mobile, and desktop applications using modern technologies. I adhere to best practices in every stage of development, including clean architecture, SOLID principles, pixel-perfect design, GitFlow, and agile methodologies.
+        I'm a Frontend Developer with over {calculateDuration('2022-01-01', false)} of experience specializing in JavaScript. I'm passionate about building robust web, mobile, and desktop applications using modern technologies. I adhere to best practices in every stage of development, including clean architecture, SOLID principles, pixel-perfect design, GitFlow, and agile methodologies.
       </p>
       <p className='text-base text-gray-400 flex gap-4 justify-center items-start mt-[24px]'>
         <a className='text-gray-400 hover:text-white inline-flex items-center gap-1' href="https://rxresu.me/jeandv/cv-jean-rondon" target="_blank">
