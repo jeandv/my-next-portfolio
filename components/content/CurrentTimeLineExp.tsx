@@ -11,7 +11,7 @@ export function calculateDuration(startDate: string, showMonths: boolean): strin
   if (years === 1 && months === 0) {
     return "1 year";
   } else if (!showMonths) {
-    return `${years} years`;
+    return `${years}+ years`;
   } else {
     return `${years} yr ${months} mos`;
   }
