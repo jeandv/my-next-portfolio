@@ -142,20 +142,40 @@ const allProjectsInfo = [
     repo: 'https://github.com/jeandv/shopphp-paypal',
     link: 'https://github.com/jeandv/shopphp-paypal'
   },
+  {
+    id: '19',
+    title: 'Freiguel',
+    des: 'Website for a construction company in Portugal.',
+    category: 'javascript - typescript - nextjs - sanity cms',
+    repo: 'https://freiguel-web.vercel.app/en',
+    link: 'https://freiguel-web.vercel.app/en'
+  },
+  {
+    id: '20',
+    title: 'Arduino Practices',
+    des: 'Exploring Electronics and Robotics using Arduino (C++) by working on projects.',
+    category: 'c++ - arduino - livewire - proteus',
+    repo: 'https://www.tinkercad.com/users/eC3q67K0OPz?type=circuits',
+    link: 'https://www.tinkercad.com/users/eC3q67K0OPz?type=circuits'
+  },
+  {
+    id: '21',
+    title: 'My Three.js Journey',
+    des: 'Three.js Journey practices and projects.',
+    category: 'javascript - threejs',
+    repo: 'https://github.com/jeandv/my-threejs-journey',
+    link: 'https://github.com/jeandv/my-threejs-journey'
+  },
 ];
 
 const SearchAllProjects = () => {
-
   const [projectSearch, setProjectSearch] = useState<string>('');
-
-  const resultSearch: CardProjectProps[] = allProjectsInfo.filter(project => project.category.includes(projectSearch.toLowerCase()))
+  const resultSearch: CardProjectProps[] = allProjectsInfo.filter(project => project.category.includes(projectSearch.toLowerCase()));
 
   return (
     <>
       <AnimationContainer customClassName='w-full group flex flex-col justify-center items-center mb-8'>
-
         <div className='w-full flex items-center lg:w-3/6 h-12 rounded shadow-lg bg-black border border-gray-800 group-hover:border-gray-500 transition-all ease'>
-
           <div className='grid place-items-center h-full w-12 text-gray-500'>
             <svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
               <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='1' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' />
@@ -169,9 +189,7 @@ const SearchAllProjects = () => {
             placeholder='Languages, frameworks, libraries, etc...'
             onChange={e => setProjectSearch(e.target.value)} />
         </div>
-
       </AnimationContainer>
-
       <article className='w-full flex justify-center items-center content-center flex-wrap gap-6 mx-auto'>
         {
           resultSearch.map(({ id, title, des, category, repo, link }) => <CardProject key={id} title={title} des={des} category={category} repo={repo} link={link} />)
