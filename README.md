@@ -1,5 +1,5 @@
 
-<img width="848" alt="Captura de pantalla 2025-02-21 a la(s) 4 09 50 p  m" src="https://github.com/user-attachments/assets/7fb39984-22d2-4016-8e41-7382c7c9c7c7" />
+<img width="788" height="527" alt="image" src="https://github.com/user-attachments/assets/ab2ac857-ff3d-4c5c-b609-0d22bd64d6d5" />
 
 Developer with over +3 years of JavaScript experience and a constant interest in learning new technologies. I have solid experience in Frontend development for web, mobile, and desktop applications, using technologies and frameworks like JavaScript, TypeScript, React, Next.js, Angular, Electron.js, and Ionic. Additionally, I have skills in Backend development with Node.js, Express, and MongoDB (NoSQL). I consistently follow best practices in prototyping, coding, clean architecture, SOLID principles, pixel-perfect design, GitFlow, and agile methodologies. I am currently on the path to becoming a DevOps professional, working with tools and technologies such as AWS, CI/CD, Docker, Kubernetes, Jenkins, and Terraform.
 
