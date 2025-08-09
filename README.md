@@ -15,7 +15,7 @@ GitHub: github.com/jeandv
 · Email: jeanrdev@gmail.com <br>
 · [CV](https://rxresu.me/jeandv/cv-jean-rondon) <br>
 · [Portfolio](https://jeanrondon.dev) <br>
-· [LinkedIn](https://linkedin.com/in/jeandv) <br>
+· [LinkedIn](https://linkedin.com/in/jeanrondon) <br>
 · [GitHub](https://github.com/jeandv) <br>
 
 ## Website URL 👁‍🗨
@@ -43,7 +43,7 @@ GitHub: github.com/jeandv
 
 ## Contact 📧
 
-✔ If you want to contact me you can write me to jeanrdev@gmail.com or to my [LinkedIn](https://www.linkedin.com/in/jeandv/) for inquiries or you can also talk to me by [Whatsapp](https://walink.co/2369d5)
+✔ If you want to contact me you can write me to jeanrdev@gmail.com or to my [LinkedIn](https://www.linkedin.com/in/jeanrondon/)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
