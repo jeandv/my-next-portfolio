@@ -8,7 +8,7 @@ const AboutMe = () => {
         About me
       </h2>
       <p className='text-base text-gray-400'>
-        I'm a Frontend Developer with over {calculateDuration('2022-01-01', false)} of experience specializing in JavaScript. I'm passionate about building robust web, mobile, and desktop applications using modern technologies. I adhere to best practices in every stage of development, including clean architecture, SOLID principles, pixel-perfect design, GitFlow, and agile methodologies.
+I am an experienced frontend developer specializing in JavaScript. I am passionate about creating robust web, mobile, and desktop applications using modern technologies. I have focused primarily on exploring new technologies, striving every day to create increasingly efficient and comprehensive solutions. I enjoy working in a team, fostering the skills of all members to form a team based on constant improvement, communication, and trust. I believe that in this field, everything has a solution and that nothing is impossible for a developer, as the only limit is oneself. One of my motivations is to make the decision every day to give my best to achieve success. I am always open to change and willing to learn whatever is necessary to achieve the objectives.
       </p>
       <p className='text-base text-gray-400 flex gap-4 justify-center items-start mt-[24px]'>
         <a className='text-gray-400 hover:text-white inline-flex items-center gap-1' href="https://rxresu.me/jeandv/cv-jean-rondon" target="_blank">
