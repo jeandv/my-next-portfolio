@@ -9,11 +9,11 @@ export const skills = [
   },
   {
     title: 'Electronics and robotic',
-    techs: ['C++', 'Arduino']
+    techs: ['C++', 'Arduino', 'Tinkercad', 'LiveWire', 'Proteus']
   },
   {
     title: 'Softwares and tools',
-    techs: ['Git', 'Github', 'Bitbucket', 'Postman', 'Figma', 'Photoshop', 'WordPress', 'Elementor']
+    techs: ['Git', 'Github', 'Bitbucket', 'Postman', 'Figma', 'Photoshop', 'WordPress', 'Elementor', 'Cura 3D', 'Autodesk Fusion']
   },
   {
     title: 'Practices',
