@@ -21,7 +21,7 @@ const CurrentTimeLineExp = () => {
   return (
     <Timeline>
       <TimelineEvent active>
-        <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> · México | Mar. 2023 -                     {calculateDuration('2023-03-01', true)}</TimelineEvent.Title>
+        <TimelineEvent.Title>Frontend Developer | <a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> · México | Mar. 2023 -                     {calculateDuration('2023-03-01', true)}</TimelineEvent.Title>
         <TimelineEvent.Description>
          Actively participated in projects for a leading film entertainment chain with a presence across Latin America, Spain, and India. Focused on delivering high-quality digital experiences for millions of users.
         </TimelineEvent.Description>
@@ -54,7 +54,7 @@ const CurrentTimeLineExp = () => {
         </TimelineEvent.Description>
       </TimelineEvent>
       <TimelineEvent>
-        <TimelineEvent.Title><a href='https://www.zima-blue.com' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Zima-Blue</a> · Portugal | May. 2025 -                   {calculateDuration('2025-05-01', true)}</TimelineEvent.Title>
+        <TimelineEvent.Title>Full Stack Developer | <a href='https://www.zima-blue.com' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Zima-Blue</a> · Portugal | May. 2025 -                   {calculateDuration('2025-05-01', true)}</TimelineEvent.Title>
         <TimelineEvent.Description>
           Integrated Sanity CMS with Next.js, ensuring a smooth connection between the CMS and the frontend, improving the client's content management and optimizing the workflow.
         </TimelineEvent.Description>
@@ -77,8 +77,14 @@ const CurrentTimeLineExp = () => {
           Created and documented UI components in isolation using Storybook, enhancing productivity and collaboration by providing a dedicated environment for component visualization and testing.
         </TimelineEvent.Description>
       </TimelineEvent>
+      <TimelineEvent>
+        <TimelineEvent.Title>Web Developer and Web Designer UX | Freelance · Venezuela | Feb. 2022 - Mar. 2023</TimelineEvent.Title>
+        <TimelineEvent.Description>
+         Design and develop web pages and applications, consistently applying clean architecture and ensuring pixel-perfect implementation across all projects. My experience spans a wide range of projects, including: Landing pages and multi-section websites, Manageable e-commerce stores with registration and login functionalities, Manageable blogs, Interactive dashboards.
+        </TimelineEvent.Description>
+      </TimelineEvent>
       <TimelineEvent last>
-        <TimelineEvent.Title><a href='https://iluxion.pe' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Studio Iluxion</a> · Perú | May. 2022 - Jul.                     2022</TimelineEvent.Title>
+        <TimelineEvent.Title>Frontend Developer and Web Designer UX | <a href='https://iluxion.pe' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Studio Iluxion</a> · Perú | May. 2022 - Jul.                     2022</TimelineEvent.Title>
         <TimelineEvent.Description>
           Web designer and responsive web designer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery implementing SCRUM, pixel perfect and clean code.
         </TimelineEvent.Description>
