@@ -13,7 +13,7 @@ export function calculateDuration(startDate: string, showMonths: boolean): strin
   } else if (!showMonths) {
     return `${years}+ years`;
   } else {
-    return `${years > 0 ? "yrs " : ""}${months} mth`;
+    return `${years > 0 ? years + " yrs " : ""}${months} mth`;
   }
 }
 
