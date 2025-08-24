@@ -11,7 +11,7 @@ const allProjectsInfo = [
     title: 'Pokédex Vanilla',
     des: 'Project using the pokeapi api, you can search the pokemons you want.',
     category: 'javascript',
-    repo: 'https://jeandv.github.io/pokedex',
+    repo: 'https://github.com/jeandv/pokedex',
     link: 'https://jeandv.github.io/pokedex'
   },
   {
@@ -19,16 +19,16 @@ const allProjectsInfo = [
     title: 'Memory Game',
     des: 'This is one of the challenges done in CADIF1 Academy. ',
     category: 'javascript - jquery',
-    repo: 'https://jeandv.github.io/memoria-game',
-    link: 'https://github.com/jeandv/memoria-game'
+    repo: 'https://github.com/jeandv/memoria-game',
+    link: 'https://jeandv.github.io/memoria-game'
   },
   {
     id: '3',
     title: 'Github User Finder',
     des: 'frontendmentor.io challenge where I use the github api to be able to search for github users.',
     category: 'javascript',
-    repo: 'https://jeandv.github.io/pokedex',
-    link: 'https://jeandv.github.io/pokedex'
+    repo: 'https://github.com/jeandv/buscador-user',
+    link: 'https://jeandv.github.io/buscador-user'
   },
   {
     id: '5',
@@ -60,7 +60,7 @@ const allProjectsInfo = [
     des: 'First project using TanStack Query with Github API, I learned what it is for, how to use it and when to use it.',
     category: 'typescript - react - react query',
     repo: 'https://github.com/jeandv/react-query/tree/main/02-react-query-issues-main',
-    link: 'https://github.com/jeandv/react-query/tree/main/02-react-query-issues-main'
+    link: null
   },
   {
     id: '9',
@@ -68,7 +68,7 @@ const allProjectsInfo = [
     des: 'Event registration app is a project test to evaluate my skills of the MERN stack using Redux and Stripe.',
     category: 'react - node - express - mongodb',
     repo: 'https://github.com/jeandv/events-test-mern',
-    link: 'https://github.com/jeandv/events-test-mern'
+    link: null
   },
   {
     id: '10',
@@ -116,7 +116,7 @@ const allProjectsInfo = [
     des: 'All my projects using Electron.',
     category: 'electron.js',
     repo: 'https://github.com/jeandv/pract-electronjs',
-    link: 'https://github.com/jeandv/pract-electronjs'
+    link: null
   },
   {
     id: '16',
@@ -124,7 +124,7 @@ const allProjectsInfo = [
     des: 'Terminal projects (console), rest servers, api rests, etc.',
     category: 'node - express - mongodb',
     repo: 'https://github.com/jeandv/pract-nodejs',
-    link: 'https://github.com/jeandv/pract-nodejs'
+    link: null
   },
   {
     id: '17',
@@ -132,7 +132,7 @@ const allProjectsInfo = [
     des: 'Practice, exercises and algorithmic challenges using JavaScript and TypeScript.',
     category: 'javascript - typescript',
     repo: 'https://github.com/jeandv/algorithms-js',
-    link: 'https://github.com/jeandv/algorithms-js'
+    link: null
   },
   {
     id: '18',
@@ -140,32 +140,40 @@ const allProjectsInfo = [
     des: 'Freelancer Ecommerce Project using PHP and MySQL database.',
     category: 'php - mysql - bootstrap',
     repo: 'https://github.com/jeandv/shopphp-paypal',
-    link: 'https://github.com/jeandv/shopphp-paypal'
+    link: null
   },
   {
     id: '19',
     title: 'Freiguel',
     des: 'Website for a construction company in Portugal.',
     category: 'javascript - typescript - nextjs - sanity cms',
-    repo: 'https://freiguel-web.vercel.app/en',
+    repo: null,
     link: 'https://freiguel-web.vercel.app/en'
   },
   {
     id: '20',
-    title: 'Arduino Practices',
-    des: 'Exploring Electronics and Robotics using Arduino (C++) by working on projects.',
-    category: 'c++ - arduino - livewire - proteus',
-    repo: 'https://www.tinkercad.com/users/eC3q67K0OPz?type=circuits',
-    link: 'https://www.tinkercad.com/users/eC3q67K0OPz?type=circuits'
+    title: 'Vilcol',
+    des: 'Website for a construction company in Portugal ',
+    category: 'javascript - typescript - next.js - sanity cms',
+    repo: null,
+    link: 'https://vilcol-web.vercel.app/es'
   },
   {
     id: '21',
+    title: 'Arduino Practices',
+    des: 'Exploring Electronics and Robotics using Arduino (C++) by working on projects.',
+    category: 'c++ - arduino - livewire - proteus',
+    repo: null,
+    link: 'https://www.tinkercad.com/users/eC3q67K0OPz?type=circuits'
+  },
+  {
+    id: '22',
     title: 'My Three.js Journey',
     des: 'Three.js Journey practices and projects.',
     category: 'javascript - threejs',
     repo: 'https://github.com/jeandv/my-threejs-journey',
-    link: 'https://github.com/jeandv/my-threejs-journey'
-  },
+    link: null
+  }
 ];
 
 const SearchAllProjects = () => {
